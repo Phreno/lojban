@@ -1,0 +1,164 @@
+:Author: K3rnel P4n1k
+:Email: losgoomy@gmail.com
+:CreationDate: 8 Octobre 2016
+:Revision: 1.0
+:State: DRAFT
+:toc: left
+:toc-title: Table des matières
+
+= Traduction du poème _L'ennemi_
+
+== À propos
+
+[format="csv"]
+[frame="topbot", grid="none"]
+|===
+Rédacteur, {Author}
+Courriel, {Email}
+Version, {Revision}
+État, *[red]#{State}#*
+|===
+
+== Outils utilisés
+
+[format="csv"]
+[options="header"]
+[frame="topbot", grid="none"]
+|===
+Outils    , Liens                                             , Utilisation
+AsciiDoc  , http://www.methods.co.nz/asciidoc/                , Rédaction
+jbovlaste , http://jbovlaste.lojban.org/                      , Dictionnaire
+zmifanva  , http://lojban.lilyx.net/zmifanva/                 , Traducteur
+wikibooks , https://en.wikibooks.org/wiki/Lojban/Attitudinals , Attitudinals
+git       , https://git-scm.com/                              , Gestion de configuration
+|===
+
+== Conventions
+=== Présentation des termes
+==== Navigation dans le texte
+Il y a quatre strophes, nommées respectivement: §1, §2, §3 & §4;
+Chaque strophe comporte 1 à n lignes annotées des lettres de l'alphabet en
+majuscule.
+
+Si des groupement de lignes non explicites peuvent être utile à l'analyse du
+poème alors les lettres de l'alphabet grec seront utilisés pour les désigner.
+
+.Utilisation de la navigation
+[format="csv"]
+[options="header"]
+[frame="topbot", grid="none"]
+|===
+Localisateur, Explication
+§1 — «lorem ipsum», première occurence de *lorem ipsum* dans la première strophe
+§2B — «lorem ipsum», première occurence de *lorem ipsum* dans la deuxième ligne de la deuxième strophe
+§3β — «lorem ipsum», première occurence de *lorem ipsum* dans le set β (optionnel, situé dans la troisième strophe)
+|===
+
+==== Mise en évidence des sumtis
+
+// Liste des couleurs utilisées pour mettre en valeur les arguments.
+:fa: yellow
+:fe: lime
+:fi: aqua
+:fo: blue
+:fu: fuchsia
+
+.Attribution d'une couleur aux arguments
+[format="csv"]
+[options="header"]
+[frame="topbot", grid="none"]
+|===
+Position, designation
+x₁, [{fa}]#fa#
+x₂, [{fe}]#fe#
+x₃, [{fi}]#fi#
+x₄, [{fo}]#fo#
+x₅, [{fu}]#fu#
+|===
+
+== Description
+Le but de ce document est de tracer le processus de traduction du poème du 
+Français au Lojban.
+
+
+== Texte en Français
+
+.Source
+[quote, Charles Baudelaire, Les Fleurs du mal]
+____
+X - L'ennemi
+
+Ma jeunesse ne fut qu'un ténébreux orage, +
+Traversé çà et là par de brillants soleils ; +
+Le tonnerre et la pluie ont fait un tel ravage, +
+Qu'il reste en mon jardin bien peu de fruits vermeils.
+
+Voilà que j'ai touché l'automne des idées, +
+Et qu'il faut employer la pelle et les râteaux +
+Pour rassembler à neuf les terres inondées, +
+Où l'eau creuse des trous grands comme des tombeaux.
+
+Et qui sait si les fleurs nouvelles que je rêve +
+Trouveront dans ce sol lavé comme une grève +
+Le mystique aliment qui ferait leur vigueur ?
+
+{empty}- O douleur ! ô douleur ! Le Temps mange la vie, +
+Et l'obscur Ennemi qui nous ronge le cœur +
+Du sang que nous perdons croît et se fortifie !
+____
+
+== Décomposition technique
+=== Analyse de la première strophe
+Cette strophe évoque par le biais d'images
+la vie du protagoniste. Ce bilan se décompose en deux parties, α & β, 
+qui se répondent en écho sur le
+même schéma — une grande flaque de noir perlée de quelques tâches de
+couleurs — l'une refletant le passé, l'autre le présent.
+
+==== *§1α.* le passé — les ténèbres & la lumière —
+
+****
+*§1A.* Ma jeunesse ne fut qu'un ténébreux orage, +
+*§1B.* Traversé çà et là par de brillants soleils ;
+****
+
+.Présentation des mots pour §1A
+[format="csv"]
+[options="header"]
+[frame="topbot", grid="none"]
+|===
+Français  , Lojban    , Traduction
+Ma        , le mi     , marque la possession
+jeunesse  , nunci'o   , [yellow]#*fa*# is the youth of [lime]#*fe*#
+ne fût    , pu        , marque du passé
+qu'un     , ??        , ??
+ténébreux , manku     , [yellow]#*fa*# is dark/lacking in illumination
+orage     , lidvilti'a, [yellow]#*fa*# is a thunderstorm at place/region [lime]#*fe*#
+|===
+
+.Présentation des mots pour §1B
+[format="csv"]
+[options="header"]
+[frame="topbot", grid="none"]
+|===
+Français    , Lojban    , Traduction
+Traversé par, pagre     , [yellow]#*fa*# passes through/penetrates barrier/medium/portal [lime]#*fe*# to destination [aqua]#*fi*# from origin side [blue]#*fo*#.
+çà et là    , .aicu'i   , attidudinal d'indécision
+brillants   , gusminra  , [yellow]#*fa*# is shiny/gleaming/bright/reflective of light [lime]#*fe*# from source [aqua]#*fi*#
+soleils     , solri     , [yellow]#*fa*# is the sun of home planet [lime]#*fe*# (default Earth) of race [aqua]#*fi*#; fa is solar.
+|===
+
+Lorsque l'on pose *pagre* comme étant le selbri de la proposition.
+
+- ⇒ [yellow]#§1B — «de brillants soleils ;»# devient [yellow]#*fa*#.
+- ⇒ [lime]#§1A# devient [lime]#*fe*#.
+
+
+
+
+==== *§1β.* le présent — le climat & les récoltes—
+****
+*§1C.* Le tonnerre et la pluie ont fait un tel ravage +
+*§1D.* Qu'il reste en mon jardin bien peu de fruits vermeils.
+****
+
