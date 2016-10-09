@@ -51,7 +51,8 @@ poème alors les lettres de l'alphabet grec seront utilisés pour les désigner.
 Localisateur, Explication
 §1 — «lorem ipsum», première occurence de *lorem ipsum* dans la première strophe
 §2B — «lorem ipsum», première occurence de *lorem ipsum* dans la deuxième ligne de la deuxième strophe
-§3β — «lorem ipsum», première occurence de *lorem ipsum* dans le set β (optionnel, situé dans la troisième strophe)
+β — «lorem ipsum», première occurence de *lorem ipsum* dans le set β
+§3β, désigne un set β définit explicitement pour la troisième strophe
 |===
 
 ==== Mise en évidence des sumtis
@@ -75,11 +76,6 @@ x₃, [{fi}]#fi#
 x₄, [{fo}]#fo#
 x₅, [{fu}]#fu#
 |===
-
-== Description
-Le but de ce document est de tracer le processus de traduction du poème du 
-Français au Lojban.
-
 
 == Texte en Français
 
@@ -128,7 +124,6 @@ couleurs — l'une refletant le passé, l'autre le présent.
 [frame="topbot", grid="none"]
 |===
 Français  , Lojban    , Traduction
-Ma        , le mi     , marque la possession
 jeunesse  , nunci'o   , [yellow]#*fa*# is the youth of [lime]#*fe*#
 ne fût    , pu        , marque du passé
 qu'un     , ??        , ??
@@ -153,7 +148,12 @@ Lorsque l'on pose *pagre* comme étant le selbri de la proposition.
 - ⇒ [yellow]#§1B — «de brillants soleils ;»# devient [yellow]#*fa*#.
 - ⇒ [lime]#§1A# devient [lime]#*fe*#.
 
+===== Traduction du sumti [{fa}]
+lo solri cu gusmnira
 
+===== Traduction du sumti [{fe}]
+
+lo lidvilti'a manku cu nunci'o mi 
 
 
 ==== *§1β.* le présent — le climat & les récoltes—
