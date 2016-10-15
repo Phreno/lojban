@@ -157,10 +157,10 @@ En appliquant *lo _selbri_ ku* dessus, alors on transforme le *selbri* en *sumti
 Ainsi, *lo su'u [{fe}]#§1A># ke ku* devient [{fe}]#fe#.
 
 Soit, après un premier essai: +
-⇒ _[{fa}]#lo gusminra solri# cu pagre [{fe}]#lo su'u lo lidvilti'a manku cu nunci'o mi#_
+⇒ _[{fa}]#lo gusminra solri# [underline]#cu pagre# [{fe}]#lo su'u lo lidvilti'a manku cu nunci'o mi#_
 
 En remplacant l'ordre pour qu'il respecte l'ordre du poème. +
-⇒ _[{fe}]#fe lo su'u lo lidvilti'a manku cu [{fa}]nunci'o mi# cu pagre [{fa}]#fa lo gusminra solri# vau_
+⇒ _[{fe}]#fe lo su'u lo lidvilti'a manku cu nunci'o mi ke# [underline]#cu pagre# [{fa}]#fa lo gusminra solri# vau_
 
 ===== Corrections
 
@@ -176,11 +176,14 @@ ____
 .Il manque *pu* dans [{fa}]#fa#
 WARNING: L'utilistation de *pu* pour marquer la jeunesse passée.
 
+.Il manque *.aicu'i* sur le *selbri*
+WARNING: L'utilisationn de *.aicu'i* pour marquer le caractère incertain
+
 .Changement morphologique
 TIP: L'utilisation de *se pagre* alterne la valeur de [{fa}]#fa# et de [{fe}]#fe#
 
 ****
-⇒ _[{fa}]#lo su'u lo lidvilti'a manku cu nunci'o mi ke# pu se pagre [{fe}]#lo gusminra solri#_
+⇒ _[{fa}]#lo su'u lo lidvilti'a manku cu nunci'o mi ke# [underline]#pu se pagre# .aicu'i [{fe}]#lo gusminra solri#_
 ****
 
 ==== *§1β.* le présent — le climat & les récoltes —
@@ -210,12 +213,13 @@ NOTE: Les mots «reste» et «vermeil» me posent problème. «reste» peux se r
 [frame="topbot", grid="none"]
 |===
 Français, Lojban, Traduction
-reste/remain, stali, [{fa}]#fa# remains/stays at/abides/lasts with [{fe}]#fe#
-mon         , memimoi, [{fa}]#fa# is mine among [{fe}] by rule/relationship [{fi}]#fi#; [{fa}]#fa# is my [{fe}]#fe# by rule/relationship [{fi}]#fi#
-jardin      , purdi, [{fa}]#fa# is a garden/tended/cultivated field of family/community/farmer [{fe}]#fe# growing plants/crop [{fi}]#fi#
-peu         , sotmei, [{fa}]#fa# are few
-fruit       , grute, [{fa}]#fa# is a fruit [body-part] of species [{fe}]#fe#
-vermeil/mûr , rutma'u, [{fa}]#fa# is ripe in quality [{fe}]#fe#
+reste/remain, stali   , [{fa}]#fa# remains/stays at/abides/lasts with [{fe}]#fe#
+mon         , memimoi , [{fa}]#fa# is mine among [{fe}] by rule/relationship [{fi}]#fi#; [{fa}]#fa# is my [{fe}]#fe# by rule/relationship [{fi}]#fi#
+jardin      , purdi   , [{fa}]#fa# is a garden/tended/cultivated field of family/community/farmer [{fe}]#fe# growing plants/crop [{fi}]#fi#
+peu         , sotmei  , [{fa}]#fa# are few
+fruit       , grute   , [{fa}]#fa# is a fruit [body-part] of species [{fe}]#fe#
+vermeil/mûr , rutma'u , [{fa}]#fa# is ripe in quality [{fe}]#fe#
 |===
 
+On pose *tolprali* comme *selbri*. 
 
