@@ -109,7 +109,7 @@ ____
 == Décomposition technique
 === Analyse de la première strophe
 Cette strophe évoque par le biais d'images
-la vie du protagoniste. Ce bilan se décompose en deux parties, α & β, 
+la vie du protagoniste. Ce bilan se décompose en deux parties, α & β,
 qui se répondent en écho sur le
 même schéma — une grande flaque de noir perlée de quelques tâches de
 couleurs — l'une refletant le passé, l'autre le présent.
@@ -146,12 +146,12 @@ brillants   , gusminra  , [{fa}]#fa# is shiny/gleaming/bright/reflective of ligh
 soleils     , solri     , [{fa}]#fa# is the sun of home planet [{fe}]#fe# (default Earth) of race [{fi}]#fi#; fa is solar.
 |===
 
-Lorsque l'on pose *pagre* comme étant le selbri de la proposition.
+On pose *pagre* comme étant le selbri de la proposition.
 
 - §1B — «de brillants soleils ;» devient [{fa}]#fa# ⇒ [{fa}]#lo gusmnira solri ku#
 - §1A devient [{fe}]#fe# ⇒ [{fe}]#lo lidvilti'a manku ku cu nunci'o mi#
 
-L'utilisation de *su'u _bridi_ ke* permet de transformer un *bridi* en *selbri*. 
+L'utilisation de *su'u _bridi_ ke* permet de transformer un *bridi* en *selbri*.
 En appliquant *lo _selbri_ ku* dessus, alors on transforme le *selbri* en *sumti*.
 
 Ainsi, *lo su'u [{fe}]#§1A># ke ku* devient [{fe}]#fe#.
@@ -201,7 +201,7 @@ NOTE: Le mot «ravage» n'existe pas, pour la version anglaise, sur jbovlaste. P
 |===
 Français          , Lojban    , Traduction
 tonnerre          , lidysina  , [{fa}]#fa# is a sound with emit sound-lightning [{fe}]#fe#
-pluie             , jaurcarvi , [{fa}]#fa# (some water) rains to [{fe}]#fe# from [{fi}]#fi#
+pluie             , carvi     , [{fa}]#fa# rains/showers/[precipitates] to [{fe}]#fe# from [{fi}]#fi#; [{fa}]#fa# is precipitation [not limited to 'rain']
 ravage/damage     , tolprali  , [{fa}]#fa# is a damage/harm/loss to [{fe}]#fe# resulting from activity/process [{fi}]#fi#
 |===
 
@@ -214,12 +214,21 @@ NOTE: Les mots «reste» et «vermeil» me posent problème. «reste» peux se r
 |===
 Français, Lojban, Traduction
 reste/remain, stali   , [{fa}]#fa# remains/stays at/abides/lasts with [{fe}]#fe#
-mon         , memimoi , [{fa}]#fa# is mine among [{fe}] by rule/relationship [{fi}]#fi#; [{fa}]#fa# is my [{fe}]#fe# by rule/relationship [{fi}]#fi#
+mon         , memimoi , [{fa}]#fa# is mine among [{fe}]#fe# by rule/relationship [{fi}]#fi#; [{fa}]#fa# is my [{fe}]#fe# by rule/relationship [{fi}]#fi#
 jardin      , purdi   , [{fa}]#fa# is a garden/tended/cultivated field of family/community/farmer [{fe}]#fe# growing plants/crop [{fi}]#fi#
 peu         , sotmei  , [{fa}]#fa# are few
 fruit       , grute   , [{fa}]#fa# is a fruit [body-part] of species [{fe}]#fe#
 vermeil/mûr , rutma'u , [{fa}]#fa# is ripe in quality [{fe}]#fe#
 |===
 
-On pose *tolprali* comme *selbri*. 
+On pose *tolprali* comme étant le *selbri* de la proposition.
 
+- §1C — «Le tonnerre et la pluie» devient [{fa}]#fa#
+- [{fe}]#fe# est sous entendu par §1α, et ne nécessite sans doute pas une mise en valeur explicite
+- §1D devient [{fi}]#fi#
+
+TIP: Il doit être possible de placer §1α directement dans [{fe}]#fe#.
+
+Première tentative:
+
+[{fa}]#lo lidysina je carvi ku# [underline]#cu tolprali# [{fe}]#go'i# [{fi}]##
