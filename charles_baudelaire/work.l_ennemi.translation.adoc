@@ -207,18 +207,21 @@ ravage/damage     , tolprali  , [{fa}]#fa# is a damage/harm/loss to [{fe}]#fe# r
 
 NOTE: Les mots «reste» et «vermeil» me posent problème. «reste» peux se remplacer par "remain" et «vermeil» par «mûr»/"ripe".
 
-.Présentation des mots pour §1D
+.Présentation des mots possibles pour §1D
 [format="csv"]
 [options="header"]
 [frame="topbot", grid="none"]
 |===
 Français, Lojban, Traduction
-reste/remain, stali   , [{fa}]#fa# remains/stays at/abides/lasts with [{fe}]#fe#
-mon         , memimoi , [{fa}]#fa# is mine among [{fe}]#fe# by rule/relationship [{fi}]#fi#; [{fa}]#fa# is my [{fe}]#fe# by rule/relationship [{fi}]#fi#
-jardin      , purdi   , [{fa}]#fa# is a garden/tended/cultivated field of family/community/farmer [{fe}]#fe# growing plants/crop [{fi}]#fi#
-peu         , sotmei  , [{fa}]#fa# are few
-fruit       , grute   , [{fa}]#fa# is a fruit [body-part] of species [{fe}]#fe#
-vermeil/mûr , rutma'u , [{fa}]#fa# is ripe in quality [{fe}]#fe#
+reste/quantity  , klani   , [{fa}]#fa# x1 is a quantity quantified/measured/enumerated by x2 (quantifier) on scale x3 (si'o)
+reste/remain    , stali   , [{fa}]#fa# remains/stays at/abides/lasts with [{fe}]#fe#
+reste/fin       , fanmo   , [{fa}]#fa# x1 is an end/finish/termination of thing/process x2; [not necessarily implying completeness]
+mon             , memimoi , [{fa}]#fa# is mine among [{fe}]#fe# by rule/relationship [{fi}]#fi#; [{fa}]#fa# is my [{fe}]#fe# by rule/relationship [{fi}]#fi#
+jardin          , purdi   , [{fa}]#fa# is a garden/tended/cultivated field of family/community/farmer [{fe}]#fe# growing plants/crop [{fi}]#fi#
+peu             , sotmei  , [{fa}]#fa# are few
+fruit           , grute   , [{fa}]#fa# is a fruit [body-part] of species [{fe}]#fe#
+vermeil/mûr     , rutma'u , [{fa}]#fa# is ripe in quality [{fe}]#fe#
+vermeil/rouge   , xunre   , [{fa}]#fa# is red/crimson/ruddy [color adjective]
 |===
 
 On pose *tolprali* comme étant le *selbri* de la proposition.
@@ -227,8 +230,14 @@ On pose *tolprali* comme étant le *selbri* de la proposition.
 - [{fe}]#fe# est sous entendu par §1α, et ne nécessite sans doute pas une mise en valeur explicite
 - §1D devient [{fi}]#fi#
 
-TIP: Il doit être possible de placer §1α directement dans [{fe}]#fe#.
+TIP: Il est possible de placer §1α directement dans [{fe}]#fe# en le remplaçant par go'i.
+
+§1D doit être décomposé et transformé en proposition.
+
+- §1D — «fruits vermeils» → lo rutma'u xunre grute ku
+- §1D — «peu de fruits vermeils» → lo rutma'u xunre grute ku cu sotmei
+- §1Dα 
 
 Première tentative:
 
-[{fa}]#lo lidysina je carvi ku# [underline]#cu tolprali# [{fe}]#go'i# [{fi}]##
+[{fa}]#lo lidysina ce carvi ku# [underline]#cu tolprali# [{fe}]#go'i# [{fi}]##
