@@ -1,0 +1,37 @@
+----
+
+Don't go around saying the world owes you a living.  The world owes you
+nothing.  It was here first.
+		-- Mark Twain
+
+dejni: x1 owes x2 in debt / obligation to creditor x3 in return for x4 [service, loan]; x1 is a debtor.
+facmu'e: x1 is reality / 'the real world' ('this' world, the world the speaker and [presumably] listener reside in), containing / defining x2 (objects and facts) defined by rules x3
+
+.i ko na cusku be lu lo facmu'e cu dejni lo jmive do liu be'o klama
+.i lo facmu'e cu dejni noda do
+.i lo facmu.e pu levi sanli
+
+----
+
+Wed Mar  7 20:48:10 CET 2018
+
+Try to relax and enjoy the crisis.
+		-- Ashleigh Brilliant
+
+troci: x1 tries / attempts / makes an effort to do / attain x2 (event / state / property) by actions / method x3.
+surla: x1 relaxes / rests / is at ease in / by doing / being x2 (activity).
+selpu'a: p2 enjoys p1 under condition p3.
+nadycai: c1=n1 is a big problem / crisis for n2 in situation / task / inquiry n3.
+
+.i ko cu troci be lo surla be'o .ije ko selpu'a be lo nadycai
+
+----
+
+Wed Mar  7 20:36:31 CET 2018
+
+You are confused; but this is your normal state.
+
+ki'anmo: x1 is confused about message x2 (text / sedu'u) from sender x3
+za'i: cmavo rafsi: zaz abstractor: state (event) abstractor; x1 is continuous state of [bridi] being true.
+
+.i za'i do cu ki'anmo
