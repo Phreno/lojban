@@ -74,12 +74,12 @@ jbo.filter.cmavo(){
 
 jbo.filter.cmavo.class(){
   cmavoClassFilter="^ .{10}${1}" 
-  jbo.cmavo | egrep "${cmavoClassFilter}" 
+  jbo.cmavo | egrep "${cmavoClassFilter}" | sort -k "1.12,1.20" 
 }
 
 jbo.filter.cmavo.class.strict(){
   cmavoClassFilter="^ .{10}${1}\W" 
-  jbo.cmavo | egrep "${cmavoClassFilter}" 
+  jbo.cmavo | egrep "${cmavoClassFilter}" | sort -k "1.12,1.20"
 }
 
 jbo.translate.cmavo(){
