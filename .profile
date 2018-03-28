@@ -40,10 +40,29 @@ jbo.translate.gismu.strict(){
   jbo.gismu | egrep "${translateFilter}"
 } 
 
+jbo.pretty.gismu(){
+    gismu="${1}"
+    breakLine="\n"
+    breakValsi="s/./${breakLine}/20"
+    breakTranslation="s/./${breakLine}/62"
+    sanitizeWhiteSpace="s/ \+/ /g"
+    sanitizeIndent="s/^ //g"
+    j.fg "${gismu}" | sed "${breakValsi}; ${breakTranslation}; ${sanitizeWhiteSpace}; ${sanitizeIndent}" 
+}    
+
+jbo.memrise.gismu(){
+    gismu="${1}"
+    enlightFirstWord="1 s/^\(\w\+\)/**&**/"
+    forceBreak="s/^/\n/g"
+    jbo.pretty.gismu "${gismu}" | sed "${enlightFirstWord}; ${forceBreak}"
+}
+
 alias j.g='jbo.gismu'
 alias j.fg='jbo.filter.gismu'
 alias j.tg='jbo.translate.gismu'
 alias j.tgs='jbo.translate.gismu.strict'
+alias j.pg='jbo.pretty.gismu'
+alias j.mg='jbo.memrise.gismu'
 
 # NORALUJV
 # --------
