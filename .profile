@@ -44,51 +44,47 @@ jbo.translate.gismu.strict(){
 } 
 
 jbo.pretty.gismu(){
-    gismu="${1}"
-    breakLine="\n"
-    breakValsi="s/./${breakLine}/20"
-    breakTranslation="s/./${breakLine}/62"
-    sanitizeWhiteSpace="s/ \+/ /g"
-    sanitizeIndent="s/^ //g"
-    j.fg "${gismu}" | sed "${breakValsi}; ${breakTranslation}; ${sanitizeWhiteSpace}; ${sanitizeIndent}" 
+  gismu="${1}"
+  breakLine="\n"
+  breakValsi="s/./${breakLine}/20"
+  breakTranslation="s/./${breakLine}/62"
+  sanitizeWhiteSpace="s/ \+/ /g"
+  sanitizeIndent="s/^ //g"
+  j.fg "${gismu}" | sed "${breakValsi}; ${breakTranslation}; ${sanitizeWhiteSpace}; ${sanitizeIndent}" 
 }
 
 jbo.pretty.gismu.1(){
-	gismu="${1}"
-	breakX="s/x[2-9]/&\n/g"
-	sanitizeLineStart="s/^,*\s//gm"
-	duplicateLine2="2s/.*/&\n&/g"
-	underline="3s/./-/g"
-	jbo.pretty.gismu "${gismu}" | sed "${breakX}; ${sanitizeLineStart}; ${duplicateLine2};" | sed "${underline}"
+  gismu="${1}"
+  breakX="s/x[2-9]/&\n/g"
+  sanitizeLineStart="s/^,*\s//gm"
+  duplicateLine2="2s/.*/&\n&/g"
+  underline="3s/./-/g"
+  jbo.pretty.gismu "${gismu}" | sed "${breakX}; ${sanitizeLineStart}; ${duplicateLine2};" | sed "${underline}"
 }
 
 jbo.pretty.gismu.by.rafsi(){
-	rafsi="${1}"
-	gismu=$(jbo.get.gismu.by.rafsi "${rafsi}")
-	jbo.pretty.gismu.1 "${gismu}"
+  rafsi="${1}"
+  gismu=$(jbo.get.gismu.by.rafsi "${rafsi}")
+  jbo.pretty.gismu.1 "${gismu}"
 }
 
 jbo.memrise.gismu(){
-    gismu="${1}"
-    enlightFirstWord="1 s/^\(\w\+\)/**&**/"
-    forceBreak="s/^/\n/g"
-    jbo.pretty.gismu "${gismu}" | sed "${enlightFirstWord}; ${forceBreak}"
+  gismu="${1}"
+  enlightFirstWord="1 s/^\(\w\+\)/**&**/"
+  forceBreak="s/^/\n/g"
+  jbo.pretty.gismu "${gismu}" | sed "${enlightFirstWord}; ${forceBreak}"
 }
 
-
 jbo.get.gismu.by.rafsi(){
-    rafsi="${1}"
-    jbo.filter.rafsi "${rafsi}" | awk '{print $1}'
+  rafsi="${1}"
+  jbo.filter.rafsi "${rafsi}" | awk '{print $1}'
 }
 
 jbo.memrise.gismu.by.rafsi(){
-    rafsi="${1}"
-    gismu=$(jbo.get.gismu.by.rafsi "${rafsi}")
-    jbo.memrise.gismu "${gismu}"
+  rafsi="${1}"
+  gismu=$(jbo.get.gismu.by.rafsi "${rafsi}")
+  jbo.memrise.gismu "${gismu}"
 }
-
-
-
 
 alias j.g='jbo.gismu'
 alias j.fg='jbo.filter.gismu'
