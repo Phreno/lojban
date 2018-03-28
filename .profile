@@ -75,6 +75,11 @@ jbo.memrise.gismu(){
   jbo.pretty.gismu "${gismu}" | sed "${enlightFirstWord}; ${forceBreak}"
 }
 
+jbo.filter.rafsi(){
+  rafsi="${1}"
+  jbo.gismu | sed -n "/^\s\(.\{6\}\|.\{10\}\|.\{14\}\)${rafsi}.*/p"
+}
+
 jbo.get.gismu.by.rafsi(){
   rafsi="${1}"
   jbo.filter.rafsi "${rafsi}" | awk '{print $1}'
@@ -96,6 +101,7 @@ alias j.pg1='jbo.pretty.gismu.1'
 alias j.mg='jbo.memrise.gismu'
 alias j.ggr='jbo.get.gismu.by.rafsi'
 alias j.mgr='jbo.memrise.gismu.by.rafsi'
+alias j.fr='jbo.filter.rafsi'
 
 # NORALUJV
 # --------
