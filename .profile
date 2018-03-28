@@ -3,6 +3,9 @@ echo "sourcing lojban profile"
 export LOJBAN="${WORKSPACE}/lojban"
 export LOJBAN_PROFILE="${LOJBAN}/.profile"
 export LOJBAN_RSC="${LOJBAN}/rsc"
+export LOJBAN_EXT="${LOJBAN}/ext"
+export LOJBAN_EXT_LUVZBA_DIR="${LOJBAN_EXT}/luvzba"
+export LOJBAN_EXT_LUVZBA="${LOJBAN_EXT_LUVZBA_DIR}/luvzba.jar"
 export LOJBAN_NORALUJV="${LOJBAN_RSC}/NORALUJV.txt"
 export LOJBAN_CMAVO="${LOJBAN_RSC}/cmavo.txt"
 export LOJBAN_GISMU="${LOJBAN_RSC}/gismu.txt"
@@ -111,6 +114,16 @@ jbo.filter.noralujv(){
 
 alias j.n='jbo.noralujv'
 alias j.fn='jbo.filter.noralujv'
+
+# LUJVO
+# -----
+
+jbo.luvzba(){
+  java -jar "${LOJBAN_EXT_LUVZBA}"
+}
+
+alias j.ll='jbo.luvzba'
+
 
 # CMAVO
 # -----
