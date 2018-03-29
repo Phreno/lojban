@@ -72,6 +72,21 @@ jbo.memrise.gismu(){
     jbo.pretty.gismu "${gismu}" | sed "${enlightFirstWord}; ${forceBreak}"
 }
 
+
+jbo.get.gismu.by.rafsi(){
+    rafsi="${1}"
+    jbo.filter.rafsi "${rafsi}" | awk '{print $1}'
+}
+
+jbo.memrise.gismu.by.rafsi(){
+    rafsi="${1}"
+    gismu=$(jbo.get.gismu.by.rafsi "${rafsi}")
+    jbo.memrise.gismu "${gismu}"
+}
+
+
+
+
 alias j.g='jbo.gismu'
 alias j.fg='jbo.filter.gismu'
 alias j.tg='jbo.translate.gismu'
@@ -80,6 +95,8 @@ alias j.pg='jbo.pretty.gismu'
 alias j.pgr='jbo.pretty.gismu.by.rafsi'
 alias j.pg1='jbo.pretty.gismu.1'
 alias j.mg='jbo.memrise.gismu'
+alias j.ggr='jbo.get.gismu.by.rafsi'
+alias j.mgr='jbo.memrise.gismu.by.rafsi'
 
 # NORALUJV
 # --------
