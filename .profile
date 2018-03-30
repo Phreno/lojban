@@ -23,6 +23,7 @@ jbo.edit.profile(){
 }
 
 alias j.ep='jbo.edit.profile'
+alias j.sp='jbo.source.profile'
 
 # GISMU
 # -----
