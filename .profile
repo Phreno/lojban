@@ -48,7 +48,22 @@ jbo.pretty.gismu(){
     sanitizeWhiteSpace="s/ \+/ /g"
     sanitizeIndent="s/^ //g"
     j.fg "${gismu}" | sed "${breakValsi}; ${breakTranslation}; ${sanitizeWhiteSpace}; ${sanitizeIndent}" 
-}    
+}
+
+jbo.pretty.gismu.1(){
+	gismu="${1}"
+	breakX="s/x[2-9]/&\n/g"
+	sanitizeLineStart="s/^,*\s//gm"
+	duplicateLine2="2s/.*/&\n&/g"
+	underline="3s/./-/g"
+	jbo.pretty.gismu "${gismu}" | sed "${breakX}; ${sanitizeLineStart}; ${duplicateLine2};" | sed "${underline}"
+}
+
+jbo.pretty.gismu.by.rafsi(){
+	rafsi="${1}"
+	gismu=$(jbo.get.gismu.by.rafsi "${rafsi}")
+	jbo.pretty.gismu.1 "${gismu}"
+}
 
 jbo.memrise.gismu(){
     gismu="${1}"
@@ -62,6 +77,8 @@ alias j.fg='jbo.filter.gismu'
 alias j.tg='jbo.translate.gismu'
 alias j.tgs='jbo.translate.gismu.strict'
 alias j.pg='jbo.pretty.gismu'
+alias j.pgr='jbo.pretty.gismu.by.rafsi'
+alias j.pg1='jbo.pretty.gismu.1'
 alias j.mg='jbo.memrise.gismu'
 
 # NORALUJV
