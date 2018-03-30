@@ -13,9 +13,13 @@ export LOJBAN_GISMU="${LOJBAN_RSC}/gismu.txt"
 # CONFIGURATION
 # -------------
 
+jbo.source.profile(){
+  source "${LOJBAN_PROFILE}"
+}
+
 jbo.edit.profile(){
   vim "${LOJBAN_PROFILE}"
-  source "${LOJBAN_PROFILE}"
+  jbo.source.profile
 }
 
 alias j.ep='jbo.edit.profile'
