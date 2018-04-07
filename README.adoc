@@ -1,0 +1,6 @@
+= Ressources de traduction en lojban
+
+Ce dépôt contient quelques outils pour m'aider à effectuer des traductions.
+
+
+
