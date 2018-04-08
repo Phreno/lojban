@@ -17,28 +17,19 @@ fa'o
 ____
 
 .Detail
-[options="header"]
+[options='header']
 |====
-| count | word     | description
-| 4     | ·i       |
-| 3     | mi       |
-| 3     | lo       |
-| 3     | ·ije     |
-| 2     | carvi    | rain
-| 1     | zgana    | observe
-| 1     | xegri    | black
-| 1     | vanci    | evening
-| 1     | tolskari | to'e (polar opposite) + skari (color)
-| 1     | tirna    | ear
-| 1     | zvati    | present
-| 1     | sipna    | sleep
-| 1     | senva    | dream
-| 1     | ro       | each
-| 1     | nicte    | night
-| 1     | melbi    | beautiful
-| 1     | manvanci | manku (dark) + vanci (evening)
-| 1     | manku    | dark
-| 1     | le       |
-| 1     | cu       |
-| 1     | ba       |
+| valsi | rafsi         | short description                         | long description
+| carvi | cav           | rain                                      | x1 rains/showers/[precipitates] to x2 from x3; x1 is precipitation [not limited to 'rain']       
+| manku | man           | dark                                      | x1 is dark/lacking in illumination                                                               
+| melbi | mel mle       | beautiful                                 | x1 is beautiful/pleasant to x2 in aspect x3 (ka) by aesthetic standard x4                        
+| mi    | mib           | me                                        | pro-sumti: me/we the speaker(s)/author(s); identified by self-vocative                           
+| nicte |     cte       | night                                     | x1 is a nighttime of day x2 at location x3; (adjective:) x1 is at night/nocturnal                
+| ro    | rol           | each                                      | digit/number: each, all                                                                          
+| senva | sev sne       | dream                'reverie'            | x1 dreams about/that x2 (fact/idea/event/state); x2 is a dream/reverie of x1                     
+| sipna | sip           | sleep                                     | x1 is asleep (adjective); x1 sleeps/is sleeping                                                  
+| tirna | tin           | hear                                      | x1 hears x2 against background/noise x3; x2 is audible; (adjective:) x1 is aural                 
+| vanci | vac           | evening                                   | x1 is an evening [from end-of-work until sleep typical for locale] of day x2 at location x3      
+| zgana |     zga       | observe                                   | x1 observes/[notices]/watches/beholds x2 using senses/means x3 under conditions x4               
+| zvati |     zva       | at                                        | x1 (object/event) is at/attending/present at x2 (event/location)                                 
 |====
