@@ -187,8 +187,8 @@ jbo.define.list(){
 
 
   echo "[options='header']"
-  echo "| valsi | rafsi         | short description                         | long description"
   echo "|===="
+  echo "| valsi | rafsi         | short description                         | long description"
   
   while read valsi; do
     definition="$(j.fg "${valsi}\s" )";
