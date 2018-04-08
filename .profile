@@ -1,12 +1,12 @@
 echo "sourcing lojban profile"
 
-export LOJBAN="${WORKSPACE}/lojban"
-export LOJBAN_PROFILE="${LOJBAN}/.profile"
-export LOJBAN_RSC="${LOJBAN}/rsc"
-export LOJBAN_EXT="${LOJBAN}/ext"
+export LOJBAN="${WORKSPACE}/lojban" # folder containing this file (only one to adapt)
+export LOJBAN_PROFILE="${LOJBAN}/.profile" # this file
+export LOJBAN_RSC="${LOJBAN}/rsc" # ressource folder
+export LOJBAN_EXT="${LOJBAN}/ext" # dependency folder
 export LOJBAN_EXT_LUVZBA_DIR="${LOJBAN_EXT}/luvzba"
 export LOJBAN_EXT_LUVZBA="${LOJBAN_EXT_LUVZBA_DIR}/luvzba.jar"
-export LOJBAN_NORALUJV="${LOJBAN_RSC}/NORALUJV.txt"
+export LOJBAN_NORALUJV="${LOJBAN_RSC}/NORALUJV.txt" 
 export LOJBAN_CMAVO="${LOJBAN_RSC}/cmavo.txt"
 export LOJBAN_GISMU="${LOJBAN_RSC}/gismu.txt"
 
@@ -171,3 +171,33 @@ alias j.fcc='jbo.filter.cmavo.class'
 alias j.fccs='jbo.filter.cmavo.class.strict'
 alias j.tc='jbo.translate.cmavo'
 alias j.tcs='jbo.translate.cmavo.strict'
+
+
+# WORKING WITH TEXTE
+# ------------------
+jbo.word.listing(){
+  file="${1}"
+  while read line; do
+    echo "${line}" | tr '[:blank:]' '\n'
+  done < "${file}" | awk 'NF' | sort | uniq
+}
+
+jbo.define.list(){
+  file="${1}"
+
+
+  echo "[options='header']"
+  echo "| valsi | rafsi         | short description                         | long description"
+  echo "|===="
+  
+  while read valsi; do
+    definition="$(j.fg "${valsi}\s" )";
+    gismu="${definition:1:5}"
+    rafsi="${definition:7:13}"
+    word="${definition:20:41}"
+    translation="${definition:62:159}"
+    echo "| ${gismu} | ${rafsi} | ${word} | ${translation}"
+  done < "${file}" | egrep -v "^\|\s+\|" | sort | uniq
+  
+  echo "|===="
+}
