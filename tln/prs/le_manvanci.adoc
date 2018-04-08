@@ -3,15 +3,42 @@ ____
 ni'o
 
 ·i mi zgana lo vanci +
-·ije mi tirna lo carni
+·ije mi tirna lo carvi
 
 ·i le manku ba xegri +
-·ije ro stela cu melbi
+·ije ro zvati cu melbi
 
 ·i nicte tolskari +
 ·ije sipna manvanci
 
-·i mi senva lo carni
+·i mi senva lo carvi
 
 fa'o
 ____
+
+.Detail
+[options="header"]
+|====
+| count | word     | description
+| 4     | ·i       |
+| 3     | mi       |
+| 3     | lo       |
+| 3     | ·ije     |
+| 2     | carvi    | rain
+| 1     | zgana    | observe
+| 1     | xegri    | black
+| 1     | vanci    | evening
+| 1     | tolskari | to'e (polar opposite) + skari (color)
+| 1     | tirna    | ear
+| 1     | zvati    | present
+| 1     | sipna    | sleep
+| 1     | senva    | dream
+| 1     | ro       | each
+| 1     | nicte    | night
+| 1     | melbi    | beautiful
+| 1     | manvanci | manku (dark) + vanci (evening)
+| 1     | manku    | dark
+| 1     | le       |
+| 1     | cu       |
+| 1     | ba       |
+|====
