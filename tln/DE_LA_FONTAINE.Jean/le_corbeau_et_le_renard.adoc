@@ -62,3 +62,35 @@ la'edi'u cu vamji le cirla·uucu'i
 la mrocticpis ·o'anai ·uanai cu lerci nupre lo nu
 	noda ba tcica vo'a
 ____
+
+.Detail
+[options='header']
+|====
+| valsi | rafsi         | short description                         | long description
+| barda |     bra       | big                  'large'              | x1 is big/large in property/dimension(s) x2 (ka) as compared with standard/norm x3               
+| cilre |     cli       | learn                                     | x1 learns x2 (du'u) about subject x3 from source x4 (obj./event) by method x5 (event/process)    
+| cipni |     cpi       | bird                                      | x1 is a bird/avian/fowl of species x2                                                            
+| cirla |               | cheese                                    | x1 is a quantity of/contains cheese/curd from source x2                                          
+| cusku | cus sku       | express                                   | x1 (agent) expresses/says x2 (sedu'u/text/lu'e concept) for audience x3 via expressive medium x4 
+| djica |     dji       | desire                                    | x1 desires/wants/wishes x2 (event/state) for purpose x3                                          
+| do    | don     doi   | you                                       | pro-sumti: you listener(s); identified by vocative                                               
+| dunli | dun     du'i  | equal                                     | x1 is equal/congruent to/as much as x2 in property/dimension/quantity x3                         
+| farlu | fal     fa'u  | fall                                      | x1 falls/drops to x2 from x3 in gravity well/frame of reference x4                               
+| jarco |         ja'o  | show                                      | x1 (agent) shows/exhibits/displays/[reveals]/demonstrates x2 (property) to audience x3           
+| jgari |         jai   | grasp                'grip'               | x1 grasps/holds/clutches/seizes/grips/[hugs] x2 with x3 (part of x1) at locus x4 (part of x2)    
+| kalri | kar           | open                                      | x1 (portal/passage/entrance-way) is open/ajar/not shut permitting passage/access to x2 by x3     
+| lerci | lec           | late                                      | x1 (event) is late by standard x2                                                                
+| lorxu | lor     lo'u  | fox                                       | x1 is a fox [bushy-tailed wild dog/canine] of species/breed x2                                   
+| nu    | nun           | event abstract                            | abstractor: generalized event abstractor; x1 is state/process/achievement/activity of [bridi]    
+| nupre | nup     nu'e  | promise                                   | x1 (agent) promises/commits/assures/threatens x2 (event/state) to x3 [beneficiary/victim]        
+| pimlu | pim     pi'u  | feather              'plume'              | x1 is a/the feather/plume(s)/plumage [body-part] of animal/species x2                            
+| renvi | rev     re'i  | survive                                   | x1 survives/endures/undergoes/abides/lasts/persists through x2 for interval/duration x3          
+| ro    | rol           | each                                      | digit/number: each, all                                                                          
+| tcica | tic           | deceive              'cheat, trick'       | x1 (event/experience) misleads/deceives/dupes/fools/cheats/tricks x2 into x3 (event/state)       
+| tirna | tin           | hear                                      | x1 hears x2 against background/noise x3; x2 is audible; (adjective:) x1 is aural                 
+| tricu | ric           | tree                                      | x1 is a tree of species/cultivar x2                                                              
+| trina |     tri       | attract                                   | x1 attracts/appeals to/lures x2 (person/event) with property/quality x3 (ka)                     
+| vamji | vam     va'i  | value                                     | x1 (ni) is the equivalent value/worth of x2 [item(s) of value] to x3 for use/appreciation x4     
+| voksa | vok     vo'a  | voice                                     | x1 is a voice/speech sound of individual x2                                                      
+| vreta |     vre       | reclining            'rest'               | x1 lies/rests/reclines/reposes on x2; x1 is reclining/recumbent/lying on x2                      
+|====
