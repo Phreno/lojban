@@ -22,6 +22,8 @@ function handleNewTranslation(translation) {
 
 const JBO = /^\s*jbo\s*$/;
 const ENG = /^\s*en\s*$/;
+const SINGLE_QUOTES = /&#039;/g;
+const SINGLE_QUOTE = "'";
 const LINE_BREAK = "\n";
 var extracted = [];
 var processing = undefined;
@@ -38,7 +40,7 @@ fs.readFile("./melbi.strings", "utf8", function(err, data) {
         processing = "eng";
     }
 
-    function parseData(line, index) {
+    function parseData(line, index, arr) {
         function handleLojbanProcessingContext() {
             markLojbanRendering();
             if (currentTranslation.jbo) {
@@ -53,7 +55,19 @@ fs.readFile("./melbi.strings", "utf8", function(err, data) {
             }
         }
         function addCurrentSegment() {
-            currentTranslation[processing] += line;
+            const guessEnglishIndex = index + 1;
+            const isAuthorName =
+                arr && arr[guessEnglishIndex]
+                    ? arr[guessEnglishIndex].match(ENG)
+                    : false;
+            if (isAuthorName) {
+                currentTranslation.author = line;
+            } else {
+                currentTranslation[processing] += line.replace(
+                    SINGLE_QUOTES,
+                    SINGLE_QUOTE
+                );
+            }
         }
 
         if (line.match(JBO)) {
