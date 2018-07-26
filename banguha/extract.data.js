@@ -32,16 +32,13 @@ fs.readFile("./melbi.strings", "utf8", function(err, data) {
         console.error(err);
     }
     function markLojbanRendering() {
-        console.log("» JBOBAU");
         processing = "jbo";
     }
     function markEnglishRendering() {
-        console.log("» GLICO");
         processing = "eng";
     }
 
     function parseData(line, index) {
-        console.log(`parsing ${index}:\t${line}`);
         function handleLojbanProcessingContext() {
             markLojbanRendering();
             if (currentTranslation.jbo) {
