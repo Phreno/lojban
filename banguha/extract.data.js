@@ -1,4 +1,17 @@
 var fs = require("fs");
+var program = require("commander");
+
+program
+    .option("-s, --source [string]", "language source [eng]", "en")
+    .option("-t, --target [string]", "language cible [jbo]", "jbo")
+    .option(
+        "-e, --encoding [string]",
+        "encodage du fichier en entrée [utf8]",
+        "utf8"
+    )
+    .option("-i, --input [string]", "fichier en entrée")
+    .option("-o, --output [string]", "fichier en sortie (stdout)", false)
+    .parse(process.argv);
 
 const translationTemplate = {
     jbo: "",
@@ -29,7 +42,7 @@ var extracted = [];
 var processing = undefined;
 var currentTranslation = undefined;
 
-fs.readFile("./melbi.strings", "utf8", function(err, data) {
+fs.readFile(program.input, program.encoding, function(err, data) {
     if (err) {
         console.error(err);
     }
@@ -81,5 +94,14 @@ fs.readFile("./melbi.strings", "utf8", function(err, data) {
 
     handleNewTranslation();
     data.split(LINE_BREAK).forEach(parseData);
-    console.log(JSON.stringify(extracted, null, 2));
+    data = JSON.stringify(extracted, null, 2);
+    if (program.output) {
+        fs.writeFile(
+            program.output,
+            data,
+            err => (err ? console.error(err) : undefined)
+        );
+    } else {
+        console.log(data);
+    }
 });
