@@ -10,7 +10,9 @@ program
         "utf8"
     )
     .option("-i, --input [string]", "fichier en entrée")
-    .option("-o, --output [string]", "fichier en sortie (stdout)", false)
+    .option("-o, --output [string]", "fichier en sortie [stdout]", false)
+    .option("-f, --format [string]", "format de l'extraction en sortie [json] (sinon dsv)", "json")
+    .option("-s, --separator [string]", "si option dsv, indique le séparateur à utiliser [;]", ";")
     .parse(process.argv);
 
 const translationTemplate = {
@@ -94,7 +96,10 @@ fs.readFile(program.input, program.encoding, function(err, data) {
 
     handleNewTranslation();
     data.split(LINE_BREAK).forEach(parseData);
-    data = JSON.stringify(extracted, null, 2);
+
+    data = "json" === program.format
+        ? JSON.stringify(extracted, null, 2)
+        : extracted.map(data => `${data.eng}${program.separator}${data.jbo}`).join('\n');
     if (program.output) {
         fs.writeFile(
             program.output,
