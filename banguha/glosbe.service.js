@@ -13,34 +13,31 @@
 glosbeService = (function () {
 
   /**
-   * Vérification des arguments du service
+   * @description Récupère les traductions disponnibles contenant la phrase en paramètre
+   * @author  K3rn€l_P4n1k
+   * @param {*} phrase Morceau de texte pour lequel on recherche des traductions
+   * @param {*} callback
    */
-  (function handleServiceConfig() {
-    const validOptions = languages && languages.from && languages.to
-    if (!validOptions) {
-      console.error('lors du chargement du paramètrage du service')
-      console.log(languages)
-    }
-  })
-
   function getTranslationMemory(phrase, callback) {
-
     const url = `${urlTool.getTranslationMemoryUrl()}${optionTool.getTranslationMemoryOption({phrase})}`
     $.get({
+      ...glosbe.templateOption.jQuery,
       url,
-      crossDomain: true,
-      dataType: "jsonp",
-      headers: {
-        Accept: "application/json"
-      }
     }).done(callback).fail((err) => console.error(err))
   }
 
+  /**
+   * @description Traduit la phrase passée en paramètre
+   * @author  K3rn€l_P4n1k
+   * @param {*} phrase Morceau de texte à traduire
+   * @param {*} callback
+   */
   function translate(phrase, callback) {
-    const url = `${urlTool.getTranslateUrl()}${optionTool.getTranslationMemoryOption(phrase)}`
-    $.ajax({
+    const url = `${urlTool.getTranslateUrl()}${optionTool.getTranslationMemoryOption({phrase})}`
+    $.get({
+      ...glosbe.templateOption.jQuery,
       url
-    }).done(callback)
+    }).done(callback).fail((err) => console.error(err))
   }
 
   return {

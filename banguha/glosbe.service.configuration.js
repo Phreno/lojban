@@ -1,9 +1,9 @@
 /**   
  * @description Constantes de configuration du service
  */
-glosbe = (function (languages = {
-  from: "en",
-  dest: "jbo"
+const glosbe = (function (languages = {
+  from: "jbo",
+  dest: "fr"
 }) {
   const config = {
     DATA_FORMAT: "json",
@@ -15,6 +15,13 @@ glosbe = (function (languages = {
   };
 
   config.templateOption = {
+    jQuery: {
+      crossDomain: true,
+      dataType: "jsonp",
+      headers: {
+        Accept: "application/json"
+      }
+    },
 
     /** 
      * from - (required) language of phrase to translate, values: ISO 693-3 three letter language code, no default, beware: if language is invalid you'll get server 500 error code in return
