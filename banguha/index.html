@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Bangu'a</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+            crossorigin="anonymous"> </head>
+
+    <body>
+        <div id="app" class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="reference" v-text="reference.label"></label>
+                        <input type="text" class="form-control" name="reference" id="reference" aria-describedby="reference.helpIdP"
+                            :placeholder="reference.placeholder" v-model="reference.value">
+                        <small id="reference.helpId" class="form-text text-muted" v-text="reference.help"> </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src=" https://code.jquery.com/jquery-3.3.1.min.js " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+            crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
+            crossorigin="anonymous "></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script>
+        <!-- ======================================================================= -->
+        <!-- Service de récupération des données -->
+        <!-- ======================================================================= -->
+        <script src="glosbe.service.configuration.js "></script>
+        <script src="glosbe.service.tool.url.js "></script>
+        <script src="glosbe.service.tool.option.js "></script>
+        <script src="glosbe.service.js "></script>
+        <!-- ======================================================================= -->
+        <!-- Gestion de l'interface -->
+        <!-- ======================================================================= -->
+        <script src="vue.instance.js "></script>
+    </body>
+
+</html>

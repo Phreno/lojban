@@ -38,7 +38,9 @@ function handleNewTranslation(translation) {
 const JBO = /^\s*jbo\s*$/;
 const ENG = /^\s*en\s*$/;
 const SINGLE_QUOTES = /&#039;/g;
+const DOUBLE_QUOTES = /&#034;/g;
 const SINGLE_QUOTE = "'";
+const DOUBLE_QUOTE = "\"";
 const LINE_BREAK = "\n";
 var extracted = [];
 var processing = undefined;
@@ -78,10 +80,9 @@ fs.readFile(program.input, program.encoding, function(err, data) {
             if (isAuthorName) {
                 currentTranslation.author = line;
             } else {
-                currentTranslation[processing] += line.replace(
-                    SINGLE_QUOTES,
-                    SINGLE_QUOTE
-                );
+                currentTranslation[processing] += line
+                    .replace(SINGLE_QUOTES, SINGLE_QUOTE)
+                    .replace(DOUBLE_QUOTES, DOUBLE_QUOTE);
             }
         }
 

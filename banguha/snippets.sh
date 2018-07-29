@@ -1,9 +1,9 @@
 SOURCE="https://fr.glosbe.com/ajax/phrasesAutosuggest?from=en&dest=jbo&phrase=test"
-TRADUCTION="https://glosbe.com/en/jbo/word"
+TRADUCTION="https://glosbe.com/jbo/en"
 
 getWordTraductionFile(){
     word="${1}"
-    wget "${TRADUCTION}/${word}" -O "${word}"
+    proxychains wget "${TRADUCTION}/${word}"
 }
 
 
@@ -36,5 +36,5 @@ extractStringsFromFile(){
 
 WORD="${1}"
 getWordTraductionFile "${WORD}"
-extractStringsFromFile "${WORD}"
-rm "${WORD}"
+extractStringsFromFile "${WORD}" > "${WORD}.dat"
+node extract.data.js -i "${WORD}.dat" -o "${WORD}.json"
