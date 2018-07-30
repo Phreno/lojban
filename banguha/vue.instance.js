@@ -1,10 +1,10 @@
 new Vue({
-  el:   "#app",
+  el: "#app",
   data: {
     // Focus de la session de travaille
     reference: {
       label: "La session de travail porte sur ",
-      placeholder:   "Un mot à travailler",
+      placeholder: "Un mot à travailler",
       value: undefined,
       help: "Défini un axe la session de travail",
       waitForInput: undefined,
@@ -13,18 +13,24 @@ new Vue({
     response: {
       label: "Votre réponse",
       placeholder: "...",
-      value: undefined,
+      value: undefined
     },
     data: {
       translate: undefined,
       translationMemory: undefined
     }
   },
-  watch:  {
-    "reference.value" () {
+  watch: {
+    "reference.value"() {
       function doServiceCall() {
-        glosbeService.translate(instance.reference.value, instance.setDataTranslate)
-        glosbeService.getTranslationMemory(instance.reference.value, instance.setDataTranslationMemory)
+        glosbeService.translate(
+          instance.reference.value,
+          instance.setDataTranslate
+        )
+        glosbeService.getTranslationMemory(
+          instance.reference.value,
+          instance.setDataTranslationMemory
+        )
         instance.waitForInput = undefined
       }
 
@@ -54,26 +60,56 @@ new Vue({
     }
   },
   computed: {
+    // =============================================================================
+    // Transformation de données
+    // =============================================================================
     referenceTranslations() {
       let translations
-      if (this.data && this.data.translate && this.data.translate.tuc && this.data.translate.tuc) {
-        translations = this.data.translate
-          .tuc
-          .map(el => el.phrase)
+      if (
+        this.data &&
+        this.data.translate &&
+        this.data.translate.tuc &&
+        this.data.translate.tuc
+      ) {
+        translations = this.data.translate.tuc.map(el => el.phrase)
       }
       return translations
-
     },
+
+    // =============================================================================
+    // Rendu de l'ihm
+    // =============================================================================
+    rightContainerClass() {
+      let obj = {}
+      let className = this.displayReferenceTranslations ? "col-8" : "col"
+      obj[className] = true
+      return obj
+    },
+
+    // =============================================================================
+    // Vérification de données
+    // =============================================================================
     displayTranslations() {
-      return this.data && this.data.translationMemory && this.data.translationMemory.examples && this.data.translationMemory.examples.length > 0
+      return (
+        this.data &&
+        this.data.translationMemory &&
+        this.data.translationMemory.examples &&
+        this.data.translationMemory.examples.length > 0
+      )
     },
     displayReferenceTranslations() {
-      return this && this.referenceTranslations && this.referenceTranslations.length > 0
+      return (
+        this &&
+        this.referenceTranslations &&
+        this.referenceTranslations.length > 0
+      )
     }
   },
   methods: {
     decodeHtml(htmlEncoded) {
-      return $("<div/>").html(htmlEncoded).text();
+      return $("<div/>")
+        .html(htmlEncoded)
+        .text()
     },
     setDataTranslate(data) {
       this.data.translate = data
