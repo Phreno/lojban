@@ -1,5 +1,7 @@
 new Vue({
   el: "#app",
+
+
   data: {
     // Focus de la session de travaille
     reference: {
@@ -10,18 +12,14 @@ new Vue({
       waitForInput: undefined,
       waitingTime: 1000
     },
-    response: {
-      label: "Votre réponse",
-      placeholder: "...",
-      value: undefined
-    },
+
     data: {
       translate: undefined,
       translationMemory: undefined
     }
   },
   watch: {
-    "reference.value"() {
+    "reference.value" () {
       function doServiceCall() {
         glosbeService.translate(
           instance.reference.value,
@@ -63,6 +61,11 @@ new Vue({
     // =============================================================================
     // Transformation de données
     // =============================================================================
+    referenceTranslationsAsGismu() {
+      let whiteSpaces = /\s+/
+      // TODO: externaliser dans un service
+      return data.gismuDatabase.filter(el => this.reference.value.split(whiteSpaces).some(segment => el.valsi === segment))
+    },
     referenceTranslations() {
       let translations
       if (
@@ -81,7 +84,7 @@ new Vue({
     // =============================================================================
     rightContainerClass() {
       let obj = {}
-      let className = this.displayReferenceTranslations ? "col-8" : "col"
+      let className = this.displayLeftContainer ? "col-8" : "col"
       obj[className] = true
       return obj
     },
@@ -89,6 +92,17 @@ new Vue({
     // =============================================================================
     // Vérification de données
     // =============================================================================
+    displayLeftContainer() {
+      return this.displayReferenceTranslations || this.displayTranslationsAsGismu
+    },
+    displayTranslationsAsGismu() {
+      return (
+        this.reference &&
+        this.reference.value &&
+        this.referenceTranslationsAsGismu &&
+        this.referenceTranslationsAsGismu.length > 0
+      )
+    },
     displayTranslations() {
       return (
         this.data &&

@@ -3,7 +3,7 @@
  */
 const glosbe = (function (languages = {
   from: "jbo",
-  dest: "fr"
+  dest: "en"
 }) {
   const config = {
     DATA_FORMAT: "json",
