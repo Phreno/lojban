@@ -54,11 +54,27 @@ new Vue({
     }
   },
   computed: {
-    displayTraductions() {
+    referenceTranslations() {
+      let translations
+      if (this.data && this.data.translate && this.data.translate.tuc && this.data.translate.tuc) {
+        translations = this.data.translate
+          .tuc
+          .map(el => el.phrase)
+      }
+      return translations
+
+    },
+    displayTranslations() {
       return this.data && this.data.translationMemory && this.data.translationMemory.examples && this.data.translationMemory.examples.length > 0
+    },
+    displayReferenceTranslations() {
+      return this && this.referenceTranslations && this.referenceTranslations.length > 0
     }
   },
   methods: {
+    decodeHtml(htmlEncoded) {
+      return $("<div/>").html(htmlEncoded).text();
+    },
     setDataTranslate(data) {
       this.data.translate = data
     },
