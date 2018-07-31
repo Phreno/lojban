@@ -32,11 +32,6 @@
                                     <p v-text="valsi.translation"></p>
                                 </li>
                             </ul>
-
-                            <!-- <div class="card-header" v-text="valsi.valsi"></div>
-                            <div class="card-body">
-                                <p class="small" v-text="valsi.translation"></p>
-                            </div> -->
                         </div>
                         <!-- ======================================================================= -->
                         <!-- Liste des traductions venant de glosbe -->
@@ -72,6 +67,8 @@
                                         <small id="reference.helpId" class="form-text text-muted" v-text="reference.help">
                                         </small>
                                     </div>
+                                </div>
+                                <div class="card-body" v-html="boxes">
                                 </div>
                             </div>
                         </div>
@@ -112,7 +109,7 @@
                             <div class="card m-2 bg-info ">
                                 <div class="card-body ">
                                     <pre>
-                                        {{JSON.stringify(data, null, 2)}}
+                                        {{JSON.stringify(referenceParsed, null, 2)}}
                                     </pre>
                                 </div>
                             </div>
@@ -123,6 +120,9 @@
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- ======================================================================= -->
+        <!-- Vendor -->
+        <!-- ======================================================================= -->
         <script src=" https://code.jquery.com/jquery-3.3.1.min.js " crossorigin="anonymous "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
@@ -131,6 +131,17 @@
             integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
             crossorigin="anonymous "></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script>
+
+        <!-- ======================================================================= -->
+        <!-- Dependencies -->
+        <!-- ======================================================================= -->
+        <script src="ext/camxes.js"></script>
+
+        <link rel="stylesheet" href="css/box.css">
+        <script src="ext/gismudata.js"></script>
+        <script src="ext/interface.js"></script>
+        <script src="ext/tree.js"></script>
+
 
         <!-- ======================================================================= -->
         <!-- Données stockées localement -->

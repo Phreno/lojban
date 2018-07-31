@@ -74,20 +74,16 @@ new Vue({
       let referenceSegments = this.reference.value.split(whiteSpaces)
       let survivors
 
-      //(function populate() {
       for (database in data) {
         survivors = data[database]
           .filter(el => referenceSegments.some(segment => el.valsi === segment))
         match.push(...survivors)
       }
-      //})()
 
-      //(function removeDuplicates() {
       match = match.filter((survivor, index, arr) =>
         index === arr.findIndex((other) => (
           other.valsi === survivor.valsi
         )))
-      //})()
 
       return match
     },
@@ -103,6 +99,9 @@ new Vue({
       }
       return translations
     },
+    referenceParsed() {
+      return this.reference && this.reference.value ? simplifyTree(camxes.parse(this.reference.value)) : undefined
+    },
 
     // =============================================================================
     // Rendu de l'ihm
@@ -112,6 +111,14 @@ new Vue({
       let className = this.displayLeftContainer ? "col-8" : "col"
       obj[className] = true
       return obj
+    },
+
+    /**
+     * Shows the boxes in the interface.
+     */
+    boxes() {
+
+      return this.referenceParsed && this.referenceParsed[0] ? constructBoxesOutput(this.referenceParsed[0], 0) :  undefined
     },
 
     // =============================================================================
