@@ -28,8 +28,11 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" v-for="valsi in dictionaryTranslations">
-                                    <span class="badge badge-info" v-text="valsi.valsi"></span>
-                                    <p v-text="valsi.translation"></p>
+
+                                    <p>
+                                        <span class="badge badge-pill badge-info mr-4" v-text="valsi.valsi"></span>
+                                        <span class="small"> {{valsi.translation}}</span>
+                                    </p>
                                 </li>
                             </ul>
                         </div>
