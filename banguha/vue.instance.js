@@ -100,7 +100,19 @@ new Vue({
       return translations
     },
     referenceParsed() {
-      return this.reference && this.reference.value ? simplifyTree(camxes.parse(this.reference.value)) : undefined
+      let fullParse
+      let simplified
+      if (this.reference && this.reference.value) {
+        try {
+          fullParse = camxes.parse(this.reference.value)
+          simplified = simplifyTree(fullParse)
+        } catch (e) {
+          /* 
+          Something strange happens but I don't care :)
+          */
+        }
+      }
+      return simplified
     },
 
     // =============================================================================
@@ -117,7 +129,6 @@ new Vue({
      * Shows the boxes in the interface.
      */
     boxes() {
-
       return this.referenceParsed && this.referenceParsed[0] ? constructBoxesOutput(this.referenceParsed[0], 0) :  undefined
     },
 

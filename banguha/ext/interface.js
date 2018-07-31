@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('label').popover();
 });
 
@@ -18,26 +18,26 @@ function parse() {
         parse = remove_spaces(parse);
         var simplified = simplifyTree(parse);
         numberSumti(simplified);
-        
+
         if (parse) {
             tokens = [];
             findTokens(parse, tokens);
-            
+
             var $parseResultHighlighted = $("#parse-result-highlighted");
             showHighlighting(simplified[0], tokens, $parseResultHighlighted);
-            
+
             var $parseResultRaw = $("#parse-result-raw");
             showRawTree(parse, $parseResultRaw);
-            
+
             var $parseResultTree = $("#parse-result-tree");
             showParseTree(parse, $parseResultTree);
-            
+
             var $parseResultSimplified = $("#parse-result-simplified");
             showSimplifiedTree(simplified, $parseResultSimplified);
-            
+
             var $parseResultBoxes = $("#parse-result-boxes");
             showBoxes(simplified, $parseResultBoxes);
-            
+
             var $parseResultGlossing = $("#parse-result-glossing");
             showGlossing(tokens, $parseResultGlossing);
         }
@@ -71,7 +71,7 @@ function parse() {
  * Finds all tokens in the resulting parse tree, and puts them in the tokens array.
  */
 function findTokens(parse, tokens) {
-    
+
     if (parse instanceof Array) {
         if (parse.length == 2 && isString(parse[0]) && isString(parse[1])) {
             tokens.push(parse[1]);
@@ -98,35 +98,35 @@ function showParseTree(parse, $element) {
 }
 
 function constructParseTreeOutput(parse, depth) {
-    
+
     // precaution against infinite recursion; this should not actually happen of course
     if (depth > 50) {
         return "<b>too much recursion :-(</b>";
     }
-    
+
     // if we get null, just print that
     if (parse === null) {
         return "<i>(none?)</i>";
     }
-    
+
     // if we get undefined, just print that
     if (!parse) {
         return "<i>(undefined?)</i>";
     }
-    
+
     if (parse instanceof Array) {
-        
+
         if (parse.length == 0) {
             return "<i>(empty array?)</i>";
         }
-        
+
         var output = "";
-        
+
         // what is the type of parse[0]?
         if (isString(parse[0])) {
             // it is the type
             output += parse[0] + ":";
-            
+
             if (isString(parse[1])) {
                 // a literal
                 output += "<b> [" + getVlasiskuLink(parse[1]) + "]</b>";
@@ -135,7 +135,7 @@ function constructParseTreeOutput(parse, depth) {
                 }
                 return output;
             }
-            
+
             output += "<ul>";
             for (var child in parse) {
                 if (child !== "0") {
@@ -153,10 +153,10 @@ function constructParseTreeOutput(parse, depth) {
             output += "</ol>";
             return output;
         }
-    
+
         return "<i>(huh 2?)</i>";
     }
-    
+
     return "<i>(huh? " + parse + ")</i>";
 }
 
@@ -168,39 +168,39 @@ function showSimplifiedTree(simplified, $element) {
 }
 
 function constructSimplifiedTreeOutput(parse, depth) {
-    
+
     // precaution against infinite recursion; this should not actually happen of course
     if (depth > 50) {
         return "<b>too much recursion :-(</b>";
     }
-    
+
     // if we get null, just print that
     if (parse === null) {
         return "<i>(none?)</i>";
     }
-    
+
     // if we get undefined, just print that
     if (!parse) {
         return "<i>(undefined?)</i>";
     }
-    
+
     var output = parse.type;
     if (parse.sumtiPlace) {
         output += parse.sumtiPlace;
     }
-    
+
     if (parse.word) {
-        
+
         // we have a terminal
         output += " <b>[" + getVlasiskuLink(parse.word) + "]</b>";
         if (shortDescriptions[parse.word]) {
             output += " <span class=\"translation\">" + shortDescriptions[parse.word] + "</span>";
         }
-        
+
     } else {
-        
+
         // we have a non-terminal
-    
+
         output += "<ul>";
 
         for (var child in parse.children) {
@@ -208,10 +208,10 @@ function constructSimplifiedTreeOutput(parse, depth) {
             output += constructSimplifiedTreeOutput(parse.children[child], depth + 1);
             output += "</li>";
         }
-    
+
         output += "</ul>";
     }
-    
+
     return output;
 }
 
@@ -219,84 +219,84 @@ function constructSimplifiedTreeOutput(parse, depth) {
  * Shows the boxes in the interface.
  */
 function showBoxes(simplified, $element) {
-    
+
     var output = "";
-    
+
     output += constructBoxesOutput(simplified[0], 0);
-    
+
     /*output += "<p>Legend: ";
     var types = ["sentence", "prenex", "selbri", "sumti"];
     for (var type in types) {
         output += "<div class=\"" + boxClassForType({ type: types[type] }) + "\">" + types[type] + "</div>";
     }
     output += "</p>";*/
-    
+
     $element.html(output);
 }
 
 function constructBoxesOutput(parse, depth) {
-    
+
     // precaution against infinite recursion; this should not actually happen of course
     if (depth > 50) {
         return "<b>too much recursion :-(</b>";
     }
-    
+
     // if we get null, just print that
     if (parse === null) {
         return "<i>(none?)</i>";
     }
-    
+
     // if we get undefined, just print that
     if (!parse) {
         return "<i>(undefined?)</i>";
     }
-    
+
     var output = "";
-    
+
     if (parse.word) {
-        
+
         output += "<div class=\"box box-terminal\">";
-        
+
         // we have a terminal
-        output += "&nbsp;<b>" + getVlasiskuLink(parse.word) + "</b>&nbsp;<br>";
+        output += "&nbsp;<b>" + parse.word + "</b>&nbsp;<br>";
         output += "&nbsp;" + parse.type + "&nbsp;<br>";
         if (shortDescriptions[parse.word]) {
             output += "<span class=\"translation\">&nbsp;" + shortDescriptions[parse.word] + "&nbsp;</span>";
         } else {
             output += "...";
         }
-        
+
         output += "</div>";
-        
+
     } else {
-        
+
         // we have a non-terminal
-        
+
         output += "<div class=\"" + boxClassForType(parse) + "\">";
-        
+
         for (var child in parse.children) {
             output += constructBoxesOutput(parse.children[child], depth + 1);
         }
-        
+
         if (boxClassForType(parse) !== "box box-not-shown") {
             output += "<br>" + parse.type;
             if (parse.sumtiPlace) {
                 output += parse.sumtiPlace;
             }
         }
-        
+
         output += "</div>";
     }
-    
+
     return output;
 }
 
 function boxClassForType(parse) {
-    
+
     if (parse.type === "sentence") {
         return "box box-sentence";
     }
-    
+
     if (parse.type === "sumti x") {
         if (parse.sumtiPlace > 5) {
             return "box box-sumti6";
@@ -306,23 +306,23 @@ function boxClassForType(parse) {
             return "box box-sumti" + parse.sumtiPlace;
         }
     }
-    
+
     if (parse.type === "modal sumti") {
         return "box box-modal";
     }
-    
+
     if (parse.type === "sumti") {
         return "box box-sumti";
     }
-    
+
     if (parse.type === "selbri") {
         return "box box-selbri";
     }
-    
+
     if (parse.type === "prenex") {
         return "box box-prenex";
     }
-    
+
     return "box box-not-shown";
 }
 
@@ -330,21 +330,21 @@ function boxClassForType(parse) {
  * Shows a syntax error in the interface.
  */
 function showSyntaxError(e, textToParse, $element) {
-    
+
     var output = "<div class=\"alert\">" +
-    "<p><b>Syntax error</b> on line <b>" + 
-    e.line +
-    "</b>, at column <b>" +
-    e.column +
-    "</b>: " +
-    e.message +
-    "</p>" +
-    "<p class=\"error-sentence\">" +
-    generateErrorPosition(e, textToParse) + 
-    "</p>" +
-    generateFixes(e) +
-    "</div>";
-    
+        "<p><b>Syntax error</b> on line <b>" +
+        e.line +
+        "</b>, at column <b>" +
+        e.column +
+        "</b>: " +
+        e.message +
+        "</p>" +
+        "<p class=\"error-sentence\">" +
+        generateErrorPosition(e, textToParse) +
+        "</p>" +
+        generateFixes(e) +
+        "</div>";
+
     $element.html(output);
 }
 
@@ -352,20 +352,20 @@ function showSyntaxError(e, textToParse, $element) {
  * Generates the text sample that shows the error position.
  */
 function generateErrorPosition(e, textToParse) {
-    
+
     //"mi vau <span class=\"error-marker\">&#9652;</span> do cusku ..." +
-    
+
     var before = textToParse.substring(e.offset - 20, e.offset);
-    
+
     var after = textToParse.substring(e.offset + 0, e.offset + 20);
-    
+
     if (e.offset > 20) {
         before = "..." + before;
     }
     if (e.offset < textToParse.length - 20) {
         after = after + "...";
     }
-    
+
     return before + "<span class=\"error-marker\">&#9652;</span>" + after;
 }
 
@@ -374,13 +374,13 @@ function generateFixes(e) {
         //return "<p><i>No quick fixes available.</i></p>";
         return "";
     }
-    
+
     var fixes = "<p>Quick fixes:<ul>";
-    
+
     for (var f in e.fix) {
         var fix = (e.fix)[f];
         fixes += "<li>";
-        
+
         if (fix.fixFunction) {
             fixes += "<a>";
             fixes += fix.name;
@@ -388,12 +388,12 @@ function generateFixes(e) {
         } else {
             fixes += fix.name;
         }
-        
+
         fixes += "</li>";
     }
-    
+
     fixes += "</ul></p>";
-    
+
     return fixes;
 }
 
@@ -401,9 +401,9 @@ function generateFixes(e) {
  * Shows the highlighting in the interface.
  */
 function showHighlighting(simplified, tokens, $element) {
-    
+
     var output = "";
-    
+
     if ($("#latin-button").hasClass('active')) {
         var mode = 1;
         var classString = "latin-highlighting";
@@ -417,20 +417,20 @@ function showHighlighting(simplified, tokens, $element) {
         var mode = 4;
         var classString = "hiragana-highlighting";
     }
-    
+
     output += "<span class=\"highlighting " + classString + "\"><big>";
     output += markupHighlighting(simplified, mode);
     output += "</big></span>";
-    
+
     $element.html(output);
 }
 
 function markupHighlighting(simplified, mode) {
-    
+
     var output = "";
     var beforeOutput = "";
     var afterOutput = " ";
-        
+
     if (simplified.type === "selbri") {
         beforeOutput += "<span class=\"lojban-selbri\">";
         afterOutput = "</span> ";
@@ -452,7 +452,7 @@ function markupHighlighting(simplified, mode) {
         beforeOutput += "<span class=\"lojban-vocative\"><sup>v</sup>";
         afterOutput = "</span> ";
     }
-    
+
     if (simplified.word) {
         output += outputWord(simplified.word, mode);
     } else {
@@ -464,14 +464,14 @@ function markupHighlighting(simplified, mode) {
             output += "<span class=\"lojban-nesting\">" + enumerateTokens(simplified, mode) + "</span>";
         }
     }
-    
+
     return beforeOutput + output + afterOutput;
 }
 
 function enumerateTokens(simplified, mode) {
-    
+
     var output = "";
-    
+
     if (simplified.word) {
         output += outputWord(simplified.word, mode);
     } else {
@@ -482,11 +482,11 @@ function enumerateTokens(simplified, mode) {
             }
         }
     }
-    
+
     if (endsWith(output, " ")) {
         output = output.substring(0, output.length - 1);
     }
-    
+
     return output;
 }
 
@@ -504,21 +504,21 @@ function markupError(error, before, after) { // TODO
  * Shows the glossing in the interface.
  */
 function showGlossing(text, $element) {
-    
+
     var output = "<dl class=\"dl-horizontal\">";
-    
+
     for (var j = 0; j < text.length; j++) {
         output += "<dt>" + getVlasiskuLink(text[j]) + "</dt>";
-        
+
         if (shortDescriptions[text[j]]) {
             output += "<dd>" + shortDescriptions[text[j]] + "</dd>";
         } else {
             output += "<dd><span class=\"muted\">(?)</span></dd>";
         }
     }
-    
+
     output += "</dl>";
-    
+
     $element.html(output);
 }
 
@@ -526,20 +526,20 @@ function showGlossing(text, $element) {
  * Shows the translation in the interface.
  */
 function showTranslation(parse, text, $element) {
-    
+
     var output = "<p class=\"muted\">This translation feature tries to give an approximate translation of the Lojban text into English. However, it does only work for a few sentences as of now. (Try [mi gleki] or something simple like that...)</p>";
-    
+
     //var translation = translate(parse);
     var translation = "Sorry! Translation is switched off at the moment, to prevent crashes in the other parts :-(";
     output += "<center><big>" + translation + "</big></center>";
-    
+
     $element.html(output);
 }
 
 // Auxiliary
 
 function isString(s) {
-    return typeof(s) === 'string' || s instanceof String;
+    return typeof (s) === 'string' || s instanceof String;
 }
 
 function getVlasiskuLink(word) {
