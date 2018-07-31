@@ -12,21 +12,37 @@
             crossorigin="anonymous"> </head>
 
     <body>
-        <div id="app" class="container">
+        <div id="app" class="container-fluid">
             <div class="row">
+                <!-- ======================================================================= -->
+                <!-- Container guauche -->
+                <!-- ======================================================================= -->
                 <div class="col-4" id="left-container" v-if="displayLeftContainer">
                     <div class="col" id="reference-translations-container">
-                        <div class="card" v-if="displayDictionaryTranslations">
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <ul class="list-group">
-                                        <li class="list-group-item" v-for="valsi in dictionaryTranslations" v-text="valsi.translation">
-                                        </li>
-                                    </ul>
-                                </div>
+                        <!-- ======================================================================= -->
+                        <!-- Liste des traductions locales -->
+                        <!-- ======================================================================= -->
+                        <div class="card m-2" v-if="displayDictionaryTranslations">
+
+                            <div class="card-header">Traductions de référence
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" v-for="valsi in dictionaryTranslations">
+                                    <span class="badge badge-info" v-text="valsi.valsi"></span>
+                                    <p v-text="valsi.translation"></p>
+                                </li>
+                            </ul>
+
+                            <!-- <div class="card-header" v-text="valsi.valsi"></div>
+                            <div class="card-body">
+                                <p class="small" v-text="valsi.translation"></p>
+                            </div> -->
                         </div>
+                        <!-- ======================================================================= -->
+                        <!-- Liste des traductions venant de glosbe -->
+                        <!-- ======================================================================= -->
                         <div class="card" v-if="displayReferenceTranslations">
+                            <div class="card-header">Traductions simples</div>
                             <div class="card-body">
                                 <div class="form-group">
                                     <ul class="list-group">
@@ -37,10 +53,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- ======================================================================= -->
+                <!-- Container droit -->
+                <!-- ======================================================================= -->
                 <div :class="rightContainerClass" id="right-container">
                     <div class="row">
                         <div class="col" id="reference-container">
-                            <div class="card">
+                            <div class="card m-2">
+                                <!-- ======================================================================= -->
+                                <!-- Définission de la session -->
+                                <!-- ======================================================================= -->
+                                <div class="card-header">Session de travail</div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="reference" v-text="reference.label"></label>
@@ -55,7 +78,11 @@
                     </div>
                     <div class="row" v-if="displayTranslations">
                         <div class="col">
-                            <div class="card">
+                            <!-- ======================================================================= -->
+                            <!-- Exemples de traductions -->
+                            <!-- ======================================================================= -->
+                            <div class="card m-2">
+                                <div class="card-header">Cas d'utilisation</div>
                                 <div class="card-body">
                                     <table class="table">
                                         <thead>
@@ -82,11 +109,13 @@
                     </div>
                     <div class="row">
                         <div class="col" id="debug-container">
-                            <div class="card bg-info ">
-                                <pre>
-                                            <div class="card-body "> {{JSON.stringify(data.translate, null, 2)}} </div>
-                                            <div class="card-body "> {{JSON.stringify(data.translationMemory, null, 2)}} </div>
-                                        </pre> </div>
+                            <div class="card m-2 bg-info ">
+                                <div class="card-body ">
+                                    <pre>
+                                        {{JSON.stringify(data, null, 2)}}
+                                    </pre>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
