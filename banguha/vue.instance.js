@@ -62,16 +62,33 @@ new Vue({
     // Transformation de données
     // =============================================================================
     dictionaryTranslations() {
+
+      /**
+       * @description
+       * @author  K3rn€l_P4n1k
+      
+       */
       let whiteSpaces = /\s+/
       // TODO: externaliser dans un service
       let match = []
       let referenceSegments = this.reference.value.split(whiteSpaces)
-      let survivor
+      let survivors
+
+      //(function populate() {
       for (database in data) {
-        survivor = data[database].filter(el => referenceSegments.some(segment => el.valsi === segment))
-        match.push(...survivor)
+        survivors = data[database]
+          .filter(el => referenceSegments.some(segment => el.valsi === segment))
+        match.push(...survivors)
       }
-      console.log(match)
+      //})()
+
+      //(function removeDuplicates() {
+      match = match.filter((survivor, index, arr) =>
+        index === arr.findIndex((other) => (
+          other.valsi === survivor.valsi
+        )))
+      //})()
+
       return match
     },
     referenceTranslations() {
