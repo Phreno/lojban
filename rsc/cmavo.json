@@ -9,7 +9,8 @@
     "valsi": ".a'a",
     "class": "UI1",
     "translation": "attentive",
-    "definition": "attitudinal: attentive - inattentive - avoiding                                                           (cf. jundi, rivbi)"
+    "definition": "attitudinal: attentive - inattentive - avoiding",
+    "refersTo": "(cf. jundi, rivbi)"
   },
   {
     "valsi": ".a'acu'i",
@@ -27,7 +28,8 @@
     "valsi": ".a'e",
     "class": "UI1",
     "translation": "alertness",
-    "definition": "attitudinal: alertness - exhaustion                                                                       (cf. sanji, cikna, tatpi)"
+    "definition": "attitudinal: alertness - exhaustion",
+    "refersTo": "(cf. sanji, cikna, tatpi)"
   },
   {
     "valsi": ".a'enai",
@@ -39,7 +41,8 @@
     "valsi": ".a'i",
     "class": "UI1",
     "translation": "effort",
-    "definition": "attitudinal: effort - no special effort - repose                                                          (cf. gunka, slunandu, guksurla, troci, selprogunka)"
+    "definition": "attitudinal: effort - no special effort - repose",
+    "refersTo": "(cf. gunka, slunandu, guksurla, troci, selprogunka)"
   },
   {
     "valsi": ".a'icu'i",
@@ -57,7 +60,8 @@
     "valsi": ".a'o",
     "class": "UI1",
     "translation": "hope",
-    "definition": "attitudinal: hope - despair                                                                               (cf. pacna)"
+    "definition": "attitudinal: hope - despair",
+    "refersTo": "(cf. pacna)"
   },
   {
     "valsi": ".a'onai",
@@ -69,7 +73,8 @@
     "valsi": ".a'u",
     "class": "UI1",
     "translation": "interest",
-    "definition": "attitudinal: interest - disinterest - repulsion                                                           (cf. cinri, selcni)"
+    "definition": "attitudinal: interest - disinterest - repulsion",
+    "refersTo": "(cf. cinri, selcni)"
   },
   {
     "valsi": ".a'ucu'i",
@@ -93,7 +98,8 @@
     "valsi": ".ai",
     "class": "UI1",
     "translation": "intent",
-    "definition": "attitudinal: intent - indecision - rejection/refusal                                                      (cf. termu'i, terzu'e, seljdi, selcu'a)"
+    "definition": "attitudinal: intent - indecision - rejection/refusal",
+    "refersTo": "(cf. termu'i, terzu'e, seljdi, selcu'a)"
   },
   {
     "valsi": ".aicu'i",
@@ -111,7 +117,8 @@
     "valsi": ".au",
     "class": "UI1",
     "translation": "desire",
-    "definition": "attitudinal: desire - indifference - reluctance                                                           (cf. djica)"
+    "definition": "attitudinal: desire - indifference - reluctance",
+    "refersTo": "(cf. djica)"
   },
   {
     "valsi": ".aucu'i",
@@ -135,7 +142,8 @@
     "valsi": "ba'a",
     "class": "UI2",
     "translation": "I anticipate",
-    "definition": "evidential: I expect - I experience - I remember                                                          (cf. bavykri, lifri, morji)"
+    "definition": "evidential: I expect - I experience - I remember",
+    "refersTo": "(cf. bavykri, lifri, morji)"
   },
   {
     "valsi": "ba'acu'i",
@@ -159,19 +167,22 @@
     "valsi": "ba'i",
     "class": "BAI",
     "translation": "replaced by",
-    "definition": "basti modal, 1st place                            replaced by ..."
+    "definition_1": "replaced by ...",
+    "definition": "basti modal, 1st place"
   },
   {
     "valsi": "ba'o",
     "class": "ZAhO",
     "translation": "perfective",
-    "definition": "interval event contour: in the aftermath of ...; since ...; perfective              |     |----"
+    "definition_1": "|----",
+    "definition": "interval event contour: in the aftermath of ...; since ...; perfective"
   },
   {
     "valsi": "ba'u",
     "class": "UI3",
     "translation": "exaggeration",
-    "definition": "discursive: exaggeration - accuracy - understatement                                                      (cf. satci, dukse)"
+    "definition": "discursive: exaggeration - accuracy - understatement",
+    "refersTo": "(cf. satci, dukse)"
   },
   {
     "valsi": "ba'ucu'i",
@@ -207,7 +218,8 @@
     "valsi": "bai",
     "class": "BAI",
     "translation": "compelled by",
-    "definition": "bapli modal, 1st place (forced by)                forcedly; compelled by force ..."
+    "definition_1": "forcedly; compelled by force ...",
+    "definition": "bapli modal, 1st place (forced by)"
   },
   {
     "valsi": "bapu",
@@ -219,7 +231,8 @@
     "valsi": "bau",
     "class": "BAI",
     "translation": "in language",
-    "definition": "bangu modal, 1st place                            in language ..."
+    "definition_1": "in language ...",
+    "definition": "bangu modal, 1st place"
   },
   {
     "valsi": "be",
@@ -243,7 +256,8 @@
     "valsi": "be'i",
     "class": "BAI",
     "translation": "sent by",
-    "definition": "benji modal, 1st place (sender)                   sent by ..."
+    "definition_1": "sent by ...",
+    "definition": "benji modal, 1st place (sender)"
   },
   {
     "valsi": "be'o",
@@ -255,7 +269,8 @@
     "valsi": "be'u",
     "class": "UI5",
     "translation": "lack",
-    "definition": "attitudinal modifier: lack/need - presence/satisfaction - satiation                                       (cf. claxu, nitcu, mansa)"
+    "definition": "attitudinal modifier: lack/need - presence/satisfaction - satiation",
+    "refersTo": "(cf. claxu, nitcu, mansa)"
   },
   {
     "valsi": "be'ucu'i",
@@ -303,7 +318,8 @@
     "valsi": "bi'u",
     "class": "UI3a",
     "translation": "new information",
-    "definition": "discursive: newly introduced information - previously introduced information                              (cf. nindatni, saurdatni)"
+    "definition": "discursive: newly introduced information - previously introduced information",
+    "refersTo": "(cf. nindatni, saurdatni)"
   },
   {
     "valsi": "bi'unai",
@@ -435,19 +451,22 @@
     "valsi": "ca'e",
     "class": "UI2",
     "translation": "I define",
-    "definition": "evidential: I define                                                                                      (cf. mitcu'a, mitsmu)"
+    "definition": "evidential: I define",
+    "refersTo": "(cf. mitcu'a, mitsmu)"
   },
   {
     "valsi": "ca'i",
     "class": "BAI",
     "translation": "by authority of",
-    "definition": "catni modal, 1st place                            by authority of ..."
+    "definition_1": "by authority of ...",
+    "definition": "catni modal, 1st place"
   },
   {
     "valsi": "ca'o",
     "class": "ZAhO",
     "translation": "continuative",
-    "definition": "interval event contour: during ...; continuative                                    |-----|"
+    "definition_1": "|-----|",
+    "definition": "interval event contour: during ...; continuative"
   },
   {
     "valsi": "ca'u",
@@ -495,7 +514,8 @@
     "valsi": "cau",
     "class": "BAI",
     "translation": "lacked by",
-    "definition": "claxu modal, 1st place                            lacked by ..."
+    "definition_1": "lacked by ...",
+    "definition": "claxu modal, 1st place"
   },
   {
     "valsi": "ce",
@@ -549,7 +569,8 @@
     "valsi": "ci'e",
     "class": "BAI",
     "translation": "in system",
-    "definition": "ciste modal, 1st place used in scalar negation    in system/context ..."
+    "definition_1": "in system/context ...",
+    "definition": "ciste modal, 1st place used in scalar negation"
   },
   {
     "valsi": "ci'i",
@@ -567,13 +588,15 @@
     "valsi": "ci'o",
     "class": "BAI",
     "translation": "emotionally felt by",
-    "definition": "cinmo modal, 1st place                            emotionally felt by ..."
+    "definition_1": "emotionally felt by ...",
+    "definition": "cinmo modal, 1st place"
   },
   {
     "valsi": "ci'u",
     "class": "BAI",
     "translation": "on the scale",
-    "definition": "ckilu modal, 1st place                            on the scale ..."
+    "definition_1": "on the scale ...",
+    "definition": "ckilu modal, 1st place"
   },
   {
     "valsi": "ciki'o",
@@ -621,7 +644,8 @@
     "valsi": "co'a",
     "class": "ZAhO",
     "translation": "initiative",
-    "definition": "interval event contour: at the starting point of ...; initiative                   >|<    |"
+    "definition_1": "|",
+    "definition": "interval event contour: at the starting point of ...; initiative"
   },
   {
     "valsi": "co'e",
@@ -633,7 +657,8 @@
     "valsi": "co'i",
     "class": "ZAhO",
     "translation": "achievative",
-    "definition": "interval event contour: at the instantaneous point of ...; achievative; point event   >|<"
+    "definition_1": ">|<",
+    "definition": "interval event contour: at the instantaneous point of ...; achievative; point event"
   },
   {
     "valsi": "co'o",
@@ -645,7 +670,8 @@
     "valsi": "co'u",
     "class": "ZAhO",
     "translation": "cessative",
-    "definition": "interval event contour: at the ending point of ... even if not done; cessative      |  >< |"
+    "definition_1": ">< |",
+    "definition": "interval event contour: at the ending point of ... even if not done; cessative"
   },
   {
     "valsi": "coi",
@@ -669,7 +695,8 @@
     "valsi": "cu'a",
     "class": "VUhU3",
     "translation": "absolute value",
-    "definition": "unary mathematical operator: absolute value/norm  |a|"
+    "definition_1": "|a|",
+    "definition": "unary mathematical operator: absolute value/norm"
   },
   {
     "valsi": "cu'e",
@@ -693,7 +720,8 @@
     "valsi": "cu'u",
     "class": "BAI",
     "translation": "as said by",
-    "definition": "cusku modal, 1st place (attribution/quotation)    as said by source ...; used for quotation"
+    "definition_1": "as said by source ...; used for quotation",
+    "definition": "cusku modal, 1st place (attribution/quotation)"
   },
   {
     "valsi": "cu'u ko'a",
@@ -741,7 +769,8 @@
     "valsi": "da'i",
     "class": "UI3",
     "translation": "supposing",
-    "definition": "discursive: supposing - in fact                                                                           (cf. sruma)"
+    "definition": "discursive: supposing - in fact",
+    "refersTo": "(cf. sruma)"
   },
   {
     "valsi": "da'inai",
@@ -765,7 +794,8 @@
     "valsi": "dai",
     "class": "UI5",
     "translation": "empathy",
-    "definition": "attitudinal modifier: marks empathetic use of preceding attitudinal; shows another's feelings             (cf. cnijmi)"
+    "definition": "attitudinal modifier: marks empathetic use of preceding attitudinal; shows another's feelings",
+    "refersTo": "(cf. cnijmi)"
   },
   {
     "valsi": "dau",
@@ -795,7 +825,8 @@
     "valsi": "de'i",
     "class": "BAI",
     "translation": "dated",
-    "definition": "detri modal, 1st place (for letters)              dated ... ; attaches date stamp"
+    "definition_1": "dated ... ; attaches date stamp",
+    "definition": "detri modal, 1st place (for letters)"
   },
   {
     "valsi": "de'o",
@@ -855,7 +886,8 @@
     "valsi": "di'o",
     "class": "BAI",
     "translation": "at the locus of",
-    "definition": "diklo modal, 1st place                            at the locus of ..."
+    "definition_1": "at the locus of ...",
+    "definition": "diklo modal, 1st place"
   },
   {
     "valsi": "di'u",
@@ -873,7 +905,8 @@
     "valsi": "do'a",
     "class": "UI3",
     "translation": "generously",
-    "definition": "discursive: generously - parsimoniously                                                                   (cf. dunda)"
+    "definition": "discursive: generously - parsimoniously",
+    "refersTo": "(cf. dunda)"
   },
   {
     "valsi": "do'anai",
@@ -951,13 +984,15 @@
     "valsi": "du'i",
     "class": "BAI",
     "translation": "as much as",
-    "definition": "dunli modal, 1st place (equalled by)              equally; as much as ..."
+    "definition_1": "equally; as much as ...",
+    "definition": "dunli modal, 1st place (equalled by)"
   },
   {
     "valsi": "du'o",
     "class": "BAI",
     "translation": "according to",
-    "definition": "djuno modal, 1st place (info source)            authoritatively; according to ...; known by ..."
+    "definition_1": "authoritatively; according to ...; known by ...",
+    "definition": "djuno modal, 1st place (info source)"
   },
   {
     "valsi": "du'u",
@@ -981,7 +1016,8 @@
     "valsi": ".e'a",
     "class": "UI1",
     "translation": "permission",
-    "definition": "attitudinal: granting permission - prohibiting                                                            (cf. curmi)"
+    "definition": "attitudinal: granting permission - prohibiting",
+    "refersTo": "(cf. curmi)"
   },
   {
     "valsi": ".e'anai",
@@ -993,7 +1029,8 @@
     "valsi": ".e'e",
     "class": "UI1",
     "translation": "competence",
-    "definition": "attitudinal: competence - incompetence/inability                                                          (cf. kakne, certu)"
+    "definition": "attitudinal: competence - incompetence/inability",
+    "refersTo": "(cf. kakne, certu)"
   },
   {
     "valsi": ".e'enai",
@@ -1005,7 +1042,8 @@
     "valsi": ".e'i",
     "class": "UI1",
     "translation": "constraint",
-    "definition": "attitudinal: feeling constraint - independence - challenge/resistance against constraint                  (cf. selri'u, seljimte)"
+    "definition": "attitudinal: feeling constraint - independence - challenge/resistance against constraint",
+    "refersTo": "(cf. selri'u, seljimte)"
   },
   {
     "valsi": ".e'icu'i",
@@ -1023,7 +1061,8 @@
     "valsi": ".e'o",
     "class": "UI1",
     "translation": "request",
-    "definition": "attitudinal: request - negative request                                                                   (cf. cpedu, pikci)"
+    "definition": "attitudinal: request - negative request",
+    "refersTo": "(cf. cpedu, pikci)"
   },
   {
     "valsi": ".e'onai",
@@ -1035,7 +1074,8 @@
     "valsi": ".e'u",
     "class": "UI1",
     "translation": "suggestion",
-    "definition": "attitudinal: suggestion - abandon suggest - warning                                                       (cf. stidi, kajde)"
+    "definition": "attitudinal: suggestion - abandon suggest - warning",
+    "refersTo": "(cf. stidi, kajde)"
   },
   {
     "valsi": ".e'ucu'i",
@@ -1059,7 +1099,8 @@
     "valsi": ".ei",
     "class": "UI1",
     "translation": "obligation",
-    "definition": "attitudinal: obligation - freedom                                                                         (cf. bilga, zifre)"
+    "definition": "attitudinal: obligation - freedom",
+    "refersTo": "(cf. bilga, zifre)"
   },
   {
     "valsi": ".einai",
@@ -1089,7 +1130,8 @@
     "valsi": "fa'e",
     "class": "BAI",
     "translation": "reverse of",
-    "definition": "fatne modal, 1st place                            backwards; reverse of ..."
+    "definition_1": "backwards; reverse of ...",
+    "definition": "fatne modal, 1st place"
   },
   {
     "valsi": "fa'i",
@@ -1119,7 +1161,8 @@
     "valsi": "fau",
     "class": "BAI",
     "translation": "in the event of",
-    "definition": "fasnu modal, 1st place (non-causal)               in the event of ..."
+    "definition_1": "in the event of ...",
+    "definition": "fasnu modal, 1st place (non-causal)"
   },
   {
     "valsi": "fe",
@@ -1233,7 +1276,8 @@
     "valsi": "fi'e",
     "class": "BAI",
     "translation": "created by",
-    "definition": "finti modal, 1st place (creator)                  created by ..."
+    "definition_1": "created by ...",
+    "definition": "finti modal, 1st place (creator)"
   },
   {
     "valsi": "fi'i",
@@ -1323,7 +1367,8 @@
     "valsi": "fu'i",
     "class": "UI5",
     "translation": "easy",
-    "definition": "attitudinal modifier: easy - difficult                                                                    (cf. frili)"
+    "definition": "attitudinal modifier: easy - difficult",
+    "refersTo": "(cf. frili)"
   },
   {
     "valsi": "fu'inai",
@@ -1359,7 +1404,8 @@
     "valsi": "ga'a",
     "class": "BAI",
     "translation": "to observer",
-    "definition": "zgana modal, 1st place                            to observer ... ; witnessed by ..."
+    "definition_1": "to observer ... ; witnessed by ...",
+    "definition": "zgana modal, 1st place"
   },
   {
     "valsi": "ga'e",
@@ -1371,7 +1417,8 @@
     "valsi": "ga'i",
     "class": "UI5",
     "translation": "hauteur",
-    "definition": "attitudinal modifier/honorific: hauteur - equal rank - meekness; used with one of lower rank              (cf. gapru, cnita)"
+    "definition": "attitudinal modifier/honorific: hauteur - equal rank - meekness; used with one of lower rank",
+    "refersTo": "(cf. gapru, cnita)"
   },
   {
     "valsi": "ga'icu'i",
@@ -1413,7 +1460,8 @@
     "valsi": "gau",
     "class": "BAI",
     "translation": "with active agent",
-    "definition": "gasnu modal, 1st place agent/actor case tag       with active agent ..."
+    "definition_1": "with active agent ...",
+    "definition": "gasnu modal, 1st place agent/actor case tag"
   },
   {
     "valsi": "ge",
@@ -1623,7 +1671,8 @@
     "valsi": ".i'a",
     "class": "UI1",
     "translation": "acceptance",
-    "definition": "attitudinal: acceptance - blame                                                                           (cf. nalna'e, nalpro, no'epro, nalzugjdi)"
+    "definition": "attitudinal: acceptance - blame",
+    "refersTo": "(cf. nalna'e, nalpro, no'epro, nalzugjdi)"
   },
   {
     "valsi": ".i'anai",
@@ -1635,7 +1684,8 @@
     "valsi": ".i'e",
     "class": "UI1",
     "translation": "approval",
-    "definition": "attitudinal: approval - non-approval - disapproval                                                        (cf. zanru)"
+    "definition": "attitudinal: approval - non-approval - disapproval",
+    "refersTo": "(cf. zanru)"
   },
   {
     "valsi": ".i'ecu'i",
@@ -1653,7 +1703,8 @@
     "valsi": ".i'i",
     "class": "UI1",
     "translation": "togetherness",
-    "definition": "attitudinal: togetherness - privacy                                                                       (cf. kansa, gumna, sivni, sepli)"
+    "definition": "attitudinal: togetherness - privacy",
+    "refersTo": "(cf. kansa, gumna, sivni, sepli)"
   },
   {
     "valsi": ".i'inai",
@@ -1665,7 +1716,8 @@
     "valsi": ".i'o",
     "class": "UI1",
     "translation": "appreciation",
-    "definition": "attitudinal: appreciation - envy                                                                          (cf. ckire, jilra)"
+    "definition": "attitudinal: appreciation - envy",
+    "refersTo": "(cf. ckire, jilra)"
   },
   {
     "valsi": ".i'onai",
@@ -1677,7 +1729,8 @@
     "valsi": ".i'u",
     "class": "UI1",
     "translation": "familiarity",
-    "definition": "attitudinal: familiarity - mystery                                                                        (cf. slabu, nalni'o, kufra)"
+    "definition": "attitudinal: familiarity - mystery",
+    "refersTo": "(cf. slabu, nalni'o, kufra)"
   },
   {
     "valsi": ".i'unai",
@@ -1689,7 +1742,8 @@
     "valsi": ".ia",
     "class": "UI1",
     "translation": "belief",
-    "definition": "attitudinal: belief - skepticism - disbelief                                                              (cf. krici, jinvi)"
+    "definition": "attitudinal: belief - skepticism - disbelief",
+    "refersTo": "(cf. krici, jinvi)"
   },
   {
     "valsi": ".iacu'i",
@@ -1713,7 +1767,8 @@
     "valsi": ".ie",
     "class": "UI1",
     "translation": "agreement",
-    "definition": "attitudinal: agreement - disagreement                                                                     (cf. tugni)"
+    "definition": "attitudinal: agreement - disagreement",
+    "refersTo": "(cf. tugni)"
   },
   {
     "valsi": ".ienai",
@@ -1725,7 +1780,8 @@
     "valsi": ".ii",
     "class": "UI1",
     "translation": "fear",
-    "definition": "attitudinal: fear - security                                                                              (cf. terpa, snura)"
+    "definition": "attitudinal: fear - security",
+    "refersTo": "(cf. terpa, snura)"
   },
   {
     "valsi": ".iinai",
@@ -1791,7 +1847,8 @@
     "valsi": ".io",
     "class": "UI1",
     "translation": "respect",
-    "definition": "attitudinal: respect - disrespect                                                                         (cf. sinma)"
+    "definition": "attitudinal: respect - disrespect",
+    "refersTo": "(cf. sinma)"
   },
   {
     "valsi": ".ionai",
@@ -1803,7 +1860,8 @@
     "valsi": ".iu",
     "class": "UI1",
     "translation": "love",
-    "definition": "attitudinal: love - no love lost - hatred                                                                 (cf. prami)"
+    "definition": "attitudinal: love - no love lost - hatred",
+    "refersTo": "(cf. prami)"
   },
   {
     "valsi": ".iucu'i",
@@ -1833,25 +1891,29 @@
     "valsi": "ja'e",
     "class": "BAI",
     "translation": "therefore result",
-    "definition": "jalge modal, 1st place                            resultingly; therefore result ..."
+    "definition_1": "resultingly; therefore result ...",
+    "definition": "jalge modal, 1st place"
   },
   {
     "valsi": "ja'enai",
     "class": "BAI*",
     "translation": "nevertheless result",
-    "definition": "jalge modal, 1st place (event causal)             nevertheless result ..."
+    "definition_1": "nevertheless result ...",
+    "definition": "jalge modal, 1st place (event causal)"
   },
   {
     "valsi": "ja'i",
     "class": "BAI",
     "translation": "by rule",
-    "definition": "javni modal, 1st place (by standard 1)            orderly; by rule ..."
+    "definition_1": "orderly; by rule ...",
+    "definition": "javni modal, 1st place (by standard 1)"
   },
   {
     "valsi": "ja'o",
     "class": "UI2",
     "translation": "I conclude",
-    "definition": "evidential: I conclude                                                                                    (cf. selni'i, ni'ikri)"
+    "definition": "evidential: I conclude",
+    "refersTo": "(cf. selni'i, ni'ikri)"
   },
   {
     "valsi": "jai",
@@ -1923,7 +1985,8 @@
     "valsi": "je'u",
     "class": "UI3",
     "translation": "truth",
-    "definition": "discursive: truth - falsity                                                                               (cf. jetnu)"
+    "definition": "discursive: truth - falsity",
+    "refersTo": "(cf. jetnu)"
   },
   {
     "valsi": "je'unai",
@@ -1953,13 +2016,15 @@
     "valsi": "ji'a",
     "class": "UI3b",
     "translation": "in addition",
-    "definition": "discursive: additionally                                                                                  (cf. jmina)"
+    "definition": "discursive: additionally",
+    "refersTo": "(cf. jmina)"
   },
   {
     "valsi": "ji'e",
     "class": "BAI",
     "translation": "up to limit",
-    "definition": "jimte modal, 1st place                            limitedly; up to limit ..."
+    "definition_1": "limitedly; up to limit ...",
+    "definition": "jimte modal, 1st place"
   },
   {
     "valsi": "ji'i",
@@ -1983,13 +2048,15 @@
     "valsi": "ji'o",
     "class": "BAI",
     "translation": "under direction of",
-    "definition": "jitro modal, 1st place (control)                  controlledly; under direction of ..."
+    "definition_1": "controlledly; under direction of ...",
+    "definition": "jitro modal, 1st place (control)"
   },
   {
     "valsi": "ji'u",
     "class": "BAI",
     "translation": "based on",
-    "definition": "jicmu modal, 1st place (assumptions);             given that ...; based on ..."
+    "definition_1": "given that ...; based on ...",
+    "definition": "jicmu modal, 1st place (assumptions);"
   },
   {
     "valsi": "jo",
@@ -2001,7 +2068,8 @@
     "valsi": "jo'a",
     "class": "UI3a",
     "translation": "metalinguistic yes",
-    "definition": "discursive: metalinguistic affirmer                                                                       (cf. drani)"
+    "definition": "discursive: metalinguistic affirmer",
+    "refersTo": "(cf. drani)"
   },
   {
     "valsi": "jo'e",
@@ -2055,7 +2123,8 @@
     "valsi": "ju'a",
     "class": "UI2",
     "translation": "I state",
-    "definition": "evidential: I state - (default) elliptical/non-specific basis                                             (cf. xusra)"
+    "definition": "evidential: I state - (default) elliptical/non-specific basis",
+    "refersTo": "(cf. xusra)"
   },
   {
     "valsi": "ju'e",
@@ -2085,7 +2154,8 @@
     "valsi": "ju'o",
     "class": "UI5",
     "translation": "certainty",
-    "definition": "attitudinal modifier: certainty - uncertainty - impossibility                                             (cf. birti, cumki)"
+    "definition": "attitudinal modifier: certainty - uncertainty - impossibility",
+    "refersTo": "(cf. birti, cumki)"
   },
   {
     "valsi": "ju'ocai",
@@ -2133,7 +2203,8 @@
     "valsi": "ka'a",
     "class": "BAI",
     "translation": "gone to by",
-    "definition": "klama modal, 1st place                            gone to by ..."
+    "definition_1": "gone to by ...",
+    "definition": "klama modal, 1st place"
   },
   {
     "valsi": "ka'e",
@@ -2145,7 +2216,8 @@
     "valsi": "ka'i",
     "class": "BAI",
     "translation": "represented by",
-    "definition": "krati modal, 1st place                            represented by ..."
+    "definition_1": "represented by ...",
+    "definition": "krati modal, 1st place"
   },
   {
     "valsi": "ka'o",
@@ -2157,13 +2229,15 @@
     "valsi": "ka'u",
     "class": "UI2",
     "translation": "I know culturally",
-    "definition": "evidential: I know by cultural means (myth or custom)                                                     (cf. kluju'o)"
+    "definition": "evidential: I know by cultural means (myth or custom)",
+    "refersTo": "(cf. kluju'o)"
   },
   {
     "valsi": "kai",
     "class": "BAI",
     "translation": "characterizing",
-    "definition": "ckaji modal, 1st place                            characterizing ..."
+    "definition_1": "characterizing ...",
+    "definition": "ckaji modal, 1st place"
   },
   {
     "valsi": "kau",
@@ -2205,7 +2279,8 @@
     "valsi": "ke'u",
     "class": "UI3",
     "translation": "repeating",
-    "definition": "discursive: repeating - continuing                                                                        (cf. refbasna, krefu, rapli, velde'a)"
+    "definition": "discursive: repeating - continuing",
+    "refersTo": "(cf. refbasna, krefu, rapli, velde'a)"
   },
   {
     "valsi": "ke'unai",
@@ -2229,7 +2304,8 @@
     "valsi": "ki'a",
     "class": "UI6",
     "translation": "textual confusion",
-    "definition": "attitudinal question: confusion about something said                                                      (cf. cfipu, kucli)"
+    "definition": "attitudinal question: confusion about something said",
+    "refersTo": "(cf. cfipu, kucli)"
   },
   {
     "valsi": "ki'anai",
@@ -2253,7 +2329,8 @@
     "valsi": "ki'i",
     "class": "BAI",
     "translation": "as a relation of",
-    "definition": "ckini modal, 1st place (related to)               relatively; as a relation of ..."
+    "definition_1": "relatively; as a relation of ...",
+    "definition": "ckini modal, 1st place (related to)"
   },
   {
     "valsi": "ki'o",
@@ -2265,7 +2342,8 @@
     "valsi": "ki'u",
     "class": "BAI",
     "translation": "because of reason",
-    "definition": "krinu modal, 1st place (justified by)             justifiably; because of reason ..."
+    "definition_1": "justifiably; because of reason ...",
+    "definition": "krinu modal, 1st place (justified by)"
   },
   {
     "valsi": "ki'u ma",
@@ -2277,7 +2355,8 @@
     "valsi": "ki'unai",
     "class": "BAI*",
     "translation": "despite reason",
-    "definition": "krinu modal, 1st place                            despite reason ..."
+    "definition_1": "despite reason ...",
+    "definition": "krinu modal, 1st place"
   },
   {
     "valsi": "ko",
@@ -2319,7 +2398,8 @@
     "valsi": "koi",
     "class": "BAI",
     "translation": "bounded by",
-    "definition": "korbi modal, 1st place (bordered by)              bounded by ..."
+    "definition_1": "bounded by ...",
+    "definition": "korbi modal, 1st place (bordered by)"
   },
   {
     "valsi": "ku",
@@ -2343,7 +2423,8 @@
     "valsi": "ku'i",
     "class": "UI3b",
     "translation": "however",
-    "definition": "discursive: however/but/in contrast                                                                       (cf. karbi, dukti, nalpanra)"
+    "definition": "discursive: however/but/in contrast",
+    "refersTo": "(cf. karbi, dukti, nalpanra)"
   },
   {
     "valsi": "ku'o",
@@ -2355,7 +2436,8 @@
     "valsi": "ku'u",
     "class": "BAI",
     "translation": "in culture",
-    "definition": "kulnu modal, 1st place                            in culture ..."
+    "definition_1": "in culture ...",
+    "definition": "kulnu modal, 1st place"
   },
   {
     "valsi": "ky",
@@ -2373,7 +2455,8 @@
     "valsi": "la'a",
     "class": "UI3",
     "translation": "probability",
-    "definition": "discursive: probability - improbability                                                                   (cf. lakne)"
+    "definition": "discursive: probability - improbability",
+    "refersTo": "(cf. lakne)"
   },
   {
     "valsi": "la'anai",
@@ -2409,7 +2492,8 @@
     "valsi": "la'u",
     "class": "BAI",
     "translation": "quantifying",
-    "definition": "klani modal, 1st place (amount)                   quantifying ...; being a quantity of ..."
+    "definition_1": "quantifying ...; being a quantity of ...",
+    "definition": "klani modal, 1st place (amount)"
   },
   {
     "valsi": "la'u ma",
@@ -2487,7 +2571,8 @@
     "valsi": "le'a",
     "class": "BAI",
     "translation": "in category",
-    "definition": "klesi modal, 1st place (scalar set)               in/of category ..."
+    "definition_1": "in/of category ...",
+    "definition": "klesi modal, 1st place (scalar set)"
   },
   {
     "valsi": "le'e",
@@ -2505,7 +2590,8 @@
     "valsi": "le'o",
     "class": "UI5",
     "translation": "aggressive",
-    "definition": "attitudinal modifier: aggressive - passive - defensive                                                    (cf. gunta, bandu)"
+    "definition": "attitudinal modifier: aggressive - passive - defensive",
+    "refersTo": "(cf. gunta, bandu)"
   },
   {
     "valsi": "le'ocu'i",
@@ -2595,7 +2681,8 @@
     "valsi": "li'a",
     "class": "UI3",
     "translation": "clearly",
-    "definition": "discursive: clearly - obscurely                                                                           (cf. klina)"
+    "definition": "discursive: clearly - obscurely",
+    "refersTo": "(cf. klina)"
   },
   {
     "valsi": "li'anai",
@@ -2607,7 +2694,8 @@
     "valsi": "li'e",
     "class": "BAI",
     "translation": "preceded by",
-    "definition": "lidne modal, 1st place                            preceded by ...; non-time sequencing"
+    "definition_1": "preceded by ...; non-time sequencing",
+    "definition": "lidne modal, 1st place"
   },
   {
     "valsi": "li'i",
@@ -2727,13 +2815,15 @@
     "valsi": "ma'e",
     "class": "BAI",
     "translation": "material object",
-    "definition": "marji modal, 1st place                            material in object/substance ..."
+    "definition_1": "material in object/substance ...",
+    "definition": "marji modal, 1st place"
   },
   {
     "valsi": "ma'i",
     "class": "BAI",
     "translation": "in reference frame",
-    "definition": "manri modal, 1st place (by standard 2)            in reference frame ..."
+    "definition_1": "in reference frame ...",
+    "definition": "manri modal, 1st place (by standard 2)"
   },
   {
     "valsi": "ma'o",
@@ -2757,7 +2847,8 @@
     "valsi": "mau",
     "class": "BAI",
     "translation": "exceeded by",
-    "definition": "zmadu modal, 1st place (a greater)                exceeded by ... ; usually a sumti modifier"
+    "definition_1": "exceeded by ... ; usually a sumti modifier",
+    "definition": "zmadu modal, 1st place (a greater)"
   },
   {
     "valsi": "me",
@@ -2769,13 +2860,15 @@
     "valsi": "me'a",
     "class": "BAI",
     "translation": "undercut by",
-    "definition": "mleca modal, 1st place (a lesser)                 undercut by ... ; usually a sumti modifier"
+    "definition_1": "undercut by ... ; usually a sumti modifier",
+    "definition": "mleca modal, 1st place (a lesser)"
   },
   {
     "valsi": "me'e",
     "class": "BAI",
     "translation": "with name",
-    "definition": "cmene modal, 1st place (requires quote)           with name ...; so-called ..."
+    "definition_1": "with name ...; so-called ...",
+    "definition": "cmene modal, 1st place (requires quote)"
   },
   {
     "valsi": "me'e ma",
@@ -2847,7 +2940,8 @@
     "valsi": "mi'u",
     "class": "UI3b",
     "translation": "ditto",
-    "definition": "discursive: ditto                                                                                         (cf. mintu)"
+    "definition": "discursive: ditto",
+    "refersTo": "(cf. mintu)"
   },
   {
     "valsi": "mo",
@@ -3021,7 +3115,8 @@
     "valsi": "mo'u",
     "class": "ZAhO",
     "translation": "completive",
-    "definition": "interval event contour: at the natural ending point of ...; completive              |    >|<"
+    "definition_1": ">|<",
+    "definition": "interval event contour: at the natural ending point of ...; completive"
   },
   {
     "valsi": "moi",
@@ -3039,7 +3134,8 @@
     "valsi": "mu'a",
     "class": "UI3",
     "translation": "for example",
-    "definition": "discursive: for example - omitting - end examples                                                         (cf. mupli)"
+    "definition": "discursive: for example - omitting - end examples",
+    "refersTo": "(cf. mupli)"
   },
   {
     "valsi": "mu'acu'i",
@@ -3063,7 +3159,8 @@
     "valsi": "mu'i",
     "class": "BAI",
     "translation": "because of motive",
-    "definition": "mukti modal, 1st place                            because of motive ..."
+    "definition_1": "because of motive ...",
+    "definition": "mukti modal, 1st place"
   },
   {
     "valsi": "mu'i ma",
@@ -3075,7 +3172,8 @@
     "valsi": "mu'inai",
     "class": "BAI*",
     "translation": "despite motive",
-    "definition": "mukti modal, 1st place                            despite motive ..."
+    "definition_1": "despite motive ...",
+    "definition": "mukti modal, 1st place"
   },
   {
     "valsi": "mu'o",
@@ -3093,7 +3191,8 @@
     "valsi": "mu'u",
     "class": "BAI",
     "translation": "exemplified by",
-    "definition": "mupli modal, 1st place                            exemplified by ..."
+    "definition_1": "exemplified by ...",
+    "definition": "mupli modal, 1st place"
   },
   {
     "valsi": "muki'o",
@@ -3165,7 +3264,8 @@
     "valsi": "na'i",
     "class": "UI3a",
     "translation": "metalinguistic not",
-    "definition": "discursive: metalinguistic negator                                                                        (cf. naldra, nalmapti)"
+    "definition": "discursive: metalinguistic negator",
+    "refersTo": "(cf. naldra, nalmapti)"
   },
   {
     "valsi": "na'o",
@@ -3279,7 +3379,8 @@
     "valsi": "ni'i",
     "class": "BAI",
     "translation": "because of logic",
-    "definition": "nibli modal, 1st place                            logically; logically because ..."
+    "definition_1": "logically; logically because ...",
+    "definition": "nibli modal, 1st place"
   },
   {
     "valsi": "ni'i ma",
@@ -3291,7 +3392,8 @@
     "valsi": "ni'inai",
     "class": "BAI*",
     "translation": "despite logic",
-    "definition": "nibli modal, 1st place                            despite logic ..."
+    "definition_1": "despite logic ...",
+    "definition": "nibli modal, 1st place"
   },
   {
     "valsi": "ni'o",
@@ -3429,7 +3531,8 @@
     "valsi": ".o'a",
     "class": "UI1",
     "translation": "pride",
-    "definition": "attitudinal: pride - modesty/humility - shame                                                             (cf. jgira, cumla, ckeji)"
+    "definition": "attitudinal: pride - modesty/humility - shame",
+    "refersTo": "(cf. jgira, cumla, ckeji)"
   },
   {
     "valsi": ".o'acu'i",
@@ -3447,7 +3550,8 @@
     "valsi": ".o'e",
     "class": "UI1",
     "translation": "closeness",
-    "definition": "attitudinal: closeness - distance                                                                         (cf. cnijbi, cnikansa)"
+    "definition": "attitudinal: closeness - distance",
+    "refersTo": "(cf. cnijbi, cnikansa)"
   },
   {
     "valsi": ".o'enai",
@@ -3459,7 +3563,8 @@
     "valsi": ".o'i",
     "class": "UI1",
     "translation": "caution",
-    "definition": "attitudinal: caution - rashness                                                                           (cf. capyrivbi, capfanta, srerivbi, srefanta, naldarsi, seljde)"
+    "definition": "attitudinal: caution - rashness",
+    "refersTo": "(cf. capyrivbi, capfanta, srerivbi, srefanta, naldarsi, seljde)"
   },
   {
     "valsi": ".o'inai",
@@ -3471,7 +3576,8 @@
     "valsi": ".o'o",
     "class": "UI1",
     "translation": "patience",
-    "definition": "attitudinal: patience - mere tolerance - anger                                                            (cf. fengu, to'ersteba, de'acni"
+    "definition": "attitudinal: patience - mere tolerance - anger",
+    "refersTo": "(cf. fengu, to'ersteba, de'acni"
   },
   {
     "valsi": ".o'ocu'i",
@@ -3489,7 +3595,8 @@
     "valsi": ".o'u",
     "class": "UI1",
     "translation": "relaxation",
-    "definition": "attitudinal: relaxation - composure - stress                                                              (cf. surla, cnilanxe, dunku)"
+    "definition": "attitudinal: relaxation - composure - stress",
+    "refersTo": "(cf. surla, cnilanxe, dunku)"
   },
   {
     "valsi": ".o'ucu'i",
@@ -3513,7 +3620,8 @@
     "valsi": ".oi",
     "class": "UI1",
     "translation": "complaint",
-    "definition": "attitudinal: complaint - pleasure                                                                         (cf. pante, pluka, kufra)"
+    "definition": "attitudinal: complaint - pleasure",
+    "refersTo": "(cf. pante, pluka, kufra)"
   },
   {
     "valsi": ".oinai",
@@ -3585,7 +3693,8 @@
     "valsi": "pa'e",
     "class": "UI3",
     "translation": "justice",
-    "definition": "discursive: justice - prejudice                                                                           (cf. tcinydracu'a, tcinydrapai, vudypai)"
+    "definition": "discursive: justice - prejudice",
+    "refersTo": "(cf. tcinydracu'a, tcinydrapai, vudypai)"
   },
   {
     "valsi": "pa'enai",
@@ -3609,7 +3718,8 @@
     "valsi": "pa'u",
     "class": "BAI",
     "translation": "having component",
-    "definition": "pagbu modal, 1st place                            having component ..."
+    "definition_1": "having component ...",
+    "definition": "pagbu modal, 1st place"
   },
   {
     "valsi": "pabi",
@@ -3729,7 +3839,8 @@
     "valsi": "pau",
     "class": "UI3a",
     "translation": "question follows",
-    "definition": "discursive: optional question premarker                                                                   (cf. preti)"
+    "definition": "discursive: optional question premarker",
+    "refersTo": "(cf. preti)"
   },
   {
     "valsi": "paunai",
@@ -3777,7 +3888,8 @@
     "valsi": "pe'i",
     "class": "UI2",
     "translation": "I opine",
-    "definition": "evidential: I opine (subjective claim)                                                                                      (cf. jinvi)"
+    "definition": "evidential: I opine (subjective claim)",
+    "refersTo": "(cf. jinvi)"
   },
   {
     "valsi": "pe'o",
@@ -3825,7 +3937,8 @@
     "valsi": "pi'o",
     "class": "BAI",
     "translation": "used by",
-    "definition": "pilno modal, 1st place                            used by ..."
+    "definition_1": "used by ...",
+    "definition": "pilno modal, 1st place"
   },
   {
     "valsi": "pi'u",
@@ -3927,13 +4040,15 @@
     "valsi": "po'i",
     "class": "BAI",
     "translation": "in the sequence",
-    "definition": "porsi modal, 1st place (in order)                 sequentially; in the sequence ..."
+    "definition_1": "sequentially; in the sequence ...",
+    "definition": "porsi modal, 1st place (in order)"
   },
   {
     "valsi": "po'o",
     "class": "UI3b",
     "translation": "uniquely",
-    "definition": "discursive: uniquely, only, solely: the only relevant case                                                (cf. pamei, mulno, frica)"
+    "definition": "discursive: uniquely, only, solely: the only relevant case",
+    "refersTo": "(cf. pamei, mulno, frica)"
   },
   {
     "valsi": "po'u",
@@ -3957,13 +4072,15 @@
     "valsi": "pu'a",
     "class": "BAI",
     "translation": "pleased by",
-    "definition": "pluka modal, 1st place                            pleased by ..."
+    "definition_1": "pleased by ...",
+    "definition": "pluka modal, 1st place"
   },
   {
     "valsi": "pu'e",
     "class": "BAI",
     "translation": "by process",
-    "definition": "pruce modal, 1st place (in manner 1)              by process ..."
+    "definition_1": "by process ...",
+    "definition": "pruce modal, 1st place (in manner 1)"
   },
   {
     "valsi": "pu'i",
@@ -3975,7 +4092,8 @@
     "valsi": "pu'o",
     "class": "ZAhO",
     "translation": "anticipative",
-    "definition": "interval event contour: in anticipation of ...;  until ... ; inchoative         ----|     |"
+    "definition_1": "|",
+    "definition": "interval event contour: in anticipation of ...;"
   },
   {
     "valsi": "pu'u",
@@ -4071,7 +4189,8 @@
     "valsi": "ra'a",
     "class": "BAI",
     "translation": "pertained to by",
-    "definition": "srana modal, 1st place                            pertained to by ... (generally more specific)"
+    "definition_1": "pertained to by ... (generally more specific)",
+    "definition": "srana modal, 1st place"
   },
   {
     "valsi": "ra'e",
@@ -4083,7 +4202,8 @@
     "valsi": "ra'i",
     "class": "BAI",
     "translation": "from source",
-    "definition": "krasi modal, 1st place                            from source/origin/starting point ..."
+    "definition_1": "from source/origin/starting point ...",
+    "definition": "krasi modal, 1st place"
   },
   {
     "valsi": "ra'o",
@@ -4095,7 +4215,8 @@
     "valsi": "ra'u",
     "class": "UI3",
     "translation": "chiefly",
-    "definition": "discursive: chiefly - equally - incidentally                                                              (cf. ralju, vajni)"
+    "definition": "discursive: chiefly - equally - incidentally",
+    "refersTo": "(cf. ralju, vajni)"
   },
   {
     "valsi": "ra'ucu'i",
@@ -4113,7 +4234,8 @@
     "valsi": "rai",
     "class": "BAI",
     "translation": "with superlative",
-    "definition": "traji modal, 1st place                            with superlative ..."
+    "definition_1": "with superlative ...",
+    "definition": "traji modal, 1st place"
   },
   {
     "valsi": "rau",
@@ -4149,7 +4271,8 @@
     "valsi": "re'e",
     "class": "UI4",
     "translation": "spiritual",
-    "definition": "emotion category/modifier: religious/spiritual/worship - sacrilege                                        (cf. lijda)"
+    "definition": "emotion category/modifier: religious/spiritual/worship - sacrilege",
+    "refersTo": "(cf. lijda)"
   },
   {
     "valsi": "re'enai",
@@ -4245,7 +4368,8 @@
     "valsi": "ri'a",
     "class": "BAI",
     "translation": "because of cause",
-    "definition": "rinka modal, 1st place (phys./mental)             causal because ..."
+    "definition_1": "causal because ...",
+    "definition": "rinka modal, 1st place (phys./mental)"
   },
   {
     "valsi": "ri'a ma",
@@ -4257,13 +4381,15 @@
     "valsi": "ri'anai",
     "class": "BAI*",
     "translation": "despite cause",
-    "definition": "rinka modal, 1st place (phys./mental)             despite cause ..."
+    "definition_1": "despite cause ...",
+    "definition": "rinka modal, 1st place (phys./mental)"
   },
   {
     "valsi": "ri'e",
     "class": "UI5",
     "translation": "release of emotion",
-    "definition": "attitudinal modifier: release of emotion - emotion restraint                                              (cf. cniri'u, cnicru)"
+    "definition": "attitudinal modifier: release of emotion - emotion restraint",
+    "refersTo": "(cf. cniri'u, cnicru)"
   },
   {
     "valsi": "ri'enai",
@@ -4299,7 +4425,8 @@
     "valsi": "ro'a",
     "class": "UI4",
     "translation": "social",
-    "definition": "emotion category/modifier: social - antisocial                                                            (cf. jikca)"
+    "definition": "emotion category/modifier: social - antisocial",
+    "refersTo": "(cf. jikca)"
   },
   {
     "valsi": "ro'anai",
@@ -4311,7 +4438,8 @@
     "valsi": "ro'e",
     "class": "UI4",
     "translation": "mental",
-    "definition": "emotion category/modifier: mental - mindless                                                              (cf. menli)"
+    "definition": "emotion category/modifier: mental - mindless",
+    "refersTo": "(cf. menli)"
   },
   {
     "valsi": "ro'enai",
@@ -4323,7 +4451,8 @@
     "valsi": "ro'i",
     "class": "UI4",
     "translation": "emotional",
-    "definition": "emotion category/modifier: emotional - denying emotion                                                    (cf. cinmo)"
+    "definition": "emotion category/modifier: emotional - denying emotion",
+    "refersTo": "(cf. cinmo)"
   },
   {
     "valsi": "ro'inai",
@@ -4335,7 +4464,8 @@
     "valsi": "ro'o",
     "class": "UI4",
     "translation": "physical",
-    "definition": "emotion category/modifier: physical - denying physical                                                    (cf. xadni)"
+    "definition": "emotion category/modifier: physical - denying physical",
+    "refersTo": "(cf. xadni)"
   },
   {
     "valsi": "ro'onai",
@@ -4347,7 +4477,8 @@
     "valsi": "ro'u",
     "class": "UI4",
     "translation": "sexual",
-    "definition": "emotion category/modifier: sexual - sexual abstinence                                                     (cf. cinse)"
+    "definition": "emotion category/modifier: sexual - sexual abstinence",
+    "refersTo": "(cf. cinse)"
   },
   {
     "valsi": "ro'unai",
@@ -4395,7 +4526,8 @@
     "valsi": "ru'a",
     "class": "UI2",
     "translation": "I postulate",
-    "definition": "evidential: I postulate                                                                                   (cf. sruma)"
+    "definition": "evidential: I postulate",
+    "refersTo": "(cf. sruma)"
   },
   {
     "valsi": "ru'e",
@@ -4443,13 +4575,15 @@
     "valsi": "sa'a",
     "class": "UI3a",
     "translation": "editorial insertion",
-    "definition": "discursive: material inserted by editor/narrator (bracketed text)                                         (cf. setca)"
+    "definition": "discursive: material inserted by editor/narrator (bracketed text)",
+    "refersTo": "(cf. setca)"
   },
   {
     "valsi": "sa'e",
     "class": "UI3",
     "translation": "precisely speaking",
-    "definition": "discursive: precisely speaking - loosely speaking                                                         (cf. satci, jibni)"
+    "definition": "discursive: precisely speaking - loosely speaking",
+    "refersTo": "(cf. satci, jibni)"
   },
   {
     "valsi": "sa'enai",
@@ -4473,7 +4607,8 @@
     "valsi": "sa'u",
     "class": "UI3",
     "translation": "simply speaking",
-    "definition": "discursive: simply - elaborating                                                                          (cf. sampu, pluja)"
+    "definition": "discursive: simply - elaborating",
+    "refersTo": "(cf. sampu, pluja)"
   },
   {
     "valsi": "sa'unai",
@@ -4491,7 +4626,8 @@
     "valsi": "sau",
     "class": "BAI",
     "translation": "requiring",
-    "definition": "sarcu modal, 1st place                            requiring ..."
+    "definition_1": "requiring ...",
+    "definition": "sarcu modal, 1st place"
   },
   {
     "valsi": "se",
@@ -4503,7 +4639,8 @@
     "valsi": "se'a",
     "class": "UI5",
     "translation": "self-sufficiency",
-    "definition": "attitudinal modifier: self-sufficiency - dependency                                                       (cf. sezysei, kantcu)"
+    "definition": "attitudinal modifier: self-sufficiency - dependency",
+    "refersTo": "(cf. sezysei, kantcu)"
   },
   {
     "valsi": "se'anai",
@@ -4521,7 +4658,8 @@
     "valsi": "se'i",
     "class": "UI5",
     "translation": "self-oriented",
-    "definition": "attitudinal modifier: self-oriented - other-oriented                                                      (cf. sevzi, drata)"
+    "definition": "attitudinal modifier: self-oriented - other-oriented",
+    "refersTo": "(cf. sevzi, drata)"
   },
   {
     "valsi": "se'inai",
@@ -4533,7 +4671,8 @@
     "valsi": "se'o",
     "class": "UI2",
     "translation": "I know internally",
-    "definition": "evidential: I know by internal experience (dream, vision, or personal revelation)                         (cf. senva)"
+    "definition": "evidential: I know by internal experience (dream, vision, or personal revelation)",
+    "refersTo": "(cf. senva)"
   },
   {
     "valsi": "se'u",
@@ -4545,85 +4684,99 @@
     "valsi": "seba'i",
     "class": "BAI*",
     "translation": "instead of",
-    "definition": "basti modal, 2nd place                            instead of ..."
+    "definition_1": "instead of ...",
+    "definition": "basti modal, 2nd place"
   },
   {
     "valsi": "sebai",
     "class": "BAI*",
     "translation": "compelling",
-    "definition": "bapli modal, 2nd place (forcing result)           compelling event ..."
+    "definition_1": "compelling event ...",
+    "definition": "bapli modal, 2nd place (forcing result)"
   },
   {
     "valsi": "sebau",
     "class": "BAI*",
     "translation": "in language of",
-    "definition": "bangu modal, 2nd place (speakers)                 in language of speakers ..."
+    "definition_1": "in language of speakers ...",
+    "definition": "bangu modal, 2nd place (speakers)"
   },
   {
     "valsi": "sebe'i",
     "class": "BAI*",
     "translation": "transmitting",
-    "definition": "benji modal, 2nd place (message/cargo)            transmitting ..."
+    "definition_1": "transmitting ...",
+    "definition": "benji modal, 2nd place (message/cargo)"
   },
   {
     "valsi": "seca'i",
     "class": "BAI*",
     "translation": "with authority over",
-    "definition": "catni modal, 2nd place                            authoritatively; with authority over ..."
+    "definition_1": "authoritatively; with authority over ...",
+    "definition": "catni modal, 2nd place"
   },
   {
     "valsi": "secau",
     "class": "BAI*",
     "translation": "without",
-    "definition": "claxu modal, 2nd place (lacking)                  without ..."
+    "definition_1": "without ...",
+    "definition": "claxu modal, 2nd place (lacking)"
   },
   {
     "valsi": "seci'e",
     "class": "BAI*",
     "translation": "with system function",
-    "definition": "ciste modal, 2nd place                            with system function ..."
+    "definition_1": "with system function ...",
+    "definition": "ciste modal, 2nd place"
   },
   {
     "valsi": "seci'o",
     "class": "BAI*",
     "translation": "emoting",
-    "definition": "cinmo modal, 2nd place (shows attitude)           emotionally; emoting ..."
+    "definition_1": "emotionally; emoting ...",
+    "definition": "cinmo modal, 2nd place (shows attitude)"
   },
   {
     "valsi": "seci'u",
     "class": "BAI*",
     "translation": "on scale measuring",
-    "definition": "ckilu modal, 2nd place used in scalar negation    on scale measuring ..."
+    "definition_1": "on scale measuring ...",
+    "definition": "ckilu modal, 2nd place used in scalar negation"
   },
   {
     "valsi": "secu'u",
     "class": "BAI*",
     "translation": "expressing",
-    "definition": "cusku modal, 2nd place (saying)                   expressively; expressing ..."
+    "definition_1": "expressively; expressing ...",
+    "definition": "cusku modal, 2nd place (saying)"
   },
   {
     "valsi": "sede'i",
     "class": "BAI*",
     "translation": "on the same date as",
-    "definition": "detri modal, 2nd place (for letters)              on the same date as ... ; label with event"
+    "definition_1": "on the same date as ... ; label with event",
+    "definition": "detri modal, 2nd place (for letters)"
   },
   {
     "valsi": "sedi'o",
     "class": "BAI*",
     "translation": "at specific locus",
-    "definition": "diklo modal, 2nd place                            locally; at specific locus ..."
+    "definition_1": "locally; at specific locus ...",
+    "definition": "diklo modal, 2nd place"
   },
   {
     "valsi": "sedu'i",
     "class": "BAI*",
     "translation": "equal to",
-    "definition": "dunli modal, 2nd place (same as 1st);             equal to ... [same as 1st place modal]"
+    "definition_1": "equal to ... [same as 1st place modal]",
+    "definition": "dunli modal, 2nd place (same as 1st);"
   },
   {
     "valsi": "sedu'o",
     "class": "BAI*",
     "translation": "knowing facts",
-    "definition": "djuno modal, 2nd place                            knowingly; knowing facts ..."
+    "definition_1": "knowingly; knowing facts ...",
+    "definition": "djuno modal, 2nd place"
   },
   {
     "valsi": "sedu'u",
@@ -4635,19 +4788,22 @@
     "valsi": "sefa'e",
     "class": "BAI*",
     "translation": "in reversal of",
-    "definition": "fatne modal, 2nd place (same as 1st);             backwards; in reversal of ..."
+    "definition_1": "backwards; in reversal of ...",
+    "definition": "fatne modal, 2nd place (same as 1st);"
   },
   {
     "valsi": "sefi'e",
     "class": "BAI*",
     "translation": "creating work",
-    "definition": "finti modal, 2nd place                            creatively; creating work ..."
+    "definition_1": "creatively; creating work ...",
+    "definition": "finti modal, 2nd place"
   },
   {
     "valsi": "sega'a",
     "class": "BAI*",
     "translation": "observing",
-    "definition": "zgana modal, 2nd place                            observing ..."
+    "definition_1": "observing ...",
+    "definition": "zgana modal, 2nd place"
   },
   {
     "valsi": "segau",
@@ -4665,55 +4821,64 @@
     "valsi": "seja'e",
     "class": "BAI*",
     "translation": "results because",
-    "definition": "jalge modal, 2nd place (event causal)             results because of ..."
+    "definition_1": "results because of ...",
+    "definition": "jalge modal, 2nd place (event causal)"
   },
   {
     "valsi": "seja'enai",
     "class": "BAI*",
     "translation": "results despite",
-    "definition": "jalge modal, 2nd place (event causal)             results despite ..."
+    "definition_1": "results despite ...",
+    "definition": "jalge modal, 2nd place (event causal)"
   },
   {
     "valsi": "seja'i",
     "class": "BAI*",
     "translation": "by rule prescribing",
-    "definition": "javni modal, 2nd place                            orderly; by rule prescribing ..."
+    "definition_1": "orderly; by rule prescribing ...",
+    "definition": "javni modal, 2nd place"
   },
   {
     "valsi": "seji'e",
     "class": "BAI*",
     "translation": "as a limit of",
-    "definition": "jimte modal, 2nd place                            limitedly; as a limit of ..."
+    "definition_1": "limitedly; as a limit of ...",
+    "definition": "jimte modal, 2nd place"
   },
   {
     "valsi": "seji'o",
     "class": "BAI*",
     "translation": "controlling aspects",
-    "definition": "jitro modal, 2nd place                            controlledly; controlling/guiding aspects ..."
+    "definition_1": "controlledly; controlling/guiding aspects ...",
+    "definition": "jitro modal, 2nd place"
   },
   {
     "valsi": "seji'u",
     "class": "BAI*",
     "translation": "supporting",
-    "definition": "jicmu modal, 2nd place (from basis)               supporting ...; as a basis for ..."
+    "definition_1": "supporting ...; as a basis for ...",
+    "definition": "jicmu modal, 2nd place (from basis)"
   },
   {
     "valsi": "seka'a",
     "class": "BAI*",
     "translation": "with destination",
-    "definition": "klama modal, 2nd place                            with destination ..."
+    "definition_1": "with destination ...",
+    "definition": "klama modal, 2nd place"
   },
   {
     "valsi": "seka'i",
     "class": "BAI*",
     "translation": "on behalf of",
-    "definition": "krati modal, 2nd place                            representingly; on behalf of ..."
+    "definition_1": "representingly; on behalf of ...",
+    "definition": "krati modal, 2nd place"
   },
   {
     "valsi": "sekai",
     "class": "BAI*",
     "translation": "with property",
-    "definition": "ckaji modal, 2nd place (quality)                  characterized by ...; with property ..."
+    "definition_1": "characterized by ...; with property ...",
+    "definition": "ckaji modal, 2nd place (quality)"
   },
   {
     "valsi": "sekai ma",
@@ -4725,259 +4890,303 @@
     "valsi": "seki'i",
     "class": "BAI*",
     "translation": "related to",
-    "definition": "ckini modal, 2nd place (same as 1st)              related to ..."
+    "definition_1": "related to ...",
+    "definition": "ckini modal, 2nd place (same as 1st)"
   },
   {
     "valsi": "seki'u",
     "class": "BAI*",
     "translation": "reason therefore",
-    "definition": "krinu modal, 2nd place                            reason therefore ..."
+    "definition_1": "reason therefore ...",
+    "definition": "krinu modal, 2nd place"
   },
   {
     "valsi": "seki'unai",
     "class": "BAI*",
     "translation": "reason nevertheless",
-    "definition": "krinu modal, 2nd place                            reason nevertheless ..."
+    "definition_1": "reason nevertheless ...",
+    "definition": "krinu modal, 2nd place"
   },
   {
     "valsi": "sekoi",
     "class": "BAI*",
     "translation": "as boundary of",
-    "definition": "korbi modal, 2nd place (bounding)                 as boundary of ..."
+    "definition_1": "as boundary of ...",
+    "definition": "korbi modal, 2nd place (bounding)"
   },
   {
     "valsi": "seku'u",
     "class": "BAI*",
     "translation": "in culture of",
-    "definition": "kulnu modal, 2nd place (people)                   in culture of ..."
+    "definition_1": "in culture of ...",
+    "definition": "kulnu modal, 2nd place (people)"
   },
   {
     "valsi": "sela'u",
     "class": "BAI*",
     "translation": "in quantity",
-    "definition": "klani modal, 2nd place                            in quantity ...; measured as ..."
+    "definition_1": "in quantity ...; measured as ...",
+    "definition": "klani modal, 2nd place"
   },
   {
     "valsi": "sele'a",
     "class": "BAI*",
     "translation": "as a category of",
-    "definition": "klesi modal, 2nd place                            as a category of/within ..."
+    "definition_1": "as a category of/within ...",
+    "definition": "klesi modal, 2nd place"
   },
   {
     "valsi": "seli'e",
     "class": "BAI*",
     "translation": "preceding",
-    "definition": "lidne modal, 2nd place                            preceding ...;leading ... ; non-time sequence"
+    "definition_1": "preceding ...;leading ... ; non-time sequence",
+    "definition": "lidne modal, 2nd place"
   },
   {
     "valsi": "sema'e",
     "class": "BAI*",
     "translation": "made of material",
-    "definition": "marji modal, 2nd place                            made of material/composition ..."
+    "definition_1": "made of material/composition ...",
+    "definition": "marji modal, 2nd place"
   },
   {
     "valsi": "sema'i",
     "class": "BAI*",
     "translation": "as a standard for",
-    "definition": "manri modal, 2nd place (of reference)             as a reference standard for observing ..."
+    "definition_1": "as a reference standard for observing ...",
+    "definition": "manri modal, 2nd place (of reference)"
   },
   {
     "valsi": "semau",
     "class": "BAI*",
     "translation": "more than",
-    "definition": "zmadu modal, 2nd place (relative!)                more than ...; usually a sumti modifier"
+    "definition_1": "more than ...; usually a sumti modifier",
+    "definition": "zmadu modal, 2nd place (relative!)"
   },
   {
     "valsi": "semaunai",
     "class": "BAI*",
     "translation": "not more than",
-    "definition": "zmadu modal, 2nd place (relative!)                not more than ...; usually a sumti modifier"
+    "definition_1": "not more than ...; usually a sumti modifier",
+    "definition": "zmadu modal, 2nd place (relative!)"
   },
   {
     "valsi": "seme'a",
     "class": "BAI*",
     "translation": "less than",
-    "definition": "mleca modal, 2nd place (relative!)                less than ...; usually a sumti modifier"
+    "definition_1": "less than ...; usually a sumti modifier",
+    "definition": "mleca modal, 2nd place (relative!)"
   },
   {
     "valsi": "seme'anai",
     "class": "BAI*",
     "translation": "not less than",
-    "definition": "mleca modal, 2nd place (relative!)                not less than ...; usually a sumti modifier"
+    "definition_1": "not less than ...; usually a sumti modifier",
+    "definition": "mleca modal, 2nd place (relative!)"
   },
   {
     "valsi": "seme'e",
     "class": "BAI*",
     "translation": "as a name for",
-    "definition": "cmene modal, 2nd place (the named one)            as a name for ..."
+    "definition_1": "as a name for ...",
+    "definition": "cmene modal, 2nd place (the named one)"
   },
   {
     "valsi": "semu'i",
     "class": "BAI*",
     "translation": "motive therefore",
-    "definition": "mukti modal, 2nd place                            motive therefore ...; motivating action ..."
+    "definition_1": "motive therefore ...; motivating action ...",
+    "definition": "mukti modal, 2nd place"
   },
   {
     "valsi": "semu'inai",
     "class": "BAI*",
     "translation": "motive nevertheless",
-    "definition": "mukti modal, 2nd place                            motive nevertheless ..."
+    "definition_1": "motive nevertheless ...",
+    "definition": "mukti modal, 2nd place"
   },
   {
     "valsi": "semu'u",
     "class": "BAI*",
     "translation": "example of property",
-    "definition": "mupli modal, 2nd place                            as an example of property ..."
+    "definition_1": "as an example of property ...",
+    "definition": "mupli modal, 2nd place"
   },
   {
     "valsi": "seni'i",
     "class": "BAI*",
     "translation": "entails therefore",
-    "definition": "nibli modal, 2nd place                            entails therefore ..."
+    "definition_1": "entails therefore ...",
+    "definition": "nibli modal, 2nd place"
   },
   {
     "valsi": "seni'inai",
     "class": "BAI*",
     "translation": "entails nevertheless",
-    "definition": "nibli modal, 2nd place                            entails nevertheless ..."
+    "definition_1": "entails nevertheless ...",
+    "definition": "nibli modal, 2nd place"
   },
   {
     "valsi": "sepa'a",
     "class": "BAI*",
     "translation": "similar to",
-    "definition": "panra modal, 2nd place                            similarly; similar to ..."
+    "definition_1": "similarly; similar to ...",
+    "definition": "panra modal, 2nd place"
   },
   {
     "valsi": "sepa'u",
     "class": "BAI*",
     "translation": "as a part of",
-    "definition": "pagbu modal, 2nd place (whole)                    partially; as a part of ..."
+    "definition_1": "partially; as a part of ...",
+    "definition": "pagbu modal, 2nd place (whole)"
   },
   {
     "valsi": "sepi'o",
     "class": "BAI*",
     "translation": "using tool",
-    "definition": "pilno modal, 2nd place (instrumental) tool/machine/apparatus/acting entity;  using (tool) ..."
+    "definition_1": "using (tool) ...",
+    "definition": "pilno modal, 2nd place (instrumental) tool/machine/apparatus/acting entity;"
   },
   {
     "valsi": "sepo'i",
     "class": "BAI*",
     "translation": "sequenced by rules",
-    "definition": "porsi modal, 2nd place                            sequentially; sequenced by rules ..."
+    "definition_1": "sequentially; sequenced by rules ...",
+    "definition": "porsi modal, 2nd place"
   },
   {
     "valsi": "sepu'a",
     "class": "BAI*",
     "translation": "in order to please",
-    "definition": "pluka modal, 2nd place (for)                   pleasingly; pleasing ...; in order to please ..."
+    "definition_1": "pleasingly; pleasing ...; in order to please ...",
+    "definition": "pluka modal, 2nd place (for)"
   },
   {
     "valsi": "sepu'e",
     "class": "BAI*",
     "translation": "processing from",
-    "definition": "pruce modal, 2nd place (inputs)                   processing from inputs ..."
+    "definition_1": "processing from inputs ...",
+    "definition": "pruce modal, 2nd place (inputs)"
   },
   {
     "valsi": "sera'a",
     "class": "BAI*",
     "translation": "concerning",
-    "definition": "srana modal, 2nd place (pertaining to)            relevantly; concerning ... (less specific)"
+    "definition_1": "relevantly; concerning ... (less specific)",
+    "definition": "srana modal, 2nd place (pertaining to)"
   },
   {
     "valsi": "sera'i",
     "class": "BAI*",
     "translation": "as an origin of",
-    "definition": "krasi modal, 2nd place                            originally; as an origin/starting point of ..."
+    "definition_1": "originally; as an origin/starting point of ...",
+    "definition": "krasi modal, 2nd place"
   },
   {
     "valsi": "serai",
     "class": "BAI*",
     "translation": "superlative in",
-    "definition": "traji modal, 2nd place (property)                 -est; most extremely; superlative in ..."
+    "definition_1": "-est; most extremely; superlative in ...",
+    "definition": "traji modal, 2nd place (property)"
   },
   {
     "valsi": "seri'a",
     "class": "BAI*",
     "translation": "causal therefore",
-    "definition": "rinka modal, 2nd place (phys./mental)             causal therefore ..."
+    "definition_1": "causal therefore ...",
+    "definition": "rinka modal, 2nd place (phys./mental)"
   },
   {
     "valsi": "seri'anai",
     "class": "BAI*",
     "translation": "causal nevertheless",
-    "definition": "rinka modal, 2nd place (phys./mental)             causal nevertheless ..."
+    "definition_1": "causal nevertheless ...",
+    "definition": "rinka modal, 2nd place (phys./mental)"
   },
   {
     "valsi": "seri'i",
     "class": "BAI*",
     "translation": "experiencing",
-    "definition": "lifri modal, 2nd place                            experiencing ...; undergoing ..."
+    "definition_1": "experiencing ...; undergoing ...",
+    "definition": "lifri modal, 2nd place"
   },
   {
     "valsi": "sesau",
     "class": "BAI*",
     "translation": "necessary for",
-    "definition": "sarcu modal, 2nd place (process)                  necessarily; necessary for ..."
+    "definition_1": "necessarily; necessary for ...",
+    "definition": "sarcu modal, 2nd place (process)"
   },
   {
     "valsi": "sesi'u",
     "class": "BAI*",
     "translation": "assisting",
-    "definition": "sidju modal, 2nd place                            assisting ... (in doing/maintaining something)"
+    "definition_1": "assisting ... (in doing/maintaining something)",
+    "definition": "sidju modal, 2nd place"
   },
   {
     "valsi": "seta'i",
     "class": "BAI*",
     "translation": "as a method for",
-    "definition": "tadji modal, 2nd place                            methodically; as a method for doing ..."
+    "definition_1": "methodically; as a method for doing ...",
+    "definition": "tadji modal, 2nd place"
   },
   {
     "valsi": "setai",
     "class": "BAI*",
     "translation": "as a form of",
-    "definition": "tamsmi modal, 2nd place                           similarly; resembling ... (in ideal form)               (x1 resembles x2 sharing ideal form/shape x3 in property x4)"
+    "definition_1": "similarly; resembling ... (in ideal form)",
+    "definition": "tamsmi modal, 2nd place",
+    "refersTo": "(x1 resembles x2 sharing ideal form/shape x3 in property x4)"
   },
   {
     "valsi": "seti'i",
     "class": "BAI*",
     "translation": "suggesting",
-    "definition": "stidi modal, 2nd place                            suggestively; suggesting (idea/action) ..."
+    "definition_1": "suggestively; suggesting (idea/action) ...",
+    "definition": "stidi modal, 2nd place"
   },
   {
     "valsi": "seti'u",
     "class": "BAI*",
     "translation": "at the same time as",
-    "definition": "tcika modal, 2nd place (for letters)              at the same time as ... ; label with event"
+    "definition_1": "at the same time as ... ; label with event",
+    "definition": "tcika modal, 2nd place (for letters)"
   },
   {
     "valsi": "setu'i",
     "class": "BAI*",
     "translation": "as a location of",
-    "definition": "stuzi modal, 2nd place                            as a location of ..."
+    "definition_1": "as a location of ...",
+    "definition": "stuzi modal, 2nd place"
   },
   {
     "valsi": "seva'o",
     "class": "BAI*",
     "translation": "as conditions for",
-    "definition": "vanbi modal, 2nd place (environment)              as conditions/environment of/for ..."
+    "definition_1": "as conditions/environment of/for ...",
+    "definition": "vanbi modal, 2nd place (environment)"
   },
   {
     "valsi": "seva'u",
     "class": "BAI*",
     "translation": "with beneficiary",
-    "definition": "xamgu modal, 2nd place beneficiary case tag       for the benefit of...; with beneficiary ..."
+    "definition_1": "for the benefit of...; with beneficiary ...",
+    "definition": "xamgu modal, 2nd place beneficiary case tag"
   },
   {
     "valsi": "sezau",
     "class": "BAI*",
     "translation": "approving",
-    "definition": "zanru modal, 2nd place                            approvingly; approving ..."
+    "definition_1": "approvingly; approving ...",
+    "definition": "zanru modal, 2nd place"
   },
   {
     "valsi": "sezu'e",
     "class": "BAI*",
     "translation": "goalfully acting at",
-    "definition": "zukte modal, 2nd place                            purposefully; goalfully acting at ..."
+    "definition_1": "purposefully; goalfully acting at ...",
+    "definition": "zukte modal, 2nd place"
   },
   {
     "valsi": "si",
@@ -4989,7 +5198,8 @@
     "valsi": "si'a",
     "class": "UI3b",
     "translation": "similarly",
-    "definition": "discursive: similarly                                                                                     (cf. simsa, panra)"
+    "definition": "discursive: similarly",
+    "refersTo": "(cf. simsa, panra)"
   },
   {
     "valsi": "si'e",
@@ -5013,7 +5223,8 @@
     "valsi": "si'u",
     "class": "BAI",
     "translation": "aided by",
-    "definition": "sidju modal, 1st place (aiding agent)             aided by ..."
+    "definition_1": "aided by ...",
+    "definition": "sidju modal, 1st place (aiding agent)"
   },
   {
     "valsi": "slaka bu",
@@ -5121,7 +5332,8 @@
     "valsi": "sozepimu",
     "class": "PA*",
     "translation": "97.5",
-    "definition": "number/quantity:  97.5"
+    "definition_1": "97.5",
+    "definition": "number/quantity:"
   },
   {
     "valsi": "su",
@@ -5133,7 +5345,8 @@
     "valsi": "su'a",
     "class": "UI2",
     "translation": "I generalize",
-    "definition": "evidential: I generalize - I particularize; discursive: abstractly - concretely                           (cf. sucta, sucni'i)"
+    "definition": "evidential: I generalize - I particularize; discursive: abstractly - concretely",
+    "refersTo": "(cf. sucta, sucni'i)"
   },
   {
     "valsi": "su'anai",
@@ -5211,7 +5424,8 @@
     "valsi": "ta'i",
     "class": "BAI",
     "translation": "by method",
-    "definition": "tadji modal, 1st place (in manner 3)              methodically; by method ..."
+    "definition_1": "methodically; by method ...",
+    "definition": "tadji modal, 1st place (in manner 3)"
   },
   {
     "valsi": "ta'i ma",
@@ -5223,7 +5437,8 @@
     "valsi": "ta'o",
     "class": "UI3",
     "translation": "by the way",
-    "definition": "discursive: by the way - returning to main point                                                          (cf. denpa, cneterta'a)"
+    "definition": "discursive: by the way - returning to main point",
+    "refersTo": "(cf. denpa, cneterta'a)"
   },
   {
     "valsi": "ta'onai",
@@ -5235,7 +5450,8 @@
     "valsi": "ta'u",
     "class": "UI3a",
     "translation": "making a tanru",
-    "definition": "discursive: making a tanru - expanding the tanru                                                          (cf. tanru)"
+    "definition": "discursive: making a tanru - expanding the tanru",
+    "refersTo": "(cf. tanru)"
   },
   {
     "valsi": "ta'unai",
@@ -5247,7 +5463,9 @@
     "valsi": "tai",
     "class": "BAI",
     "translation": "in form",
-    "definition": "tamsmi modal, 1st place (like)/(in manner 2)      resembling ...; sharing ideal form ...                  (x1 resembles x2 sharing ideal form/shape x3 in property x4)"
+    "definition_1": "resembling ...; sharing ideal form ...",
+    "definition": "tamsmi modal, 1st place (like)/(in manner 2)",
+    "refersTo": "(x1 resembles x2 sharing ideal form/shape x3 in property x4)"
   },
   {
     "valsi": "tau",
@@ -5289,73 +5507,85 @@
     "valsi": "tebau",
     "class": "BAI*",
     "translation": "expressing",
-    "definition": "bangu modal, 3rd place (expression)               language expressing ..."
+    "definition_1": "language expressing ...",
+    "definition": "bangu modal, 3rd place (expression)"
   },
   {
     "valsi": "tebe'i",
     "class": "BAI*",
     "translation": "sent to",
-    "definition": "benji modal, 3rd place (source)                   sent to receiver ..."
+    "definition_1": "sent to receiver ...",
+    "definition": "benji modal, 3rd place (source)"
   },
   {
     "valsi": "teca'i",
     "class": "BAI*",
     "translation": "basis for authority",
-    "definition": "catni modal, 3rd place                            authoritatively; with basis of authority ..."
+    "definition_1": "authoritatively; with basis of authority ...",
+    "definition": "catni modal, 3rd place"
   },
   {
     "valsi": "teci'e",
     "class": "BAI*",
     "translation": "of system components",
-    "definition": "ciste modal, 3rd place                            of system components ..."
+    "definition_1": "of system components ...",
+    "definition": "ciste modal, 3rd place"
   },
   {
     "valsi": "teci'o",
     "class": "BAI*",
     "translation": "emoting about",
-    "definition": "cinmo modal, 3rd place (attitude about)           emotionally; emoting about ..."
+    "definition_1": "emotionally; emoting about ...",
+    "definition": "cinmo modal, 3rd place (attitude about)"
   },
   {
     "valsi": "tecu'u",
     "class": "BAI*",
     "translation": "as told to",
-    "definition": "cusku modal, 3rd place (3rd party hearsay)        as told to ..."
+    "definition_1": "as told to ...",
+    "definition": "cusku modal, 3rd place (3rd party hearsay)"
   },
   {
     "valsi": "tede'i",
     "class": "BAI*",
     "translation": "on date at location",
-    "definition": "detri modal, 3rd place                            on a date measured at location ..."
+    "definition_1": "on a date measured at location ...",
+    "definition": "detri modal, 3rd place"
   },
   {
     "valsi": "tedi'o",
     "class": "BAI*",
     "translation": "at locus within range",
-    "definition": "diklo modal, 3rd place                            locally; at specific locus within range ..."
+    "definition_1": "locally; at specific locus within range ...",
+    "definition": "diklo modal, 3rd place"
   },
   {
     "valsi": "tedu'i",
     "class": "BAI*",
     "translation": "equal in property",
-    "definition": "dunli modal, 3rd place                            equally; equal in property ..."
+    "definition_1": "equally; equal in property ...",
+    "definition": "dunli modal, 3rd place"
   },
   {
     "valsi": "tedu'o",
     "class": "BAI*",
     "translation": "knowing about",
-    "definition": "djuno modal, 3rd place                            knowingly; knowing about ..."
+    "definition_1": "knowingly; knowing about ...",
+    "definition": "djuno modal, 3rd place"
   },
   {
     "valsi": "tefi'e",
     "class": "BAI*",
     "translation": "created for purpose",
-    "definition": "finti modal, 3rd place                            creatively; created for purpose ..."
+    "definition_1": "creatively; created for purpose ...",
+    "definition": "finti modal, 3rd place"
   },
   {
     "valsi": "tega'a",
     "class": "BAI*",
     "translation": "observed by means",
-    "definition": "zgana modal, 3rd place                            observed by means ..."
+    "definition_1": "observed by means ...",
+    "definition": "zgana modal, 3rd place"
   },
   {
     "valsi": "tei",
@@ -5367,199 +5597,233 @@
     "valsi": "teja'i",
     "class": "BAI*",
     "translation": "by rule within",
-    "definition": "javni modal, 3rd place                            orderly; by rule within system ..."
+    "definition_1": "orderly; by rule within system ...",
+    "definition": "javni modal, 3rd place"
   },
   {
     "valsi": "teji'e",
     "class": "BAI*",
     "translation": "limited in property",
-    "definition": "jimte modal, 3rd place                            limitedly; limited in property/domain ..."
+    "definition_1": "limitedly; limited in property/domain ...",
+    "definition": "jimte modal, 3rd place"
   },
   {
     "valsi": "teji'o",
     "class": "BAI*",
     "translation": "controlling event",
-    "definition": "jitro modal, 3rd place                            controlledly; controlling event ..."
+    "definition_1": "controlledly; controlling event ...",
+    "definition": "jitro modal, 3rd place"
   },
   {
     "valsi": "teka'a",
     "class": "BAI*",
     "translation": "with origin",
-    "definition": "klama modal, 3rd place                            with origin ..."
+    "definition_1": "with origin ...",
+    "definition": "klama modal, 3rd place"
   },
   {
     "valsi": "teka'i",
     "class": "BAI*",
     "translation": "representing in",
-    "definition": "krati modal, 2nd place                            representingly; representing in matter..."
+    "definition_1": "representingly; representing in matter...",
+    "definition": "krati modal, 2nd place"
   },
   {
     "valsi": "teki'i",
     "class": "BAI*",
     "translation": "with relation",
-    "definition": "ckini modal, 3rd place                            with relation ..."
+    "definition_1": "with relation ...",
+    "definition": "ckini modal, 3rd place"
   },
   {
     "valsi": "tekoi",
     "class": "BAI*",
     "translation": "bordering",
-    "definition": "korbi modal, 3rd place (bounding)                 bordering ..."
+    "definition_1": "bordering ...",
+    "definition": "korbi modal, 3rd place (bounding)"
   },
   {
     "valsi": "tela'u",
     "class": "BAI*",
     "translation": "measured on scale",
-    "definition": "klani modal, 3rd place                            quantity measured on scale ..."
+    "definition_1": "quantity measured on scale ...",
+    "definition": "klani modal, 3rd place"
   },
   {
     "valsi": "tele'a",
     "class": "BAI*",
     "translation": "defined by quality",
-    "definition": "klesi modal, 3rd place (category)                 defined by quality ..."
+    "definition_1": "defined by quality ...",
+    "definition": "klesi modal, 3rd place (category)"
   },
   {
     "valsi": "teli'e",
     "class": "BAI*",
     "translation": "ordered in sequence",
-    "definition": "lidne modal, 3rd place                            ordered within sequence ...; non-time sequence"
+    "definition_1": "ordered within sequence ...; non-time sequence",
+    "definition": "lidne modal, 3rd place"
   },
   {
     "valsi": "tema'e",
     "class": "BAI*",
     "translation": "in material form",
-    "definition": "marji modal, 3rd place                            in material form ..."
+    "definition_1": "in material form ...",
+    "definition": "marji modal, 3rd place"
   },
   {
     "valsi": "tema'i",
     "class": "BAI*",
     "translation": "rules of standard",
-    "definition": "manri modal, 3rd place (of reference)             observed/measured with/by rules ..."
+    "definition_1": "observed/measured with/by rules ...",
+    "definition": "manri modal, 3rd place (of reference)"
   },
   {
     "valsi": "temau",
     "class": "BAI*",
     "translation": "more in property",
-    "definition": "zmadu modal, 3rd place (relative!)                more than/exceeding in property ..."
+    "definition_1": "more than/exceeding in property ...",
+    "definition": "zmadu modal, 3rd place (relative!)"
   },
   {
     "valsi": "teme'a",
     "class": "BAI*",
     "translation": "less in property",
-    "definition": "mleca modal, 3rd place (relative!)                less than in property ..."
+    "definition_1": "less than in property ...",
+    "definition": "mleca modal, 3rd place (relative!)"
   },
   {
     "valsi": "teme'e",
     "class": "BAI*",
     "translation": "as a name used by",
-    "definition": "cmene modal, 3rd place                            as a name used by ..."
+    "definition_1": "as a name used by ...",
+    "definition": "cmene modal, 3rd place"
   },
   {
     "valsi": "temu'i",
     "class": "BAI*",
     "translation": "motive of person",
-    "definition": "mukti modal, 3rd place                            motivated/motivating per the volition of ..."
+    "definition_1": "motivated/motivating per the volition of ...",
+    "definition": "mukti modal, 3rd place"
   },
   {
     "valsi": "temu'u",
     "class": "BAI*",
     "translation": "example out oof set",
-    "definition": "mupli modal, 3rd place                            as an example out of the set of ..."
+    "definition_1": "as an example out of the set of ...",
+    "definition": "mupli modal, 3rd place"
   },
   {
     "valsi": "teni'i",
     "class": "BAI*",
     "translation": "under logic system",
-    "definition": "nibli modal, 3rd place                            entailment under logic system ..."
+    "definition_1": "entailment under logic system ...",
+    "definition": "nibli modal, 3rd place"
   },
   {
     "valsi": "tepa'a",
     "class": "BAI*",
     "translation": "contrasting property",
-    "definition": "panra modal, 3rd place (property)                 contrastingly; contrasting in property ..."
+    "definition_1": "contrastingly; contrasting in property ...",
+    "definition": "panra modal, 3rd place (property)"
   },
   {
     "valsi": "tepi'o",
     "class": "BAI*",
     "translation": "usage for purpose",
-    "definition": "pilno modal, 3rd place (instrumental)             a tool usage for purpose ..."
+    "definition_1": "a tool usage for purpose ...",
+    "definition": "pilno modal, 3rd place (instrumental)"
   },
   {
     "valsi": "tepo'i",
     "class": "BAI*",
     "translation": "ordering items",
-    "definition": "porsi modal, 3rd place                            sequentially; as an order on set of items ..."
+    "definition_1": "sequentially; as an order on set of items ...",
+    "definition": "porsi modal, 3rd place"
   },
   {
     "valsi": "tepu'a",
     "class": "BAI*",
     "translation": "pleasing conditions",
-    "definition": "pluka modal, 3rd place                          pleasingly; being pleasing under conditions ..."
+    "definition_1": "pleasingly; being pleasing under conditions ...",
+    "definition": "pluka modal, 3rd place"
   },
   {
     "valsi": "tepu'e",
     "class": "BAI*",
     "translation": "processing into",
-    "definition": "pruce modal, 3rd place (outputs)                  processing into outputs ..."
+    "definition_1": "processing into outputs ...",
+    "definition": "pruce modal, 3rd place (outputs)"
   },
   {
     "valsi": "terai",
     "class": "BAI*",
     "translation": "at extreme",
-    "definition": "traji modal, 3rd place (superlative)              -est; most extremely; at extreme ..."
+    "definition_1": "-est; most extremely; at extreme ...",
+    "definition": "traji modal, 3rd place (superlative)"
   },
   {
     "valsi": "teri'a",
     "class": "BAI*",
     "translation": "causal conditions",
-    "definition": "rinka modal, 2nd place (phys./mental)             causally under conditions ..."
+    "definition_1": "causally under conditions ...",
+    "definition": "rinka modal, 2nd place (phys./mental)"
   },
   {
     "valsi": "tesau",
     "class": "BAI*",
     "translation": "necessarily under",
-    "definition": "sarcu modal, 3rd place (conditions 2)             necessarily; necessarily under ..."
+    "definition_1": "necessarily; necessarily under ...",
+    "definition": "sarcu modal, 3rd place (conditions 2)"
   },
   {
     "valsi": "tesi'u",
     "class": "BAI*",
     "translation": "assisting in",
-    "definition": "sidju modal, 3rd place                            assisting in doing/maintaining/achieving ..."
+    "definition_1": "assisting in doing/maintaining/achieving ...",
+    "definition": "sidju modal, 3rd place"
   },
   {
     "valsi": "teta'i",
     "class": "BAI*",
     "translation": "method conditions",
-    "definition": "tadji modal, 3rd place                       methodically doing (something) under conditions ..."
+    "definition_1": "methodically doing (something) under conditions ...",
+    "definition": "tadji modal, 3rd place"
   },
   {
     "valsi": "tetai",
     "class": "BAI*",
     "translation": "sharing ideal form",
-    "definition": "tamsmi modal, 3rd place                           similarly; sharing common ideal form ...                (x1 resembles x2 sharing ideal form/shape x3 in property x4)"
+    "definition_1": "similarly; sharing common ideal form ...",
+    "definition": "tamsmi modal, 3rd place",
+    "refersTo": "(x1 resembles x2 sharing ideal form/shape x3 in property x4)"
   },
   {
     "valsi": "teti'i",
     "class": "BAI*",
     "translation": "suggested to",
-    "definition": "stidi modal, 3rd place                            suggestively; suggested to ..."
+    "definition_1": "suggestively; suggested to ...",
+    "definition": "stidi modal, 3rd place"
   },
   {
     "valsi": "teti'u",
     "class": "BAI*",
     "translation": "time on day",
-    "definition": "tcika modal, 3rd place (for letters)              as a time on day ..."
+    "definition_1": "as a time on day ...",
+    "definition": "tcika modal, 3rd place (for letters)"
   },
   {
     "valsi": "teva'u",
     "class": "BAI*",
     "translation": "goodness standard",
-    "definition": "xamgu modal, 3rd place                            good/beneficial by standard ..."
+    "definition_1": "good/beneficial by standard ...",
+    "definition": "xamgu modal, 3rd place"
   },
   {
     "valsi": "tezu'e",
     "class": "BAI*",
     "translation": "with goal",
-    "definition": "zukte modal, 3rd place                            purposefully; (as an action) with goal ..."
+    "definition_1": "purposefully; (as an action) with goal ...",
+    "definition": "zukte modal, 3rd place"
   },
   {
     "valsi": "ti",
@@ -5577,13 +5841,15 @@
     "valsi": "ti'e",
     "class": "UI2",
     "translation": "I hear",
-    "definition": "evidential: I hear (hearsay)                                                                              (cf. tirna, sitna, tcidu)"
+    "definition": "evidential: I hear (hearsay)",
+    "refersTo": "(cf. tirna, sitna, tcidu)"
   },
   {
     "valsi": "ti'i",
     "class": "BAI",
     "translation": "suggested by",
-    "definition": "stidi modal, 1st place                            suggested by ...; proposed by ..."
+    "definition_1": "suggested by ...; proposed by ...",
+    "definition": "stidi modal, 1st place"
   },
   {
     "valsi": "ti'o",
@@ -5595,7 +5861,8 @@
     "valsi": "ti'u",
     "class": "BAI",
     "translation": "associated with time",
-    "definition": "tcika modal, 1st place (for letters)              associated with time ... ; attach time stamp"
+    "definition_1": "associated with time ... ; attach time stamp",
+    "definition": "tcika modal, 1st place (for letters)"
   },
   {
     "valsi": "to",
@@ -5631,7 +5898,8 @@
     "valsi": "to'u",
     "class": "UI3",
     "translation": "in brief",
-    "definition": "discursive: in brief - in detail                                                                          (cf. tordu, clani, tcidu)"
+    "definition": "discursive: in brief - in detail",
+    "refersTo": "(cf. tordu, clani, tcidu)"
   },
   {
     "valsi": "to'unai",
@@ -5667,7 +5935,8 @@
     "valsi": "tu'i",
     "class": "BAI",
     "translation": "associated with site",
-    "definition": "stuzi modal, 1st place (used to situate letters)  associated with site ... ; label with location"
+    "definition_1": "associated with site ... ; label with location",
+    "definition": "stuzi modal, 1st place (used to situate letters)"
   },
   {
     "valsi": "tu'o",
@@ -5697,7 +5966,8 @@
     "valsi": ".u'a",
     "class": "UI1",
     "translation": "gain",
-    "definition": "attitudinal: gain - loss                                                                                  (cf. jinga, selne'u, prali, cirko)"
+    "definition": "attitudinal: gain - loss",
+    "refersTo": "(cf. jinga, selne'u, prali, cirko)"
   },
   {
     "valsi": ".u'anai",
@@ -5709,7 +5979,8 @@
     "valsi": ".u'e",
     "class": "UI1",
     "translation": "wonder",
-    "definition": "attitudinal: wonder - commonplace                                                                         (cf. manci, fadni)"
+    "definition": "attitudinal: wonder - commonplace",
+    "refersTo": "(cf. manci, fadni)"
   },
   {
     "valsi": ".u'enai",
@@ -5721,7 +5992,8 @@
     "valsi": ".u'i",
     "class": "UI1",
     "translation": "amusement",
-    "definition": "attitudinal: amusement - weariness                                                                        (cf. selzdi, selxajmi, xalbo)"
+    "definition": "attitudinal: amusement - weariness",
+    "refersTo": "(cf. selzdi, selxajmi, xalbo)"
   },
   {
     "valsi": ".u'inai",
@@ -5733,7 +6005,8 @@
     "valsi": ".u'o",
     "class": "UI1",
     "translation": "courage",
-    "definition": "attitudinal: courage - timidity - cowardice                                                               (cf. virnu)"
+    "definition": "attitudinal: courage - timidity - cowardice",
+    "refersTo": "(cf. virnu)"
   },
   {
     "valsi": ".u'ocu'i",
@@ -5751,7 +6024,8 @@
     "valsi": ".u'u",
     "class": "UI1",
     "translation": "repentance",
-    "definition": "attitudinal: repentance - lack of regret - innocence                                                      (cf. xenru, zugycni)"
+    "definition": "attitudinal: repentance - lack of regret - innocence",
+    "refersTo": "(cf. xenru, zugycni)"
   },
   {
     "valsi": ".u'ucu'i",
@@ -5769,7 +6043,8 @@
     "valsi": ".ua",
     "class": "UI1",
     "translation": "discovery",
-    "definition": "attitudinal: discovery - confusion/searching                                                              (cf. facki, cfipu, sisku)"
+    "definition": "attitudinal: discovery - confusion/searching",
+    "refersTo": "(cf. facki, cfipu, sisku)"
   },
   {
     "valsi": ".uanai",
@@ -5787,7 +6062,8 @@
     "valsi": ".ue",
     "class": "UI1",
     "translation": "surprise",
-    "definition": "attitudinal: surprise - not really surprised - expectation                                                (cf. spaji)"
+    "definition": "attitudinal: surprise - not really surprised - expectation",
+    "refersTo": "(cf. spaji)"
   },
   {
     "valsi": ".uecu'i",
@@ -5811,7 +6087,8 @@
     "valsi": ".ui",
     "class": "UI1",
     "translation": "happiness",
-    "definition": "attitudinal: happiness - unhappiness                                                                      (cf. gleki)"
+    "definition": "attitudinal: happiness - unhappiness",
+    "refersTo": "(cf. gleki)"
   },
   {
     "valsi": ".uibu",
@@ -5829,7 +6106,8 @@
     "valsi": ".uo",
     "class": "UI1",
     "translation": "completion",
-    "definition": "attitudinal: completion - incompleteness                                                                  (cf. mulno, mansa, fanmo, snada)"
+    "definition": "attitudinal: completion - incompleteness",
+    "refersTo": "(cf. mulno, mansa, fanmo, snada)"
   },
   {
     "valsi": ".uonai",
@@ -5841,7 +6119,8 @@
     "valsi": ".uu",
     "class": "UI1",
     "translation": "pity",
-    "definition": "attitudinal: pity - cruelty                                                                               (cf. kecti)"
+    "definition": "attitudinal: pity - cruelty",
+    "refersTo": "(cf. kecti)"
   },
   {
     "valsi": ".uunai",
@@ -5871,7 +6150,8 @@
     "valsi": "va'i",
     "class": "UI3",
     "translation": "in other words",
-    "definition": "discursive: in other words - in the same words                                                            (cf. cneselsku)"
+    "definition": "discursive: in other words - in the same words",
+    "refersTo": "(cf. cneselsku)"
   },
   {
     "valsi": "va'inai",
@@ -5883,13 +6163,15 @@
     "valsi": "va'o",
     "class": "BAI",
     "translation": "under conditions",
-    "definition": "vanbi modal, 1st place (conditions 1)             under conditions ...; in environment ..."
+    "definition_1": "under conditions ...; in environment ...",
+    "definition": "vanbi modal, 1st place (conditions 1)"
   },
   {
     "valsi": "va'u",
     "class": "BAI",
     "translation": "benefiting from",
-    "definition": "xamgu modal, 1st place beneficiary case tag complement  benefiting from ..."
+    "definition_1": "benefiting from ...",
+    "definition": "xamgu modal, 1st place beneficiary case tag complement"
   },
   {
     "valsi": "vai",
@@ -5943,43 +6225,50 @@
     "valsi": "vebe'i",
     "class": "BAI*",
     "translation": "transmit origin",
-    "definition": "benji modal, 4th place                            transmit origin ..."
+    "definition_1": "transmit origin ...",
+    "definition": "benji modal, 4th place"
   },
   {
     "valsi": "veci'e",
     "class": "BAI*",
     "translation": "with synergy in",
-    "definition": "ciste modal, 4th place                            as a system with synergy in ..."
+    "definition_1": "as a system with synergy in ...",
+    "definition": "ciste modal, 4th place"
   },
   {
     "valsi": "vecu'u",
     "class": "BAI*",
     "translation": "expressed in medium",
-    "definition": "cusku modal, 4th place                            in expression medium ..."
+    "definition_1": "in expression medium ...",
+    "definition": "cusku modal, 4th place"
   },
   {
     "valsi": "vede'i",
     "class": "BAI*",
     "translation": "on date by calendar",
-    "definition": "detri modal, 4th place                            on a date according to calendar ..."
+    "definition_1": "on a date according to calendar ...",
+    "definition": "detri modal, 4th place"
   },
   {
     "valsi": "vedu'o",
     "class": "BAI*",
     "translation": "under epistemology",
-    "definition": "djuno modal, 4th place                            under epistemology ..."
+    "definition_1": "under epistemology ...",
+    "definition": "djuno modal, 4th place"
   },
   {
     "valsi": "vefi'e",
     "class": "BAI*",
     "translation": "created from",
-    "definition": "finti modal, 4th place                            creatively; created from ideas/elements ..."
+    "definition_1": "creatively; created from ideas/elements ...",
+    "definition": "finti modal, 4th place"
   },
   {
     "valsi": "vega'a",
     "class": "BAI*",
     "translation": "observed under",
-    "definition": "zgana modal, 4th place (under conditions)         observed under observing conditions ..."
+    "definition_1": "observed under observing conditions ...",
+    "definition": "zgana modal, 4th place (under conditions)"
   },
   {
     "valsi": "vei",
@@ -5991,49 +6280,58 @@
     "valsi": "veka'a",
     "class": "BAI*",
     "translation": "via route",
-    "definition": "klama modal, 4th place                            via route ..."
+    "definition_1": "via route ...",
+    "definition": "klama modal, 4th place"
   },
   {
     "valsi": "vemau",
     "class": "BAI*",
     "translation": "more by amount",
-    "definition": "zmadu modal, 4th place (relative!)                more than/exceeding by amount ..."
+    "definition_1": "more than/exceeding by amount ...",
+    "definition": "zmadu modal, 4th place (relative!)"
   },
   {
     "valsi": "veme'a",
     "class": "BAI*",
     "translation": "less by amount",
-    "definition": "mleca modal, 4th place (relative!)                less than by amount ..."
+    "definition_1": "less than by amount ...",
+    "definition": "mleca modal, 4th place (relative!)"
   },
   {
     "valsi": "vepa'a",
     "class": "BAI*",
     "translation": "similar by standard",
-    "definition": "panra modal, 4nd place (standard/geometry)        similarly; similar by standard ..."
+    "definition_1": "similarly; similar by standard ...",
+    "definition": "panra modal, 4nd place (standard/geometry)"
   },
   {
     "valsi": "vepu'e",
     "class": "BAI*",
     "translation": "passing thru stages",
-    "definition": "pruce modal, 4th place (set of stages)            passing through processing stages ..."
+    "definition_1": "passing through processing stages ...",
+    "definition": "pruce modal, 4th place (set of stages)"
   },
   {
     "valsi": "verai",
     "class": "BAI*",
     "translation": "superlative among",
-    "definition": "traji modal, 4th place (set)                      -est; most extremely; superlative among ..."
+    "definition_1": "-est; most extremely; superlative among ...",
+    "definition": "traji modal, 4th place (set)"
   },
   {
     "valsi": "vetai",
     "class": "BAI*",
     "translation": "similar in property",
-    "definition": "tamsmi modal, 4th place                           similarly; sharing ideal form in property ...           (x1 resembles x2 sharing ideal form/shape x3 in property x4)"
+    "definition_1": "similarly; sharing ideal form in property ...",
+    "definition": "tamsmi modal, 4th place",
+    "refersTo": "(x1 resembles x2 sharing ideal form/shape x3 in property x4)"
   },
   {
     "valsi": "veti'u",
     "class": "BAI*",
     "translation": "time at location",
-    "definition": "tcika modal, 4th place (for letters)              as a time at location ..."
+    "definition_1": "as a time at location ...",
+    "definition": "tcika modal, 4th place (for letters)"
   },
   {
     "valsi": "vi",
@@ -6159,7 +6457,8 @@
     "valsi": "vu'e",
     "class": "UI5",
     "translation": "virtue",
-    "definition": "attitudinal modifier: virtue - sin                                                                        (cf. vrude, zungi)"
+    "definition": "attitudinal modifier: virtue - sin",
+    "refersTo": "(cf. vrude, zungi)"
   },
   {
     "valsi": "vu'enai",
@@ -6237,13 +6536,15 @@
     "valsi": "xebe'i",
     "class": "BAI*",
     "translation": "transmitted via",
-    "definition": "benji modal, 5th place (medium)                   transmitted via ..."
+    "definition_1": "transmitted via ...",
+    "definition": "benji modal, 5th place (medium)"
   },
   {
     "valsi": "xeka'a",
     "class": "BAI*",
     "translation": "by transport mode",
-    "definition": "klama modal, 5th place                            by transport mode ..."
+    "definition_1": "by transport mode ...",
+    "definition": "klama modal, 5th place"
   },
   {
     "valsi": "xi",
@@ -6297,7 +6598,8 @@
     "valsi": "za'a",
     "class": "UI2",
     "translation": "I observe",
-    "definition": "evidential: I observe                                                                                     (cf. zgana, lanli)"
+    "definition": "evidential: I observe",
+    "refersTo": "(cf. zgana, lanli)"
   },
   {
     "valsi": "za'e",
@@ -6315,7 +6617,8 @@
     "valsi": "za'o",
     "class": "ZAhO",
     "translation": "superfective",
-    "definition": "interval event contour: continuing too long after natural end of ...; superfective  |     ---->"
+    "definition_1": "---->",
+    "definition": "interval event contour: continuing too long after natural end of ...; superfective"
   },
   {
     "valsi": "za'u",
@@ -6333,7 +6636,8 @@
     "valsi": "zau",
     "class": "BAI",
     "translation": "approved by",
-    "definition": "zanru modal, 1st place                            approved by ..."
+    "definition_1": "approved by ...",
+    "definition": "zanru modal, 1st place"
   },
   {
     "valsi": "ze",
@@ -6465,7 +6769,8 @@
     "valsi": "zo'o",
     "class": "UI5",
     "translation": "humorously",
-    "definition": "attitudinal modifier: humorously - dully - seriously                                                      (cf. xajmi, junri)"
+    "definition": "attitudinal modifier: humorously - dully - seriously",
+    "refersTo": "(cf. xajmi, junri)"
   },
   {
     "valsi": "zo'obu",
@@ -6513,7 +6818,8 @@
     "valsi": "zu'e",
     "class": "BAI",
     "translation": "with actor",
-    "definition": "zukte modal, 1st place (purposed agent)           with goal-seeking actor ..."
+    "definition_1": "with goal-seeking actor ...",
+    "definition": "zukte modal, 1st place (purposed agent)"
   },
   {
     "valsi": "zu'i",
@@ -6531,7 +6837,8 @@
     "valsi": "zu'u",
     "class": "UI3",
     "translation": "on the one hand",
-    "definition": "discursive: on the one hand - on the other hand                                                           (cf. karbi, frica. dukti)"
+    "definition": "discursive: on the one hand - on the other hand",
+    "refersTo": "(cf. karbi, frica. dukti)"
   },
   {
     "valsi": "zu'unai",

@@ -16,11 +16,11 @@
             <div class="row">
                 <div class="col-4" id="left-container" v-if="displayLeftContainer">
                     <div class="col" id="reference-translations-container">
-                        <div class="card" v-if="displayTranslationsAsGismu">
+                        <div class="card" v-if="displayDictionaryTranslations">
                             <div class="card-body">
                                 <div class="form-group">
                                     <ul class="list-group">
-                                        <li class="list-group-item" v-for="gismu in referenceTranslationsAsGismu" v-text="gismu.translation">
+                                        <li class="list-group-item" v-for="valsi in dictionaryTranslations" v-text="valsi.translation">
                                         </li>
                                     </ul>
                                 </div>

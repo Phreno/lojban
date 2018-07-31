@@ -61,10 +61,18 @@ new Vue({
     // =============================================================================
     // Transformation de données
     // =============================================================================
-    referenceTranslationsAsGismu() {
+    dictionaryTranslations() {
       let whiteSpaces = /\s+/
       // TODO: externaliser dans un service
-      return data.gismuDatabase.filter(el => this.reference.value.split(whiteSpaces).some(segment => el.valsi === segment))
+      let match = []
+      let referenceSegments = this.reference.value.split(whiteSpaces)
+      let survivor
+      for (database in data) {
+        survivor = data[database].filter(el => referenceSegments.some(segment => el.valsi === segment))
+        match.push(...survivor)
+      }
+      console.log(match)
+      return match
     },
     referenceTranslations() {
       let translations
@@ -93,14 +101,14 @@ new Vue({
     // Vérification de données
     // =============================================================================
     displayLeftContainer() {
-      return this.displayReferenceTranslations || this.displayTranslationsAsGismu
+      return this.displayReferenceTranslations || this.displayDictionaryTranslations
     },
-    displayTranslationsAsGismu() {
+    displayDictionaryTranslations() {
       return (
         this.reference &&
         this.reference.value &&
-        this.referenceTranslationsAsGismu &&
-        this.referenceTranslationsAsGismu.length > 0
+        this.dictionaryTranslations &&
+        this.dictionaryTranslations.length > 0
       )
     },
     displayTranslations() {

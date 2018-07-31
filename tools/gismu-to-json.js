@@ -61,7 +61,11 @@ let config = {
           end: 61
         },
         definition:  {
-          start: 62
+          start: 62,
+          end:  167
+        },
+        refersTo: {
+          start:  168
         }
       }
     }
@@ -79,13 +83,24 @@ function extractDataFrom(dataType) {
     let columns = config[dataType].columns.positions
     let jsonObj = {};
     let field
+    let subfield
+    let fieldIndex = 0
+    let subfieldIndex = 1
     let start
     let end
     for (let column in columns) {
       start = config[dataType].columns.positions[column].start
       end = config[dataType].columns.positions[column].end
-      field = line.substring(start, end).trim()
-      jsonObj[column] = field.trim()
+      data = line.substring(start, end).trim().split(/(\s\s+|\t)/)
+      field = data[0]
+      if (data.length > 0) {
+        data.forEach((el, index) => {
+          if (fieldIndex !== index) {
+            jsonObj[`${column}_1`] = el
+          }
+        })
+      }
+      jsonObj[column] = field && field.length > 0 ? field : undefined
     }
     return jsonObj
   }
@@ -106,7 +121,7 @@ function extractDataFrom(dataType) {
 }
 
 function main() {
-  extractDataFrom(config.gismu.identifier)
+  //extractDataFrom(config.gismu.identifier)
   extractDataFrom(config.cmavo.identifier)
 }
 
