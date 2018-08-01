@@ -70,7 +70,9 @@ new Vue({
     // Transformation de données
     // =============================================================================
     referenceSegments() {
-      let whiteSpaces = /\s+/
+      const whiteSpaces = /\s+/
+      const comment = /#.*$/
+      const empty = ''
       return this.reference.value.split(whiteSpaces).map((el, index) => {
         return {
           value:  el,
@@ -118,11 +120,13 @@ new Vue({
     },
 
     referenceParsed() {
+      const comment = /#.*$/
+      const empty = ''
       let fullParse
       let simplified
       if (this.reference && this.reference.value) {
         try {
-          fullParse = camxes.parse(this.reference.value)
+          fullParse = camxes.parse(this.reference.value.replace(comment, empty))
           simplified = simplifyTree(fullParse)
         } catch (e) {
           /* 
