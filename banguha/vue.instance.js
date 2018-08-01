@@ -20,6 +20,8 @@ new Vue({
   },
   watch: {
     "reference.value" () {
+      // TODO: faire un bouton pour requéter manuellement sinon on se fait bloquer
+      return undefined
 
       function preventUselessCallToService() {
         if (instance.waitForInput) {
