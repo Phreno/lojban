@@ -62,44 +62,54 @@ new Vue({
     // =============================================================================
     // Transformation de données
     // =============================================================================
+    referenceSegments() {
+      let whiteSpaces = /\s+/
+      return this.reference.value.split(whiteSpaces).map((el, index) => {
+        return {
+          value:  el,
+          priority: index
+        }
+      })
+    },
+
     dictionaryTranslations() {
 
       /**
        * @description
        * @author  K3rn€l_P4n1k
-      
        */
-      let whiteSpaces = /\s+/
       // TODO: externaliser dans un service
+      // TODO: prioriser les sources de données
       let match = []
-      let referenceSegments = this.reference.value.split(whiteSpaces)
       let valsi
       let words
+      let instance = this
 
       // search for valsi
       for (database in data) {
-        valsi = data[database]
-          .filter(el => referenceSegments.some(segment => el.valsi === segment))
-        valsi.map(el => {
-          el['@translation'] = "source"; 
-          return el
-        })
-        words = data[database]
-          .filter(el => referenceSegments.some(segment => el.shortTranslation === segment))
-        words.map(el => {
-          el['@translation'] = "target"; 
-          return el
-        })
-        match.push(...valsi, ...words)
+        valsi = instance.getSourcesFromSegments(data[database])
+        words = instance.getTargetsFromSegments(data[database])
+        if (valsi) {
+          match.push(...valsi)
+        }
+        if (words) {
+          match.push(...words)
+        }
       }
 
+      // @see https://stackoverflow.com/a/36744732
       match = match.filter((survivor, index, arr) =>
         index === arr.findIndex((other) => (
           other.valsi === survivor.valsi
         )))
 
-      return match
+      match = match.map(el => {
+        el['@priority'] = this.referenceSegments.find(segment => segment.value === el.valsi || segment.value === el.shortTranslation).priority
+        return el
+      })
+      return match.sort((a, b) => b['@priority'] - a['@priority'])
     },
+
     referenceParsed() {
       let fullParse
       let simplified
@@ -150,6 +160,25 @@ new Vue({
     }
   },
   methods: {
+    getSourcesFromSegments(database) {
+      let source = database
+        .filter(el => this.referenceSegments.some(segment => el.valsi === segment.value))
+      return source.map(el => {
+        el['@translation'] = "source"
+        el['@type'] = database
+        return el
+      })
+    },
+    getTargetsFromSegments(database) {
+      let target = database
+        .filter(el => this.referenceSegments.some(segment => el.shortTranslation === segment.value))
+      return target.map(el => {
+        el['@translation'] = "target";
+        el['@type'] = database 
+        return el
+      })
+    },
+
     decodeHtml(htmlEncoded) {
       return $("<div/>")
         .html(htmlEncoded)
