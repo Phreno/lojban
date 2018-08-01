@@ -12,7 +12,7 @@ new Vue({
       waitForInput: undefined,
       waitingTime: 1000
     },
-
+    // TODO: déplacer data dans reference.glosbe
     data: {
       translate: undefined,
       translationMemory: undefined
@@ -91,27 +91,12 @@ new Vue({
         match.push(...valsi, ...words)
       }
 
-
-
-
       match = match.filter((survivor, index, arr) =>
         index === arr.findIndex((other) => (
           other.valsi === survivor.valsi
         )))
 
       return match
-    },
-    referenceTranslations() {
-      let translations
-      if (
-        this.data &&
-        this.data.translate &&
-        this.data.translate.tuc &&
-        this.data.translate.tuc
-      ) {
-        translations = this.data.translate.tuc.map(el => el.phrase)
-      }
-      return translations
     },
     referenceParsed() {
       let fullParse
@@ -132,12 +117,6 @@ new Vue({
     // =============================================================================
     // Rendu de l'ihm
     // =============================================================================
-    rightContainerClass() {
-      let obj = {}
-      let className = this.displayLeftContainer ? "col-8" : "col"
-      obj[className] = true
-      return obj
-    },
 
     /**
      * Shows the boxes in the interface.
@@ -148,10 +127,9 @@ new Vue({
 
     // =============================================================================
     // Vérification de données
+    // TODO: mettre en commun certaines vérifications
     // =============================================================================
-    displayLeftContainer() {
-      return this.displayReferenceTranslations || this.displayDictionaryTranslations
-    },
+
     displayDictionaryTranslations() {
       return (
         this.reference &&
@@ -166,13 +144,6 @@ new Vue({
         this.data.translationMemory &&
         this.data.translationMemory.examples &&
         this.data.translationMemory.examples.length > 0
-      )
-    },
-    displayReferenceTranslations() {
-      return (
-        this &&
-        this.referenceTranslations &&
-        this.referenceTranslations.length > 0
       )
     }
   },

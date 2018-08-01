@@ -17,7 +17,7 @@
                 <!-- ======================================================================= -->
                 <!-- Container guauche -->
                 <!-- ======================================================================= -->
-                <div class="col-4" id="left-container" v-if="displayLeftContainer" style="overflow-y: scroll; height: 100%">
+                <div class="col-4" id="left-container" style="overflow-y: scroll; height: 100%">
                     <div class="col" id="reference-translations-container">
                         <!-- ======================================================================= -->
                         <!-- Liste des traductions locales -->
@@ -37,25 +37,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- ======================================================================= -->
-                        <!-- Liste des traductions venant de glosbe -->
-                        <!-- ======================================================================= -->
-                        <div class="card" v-if="displayReferenceTranslations">
-                            <div class="card-header">Traductions simples</div>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <ul class="list-group">
-                                        <li class="list-group-item" v-for="translation in referenceTranslations" v-text="decodeHtml(translation.text)"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!-- ======================================================================= -->
                 <!-- Container droit -->
                 <!-- ======================================================================= -->
-                <div :class="rightContainerClass" id="right-container">
+                <div class="col-8" id="right-container">
                     <div class="row">
                         <div class="col" id="reference-container">
                             <div class="card m-2">
