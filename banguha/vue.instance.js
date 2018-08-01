@@ -21,7 +21,6 @@ new Vue({
   watch: {
     "reference.value" () {
       // TODO: faire un bouton pour requéter manuellement sinon on se fait bloquer
-      return undefined
 
       function preventUselessCallToService() {
         if (instance.waitForInput) {
@@ -32,20 +31,28 @@ new Vue({
       function handleReferenceChange() {
         function waitAndDoServiceCall() {
           function doServiceCall() {
-            glosbeService.translate(
-              instance.reference.value,
+            /* glosbeService.translate(
+              instance.reference.substring(
+                str.lastIndexOf(":") + 1,
+                str.lastIndexOf(";")
+              ),
               instance.setDataTranslate
-            )
+            ) */
             glosbeService.getTranslationMemory(
-              instance.reference.value,
+              command,
               instance.setDataTranslationMemory
             )
             instance.waitForInput = undefined
           }
           instance.waitForInput = setTimeout(doServiceCall, 1000)
         }
+
         const noLetters = /^\W*$/
-        const noReference = instance.reference.value.match(noLetters)
+        const command = instance.reference.value.substring(
+          this.reference.value.lastIndexOf(":") + 1,
+          this.reference.value.lastIndexOf(";")
+        );
+        const noReference = command.match(noLetters)
         if (noReference) {
           instance.emptyData()
         } else {
