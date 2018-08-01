@@ -17,7 +17,7 @@
                 <!-- ======================================================================= -->
                 <!-- Container guauche -->
                 <!-- ======================================================================= -->
-                <div class="col-4" id="left-container" v-if="displayLeftContainer">
+                <div class="col-4" id="left-container" v-if="displayLeftContainer" style="overflow-y: scroll; height: 100%">
                     <div class="col" id="reference-translations-container">
                         <!-- ======================================================================= -->
                         <!-- Liste des traductions locales -->
@@ -30,7 +30,8 @@
                                 <li class="list-group-item" v-for="valsi in dictionaryTranslations">
 
                                     <p>
-                                        <span class="badge badge-pill badge-info mr-4" v-text="valsi.valsi"></span>
+                                        <span class="badge badge-pill badge-primary mr-2" v-text="valsi.valsi"></span>
+                                        <span class="badge badge-pill badge-info mr-2" v-text="valsi.shortTranslation"></span>
                                         <span class="small"> {{valsi.translation}}</span>
                                     </p>
                                 </li>
@@ -71,12 +72,12 @@
                                         </small>
                                     </div>
                                 </div>
-                                <div class="card-body" v-html="boxes">
+                                <div class="card-body" v-html="boxes" style="overflow-x: scroll; width: 100%">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" v-if="displayTranslations">
+                    <div class="row" v-if="displayTranslations" style="overflow-y: scroll">
                         <div class="col">
                             <!-- ======================================================================= -->
                             <!-- Exemples de traductions -->

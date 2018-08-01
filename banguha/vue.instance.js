@@ -20,17 +20,6 @@ new Vue({
   },
   watch: {
     "reference.value" () {
-      function doServiceCall() {
-        glosbeService.translate(
-          instance.reference.value,
-          instance.setDataTranslate
-        )
-        glosbeService.getTranslationMemory(
-          instance.reference.value,
-          instance.setDataTranslationMemory
-        )
-        instance.waitForInput = undefined
-      }
 
       function preventUselessCallToService() {
         if (instance.waitForInput) {
@@ -38,11 +27,21 @@ new Vue({
         }
       }
 
-      function waitAndDoServiceCall() {
-        instance.waitForInput = setTimeout(doServiceCall, 1000)
-      }
-
       function handleReferenceChange() {
+        function waitAndDoServiceCall() {
+          function doServiceCall() {
+            glosbeService.translate(
+              instance.reference.value,
+              instance.setDataTranslate
+            )
+            glosbeService.getTranslationMemory(
+              instance.reference.value,
+              instance.setDataTranslationMemory
+            )
+            instance.waitForInput = undefined
+          }
+          instance.waitForInput = setTimeout(doServiceCall, 1000)
+        }
         const noLetters = /^\W*$/
         const noReference = instance.reference.value.match(noLetters)
         if (noReference) {
@@ -72,13 +71,28 @@ new Vue({
       // TODO: externaliser dans un service
       let match = []
       let referenceSegments = this.reference.value.split(whiteSpaces)
-      let survivors
+      let valsi
+      let words
 
+      // search for valsi
       for (database in data) {
-        survivors = data[database]
+        valsi = data[database]
           .filter(el => referenceSegments.some(segment => el.valsi === segment))
-        match.push(...survivors)
+        valsi.map(el => {
+          el['@translation'] = "source"; 
+          return el
+        })
+        words = data[database]
+          .filter(el => referenceSegments.some(segment => el.shortTranslation === segment))
+        words.map(el => {
+          el['@translation'] = "target"; 
+          return el
+        })
+        match.push(...valsi, ...words)
       }
+
+
+
 
       match = match.filter((survivor, index, arr) =>
         index === arr.findIndex((other) => (
