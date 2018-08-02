@@ -210,12 +210,13 @@ new Vue({
     stepBackward() {
       const notFound = -1
       const firstItem = 0
-      const isEmpty = /^\s*$/
+      const empty = /^\s*$/
+      const isEmpty = this.hasReferenceValue && this.reference.value.match(empty)
       let matchIndex = this.findIndexInHistory()
       let next
 
-      if (this.hasReferenceValue && this.reference.value.match(isEmpty)) {
-        matchIndex = this.reference.history.length - 1
+      if (!this.hasReferenceValue || isEmpty) {
+        matchIndex = this.reference.history.length
       } else if (notFound === matchIndex) {
         this.backupReference()
         matchIndex = this.findIndexInHistory()
@@ -223,7 +224,7 @@ new Vue({
 
       next = matchIndex - 1
       if (notFound !== next) {
-        this.setReference(this.reference.history[matchIndex - 1])
+        this.setReference(this.reference.history[next])
       } else {
         this.emptyReference()
       }
