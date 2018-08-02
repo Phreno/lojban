@@ -10,7 +10,8 @@ new Vue({
       value: undefined,
       help: "Défini un axe la session de travail",
       waitForInput: undefined,
-      waitingTime: 1000
+      waitingTime: 1000,
+      history: []
     },
     // TODO: déplacer data dans reference.glosbe
     data: {
@@ -20,8 +21,6 @@ new Vue({
   },
   watch: {
     "reference.value" () {
-      // TODO: faire un bouton pour requéter manuellement sinon on se fait bloquer
-
       function preventUselessCallToService() {
         if (instance.waitForInput) {
           clearTimeout(instance.waitForInput)
@@ -39,23 +38,19 @@ new Vue({
               instance.setDataTranslate
             ) */
             glosbeService.getTranslationMemory(
-              command,
+              instance.command,
               instance.setDataTranslationMemory
             )
             instance.waitForInput = undefined
           }
           instance.waitForInput = setTimeout(doServiceCall, 1000)
         }
-
         const noLetters = /^\W*$/
-        const command = instance.reference.value.substring(
-          this.reference.value.lastIndexOf(":") + 1,
-          this.reference.value.lastIndexOf(";")
-        );
-        const noReference = command.match(noLetters)
-        if (noReference) {
+        const noCommand = instance.command.match(noLetters)
+        if (noCommand) {
           instance.emptyData()
         } else {
+          // TODO: handle complex command
           waitAndDoServiceCall()
         }
       }
@@ -66,6 +61,17 @@ new Vue({
     }
   },
   computed: {
+
+    command() {
+      let command = ''
+      if (this.hasReferenceValue) {
+        command = this.reference.value.substring(
+          this.reference.value.lastIndexOf(":") + 1,
+          this.reference.value.lastIndexOf(";")
+        );
+      }
+      return command
+    },
     // =============================================================================
     // Transformation de données
     // =============================================================================
@@ -152,11 +158,13 @@ new Vue({
     // Vérification de données
     // TODO: mettre en commun certaines vérifications
     // =============================================================================
-
+    hasReferenceValue() {
+      return this.reference &&
+        this.reference.value
+    },
     displayDictionaryTranslations() {
       return (
-        this.reference &&
-        this.reference.value &&
+        this.hasReferenceValue &&
         this.dictionaryTranslations &&
         this.dictionaryTranslations.length > 0
       )
@@ -171,6 +179,74 @@ new Vue({
     }
   },
   methods: {
+    // =============================================================================
+    // History Tools
+    // =============================================================================
+    backupReference() {
+      const notFound = -1
+      const currentIndex = this.findIndexInHistory()
+      const empty = /^\s*$/
+      if (this.hasReferenceValue && notFound === currentIndex && !this.reference.value.match(empty)) {
+        this.reference.history.push(`${this.reference.value}`)
+      } else {
+        //TODO: faire remonter le résultat en première position 
+      }
+
+      // @see https://stackoverflow.com/a/36744732
+      /*       this.reference.history = this.reference.history.filter((survivor, index, arr) =>
+              index === arr.findIndex((other) => (
+                other.valsi === survivor.valsi
+              )))
+       */
+    },
+    memorize() {
+      this.backupReference()
+      this.emptyReference()
+      console.log(this.reference.history)
+    },
+    findIndexInHistory() {
+      return this.reference.history.findIndex(el => el === this.reference.value)
+    },
+    stepBackward() {
+      const notFound = -1
+      const firstItem = 0
+      const isEmpty = /^\s*$/
+      let matchIndex = this.findIndexInHistory()
+      let next
+
+      if (this.hasReferenceValue && this.reference.value.match(isEmpty)) {
+        matchIndex = this.reference.history.length - 1
+      } else if (notFound === matchIndex) {
+        this.backupReference()
+        matchIndex = this.findIndexInHistory()
+      }
+
+      next = matchIndex - 1
+      if (notFound !== next) {
+        this.setReference(this.reference.history[matchIndex - 1])
+      } else {
+        this.emptyReference()
+      }
+    },
+    stepForward() {
+      const notFound = -1
+      let matchIndex = this.findIndexInHistory()
+
+      if (notFound === matchIndex) {
+        this.backupReference()
+        matchIndex = this.findIndexInHistory()
+      }
+
+      if (this.reference.history.length - 1 >= matchIndex + 1) {
+        this.setReference(this.reference.history[matchIndex + 1])
+      } else {
+        this.emptyReference()
+      }
+    },
+
+    // =============================================================================
+    // Database tools
+    // =============================================================================
     getSourcesFromSegments(database) {
       let source = database
         .filter(el => this.referenceSegments.some(segment => el.valsi === segment.value))
@@ -189,17 +265,35 @@ new Vue({
         return el
       })
     },
+    // =============================================================================
+    // Html Tools
+    // =============================================================================
 
     decodeHtml(htmlEncoded) {
       return $("<div/>")
         .html(htmlEncoded)
         .text()
     },
+
+    // =============================================================================
+    // Getter & Setter
+    // =============================================================================
+    setReference(text) {
+      this.reference.value = text
+    },
     setDataTranslate(data) {
       this.data.translate = data
     },
     setDataTranslationMemory(data) {
       this.data.translationMemory = data
+    },
+
+    // =============================================================================
+    // Nettoyage des variables
+    // =============================================================================
+    emptyReference() {
+      const empty = ''
+      this.setReference(empty);
     },
     emptyDataTranslate() {
       this.setDataTranslate(undefined)

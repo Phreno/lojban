@@ -53,7 +53,9 @@
                                     <div class="form-group">
                                         <label for="reference" v-text="reference.label"></label>
                                         <input type="text" class="form-control" name="reference" id="reference" aria-describedby="reference.helpIdP"
-                                            :placeholder="reference.placeholder" v-model="reference.value">
+                                            :placeholder="reference.placeholder" v-model="reference.value"
+                                            @keyup.enter="memorize()" @keyup.up="stepBackward()"
+                                            @keyup.down="stepForward()">
                                         <small id="reference.helpId" class="form-text text-muted" v-text="reference.help">
                                         </small>
                                     </div>
