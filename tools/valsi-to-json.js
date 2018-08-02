@@ -6,6 +6,29 @@ let fs = require('fs')
 // =============================================================================
 let config = {
   LINE_BREAK: '\n',
+  lujvo: {
+    fix: (el) => {
+      return {
+        valsi:  el.valsi,
+        translation:  el.rest_1,
+        elements: el.rest.replace(':', '').split('+')
+      }
+    },
+    identifier:   "lujvo",
+    path: "../rsc/NORALUJV.txt",
+    output: "../rsc/lujvo.json",
+    columns: {
+      positions: {
+        valsi: {
+          start:  0,
+          end: 30
+        },
+        rest: {
+          start:  31
+        }
+      }
+    }
+  },
   gismu: {
     identifier:   "gismu",
     path: "../rsc/gismu.txt",
@@ -110,7 +133,11 @@ function extractDataFrom(dataType) {
       console.error(err)
       exit(1)
     }
-    const jsonArray = data.split(config.LINE_BREAK).filter((el, index) => index !== 0 && !el.match(/^\s*$/)).map(line2Json)
+    let jsonArray = data.split(config.LINE_BREAK).filter((el, index) => index !== 0 && !el.match(/^\s*$/)).map(line2Json)
+    if (config[dataType].fix) {
+      jsonArray = jsonArray.map(config[dataType].fix)
+    }
+    console.log(JSON.stringify(jsonArray, null, 2))
     fs.writeFile(config[dataType].output, JSON.stringify(jsonArray, null, 2), err => {
       if (err) {
         console.error(err)
@@ -122,7 +149,8 @@ function extractDataFrom(dataType) {
 
 function main() {
   //extractDataFrom(config.gismu.identifier)
-  extractDataFrom(config.cmavo.identifier)
+  //extractDataFrom(config.cmavo.identifier)
+  extractDataFrom(config.lujvo.identifier)
 }
 
 main()
