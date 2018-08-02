@@ -3,12 +3,19 @@ new Vue({
 
 
   data: {
+    page: {
+      title: "bangu'a"
+    },
     // Focus de la session de travaille
     reference: {
-      label: "La session de travail porte sur ",
-      placeholder: "Un mot à travailler",
+      placeholder: "mi djica lo nu do ciska lo jbobau",
       value: undefined,
-      help: "Défini un axe la session de travail",
+      help: [
+        "lo glico fanva cu cumki ma'i zoi sy. http://www.lojban.org/publications/wordlists/gismu.txt .sy.",
+        "zoi sy.#.sy. cu pinka",
+        "zoi sy.:gleki;.sy. cu prina lo mupli sepi'o la'o sy. glosbe .sy.",
+        "lo skami galtu ciska .e lo skami dizlo ciska cu litru le do jufra citri"
+      ],
       waitForInput: undefined,
       waitingTime: 1000,
       history: []
@@ -287,6 +294,13 @@ new Vue({
     },
     setDataTranslationMemory(data) {
       this.data.translationMemory = data
+    },
+    getRafsiListFrom(valsi) {
+      let rafsi = []
+      if (valsi && valsi.rafsi) {
+        rafsi = valsi.rafsi.split(/\s+/)
+      }
+      return rafsi
     },
 
     // =============================================================================

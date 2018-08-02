@@ -1,11 +1,14 @@
 .box {
     text-align: center;
     display: inline-block;
+    font-size: 10pt;
+    font-weight: lighter;
     vertical-align: middle;
-    margin: 4px;
+    margin: 2px;
     padding: 2px;
-    border: 2px black solid;
+    border: 1px rgba(0, 0, 0, 0.582) solid;
     white-space: nowrap;
+    border-radius: 2%
 }
 
 .box.box-sentence {
@@ -70,5 +73,5 @@
 
 .box span.translation {
     color: black;
-    font-style: italic;
+    font-weight: bolder
 }
