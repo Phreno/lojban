@@ -8,7 +8,7 @@ new Vue({
     },
     // Focus de la session de travaille
     reference: {
-      placeholder: "mi djica lo nu do ciska lo jbobau",
+      placeholder: "ca lo nu do.ui ciska lo jbobau",
       value: undefined,
       help: [
         "lo glico fanva cu cumki ma'i zoi sy. http://www.lojban.org/publications/wordlists/gismu.txt .sy.",
@@ -33,7 +33,7 @@ new Vue({
           clearTimeout(instance.waitForInput)
         }
       }
-
+      // TODO: changer le nom de la vers command
       function handleReferenceChange() {
         function waitAndDoServiceCall() {
           function doServiceCall() {

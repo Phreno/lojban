@@ -44,6 +44,8 @@
                                         <span class="badge badge-pill badge-primary mr-2" v-text="valsi.valsi"></span>
                                         <span class="badge badge-pill badge-warning mr-2" v-for="rafsi in getRafsiListFrom(valsi)"
                                             v-text="rafsi"></span>
+                                        <span class="badge badge-pill badge-secondary mr-2" v-for="el in valsi.elements"
+                                            v-text="el"></span>
                                         <span class="badge badge-pill badge-dark mr-2" v-text="valsi.class"></span>
                                         <span class="badge badge-pill badge-info mr-2" v-text="valsi.shortTranslation"></span>
                                         <span :class="{small:0!==index,'font-weight-bold':0===index}"> {{valsi.translation}}</span>
@@ -65,13 +67,10 @@
                                 <!-- ======================================================================= -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="reference" v-text="reference.label"></label>
                                         <input type="text" class="form-control" name="reference" id="reference" aria-describedby="reference.helpIdP"
                                             :placeholder="reference.placeholder" v-model="reference.value"
                                             @keyup.enter="memorize()" @keyup.up="stepBackward()"
                                             @keyup.down="stepForward()">
-                                        <small v-for="help in reference.help" class="form-text text-muted" v-text="help">
-                                        </small>
                                     </div>
                                 </div>
                                 <div class="card-body" v-html="boxes" v-if="boxes">
@@ -136,6 +135,8 @@
             integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
             crossorigin="anonymous "></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js'></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'
+        />
 
         <!-- ======================================================================= -->
         <!-- Dependencies -->
@@ -158,6 +159,7 @@
         </script>
         <script src="data/cmavo.js"></script>
         <script src="data/gismu.js"></script>
+        <script src="data/lujvo.js"></script>
         <!-- ======================================================================= -->
         <!-- Service de récupération des données -->
         <!-- ======================================================================= -->
