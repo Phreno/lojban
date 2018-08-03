@@ -1,0 +1,4 @@
+Lot of features used others works, here are the original sources
+
+https://github.com/sozysozbot/sozysozbot_jvozba/tree/master/docs
+https://github.com/lojban/ilmentufa/tree/master/glosser
