@@ -11,6 +11,13 @@ new Vue({
       placeholder: "ca lo nu do.ui ciska lo jbobau",
       value: ":help;",
       help: [{
+          action: "...valsi / words",
+          description: "type words to display translation (if available)"
+        },
+        {
+          action: "do ciska lo xamgu jufra",
+          description:   "display boxes"
+        }, {
           action: "<pre>:help;</pre>",
           description:   "display help"
         },
@@ -27,6 +34,10 @@ new Vue({
           description: "decompose a lujvo"
         },
         {
+          action: "<pre>:tm [valste...];<pre>",
+          description: "request <a href='https://glosbe.com/'> glosbe</a> for available sample about vlaste"
+        },
+        {
           action:   "<pre> # is a sort of comment </pre>",
           description: "after this sign, the lojban is not parsed for the boxes, but you can run command and display translation"
         },
@@ -37,14 +48,6 @@ new Vue({
         {
           action: "<kbd>↑</kbd> <kbd>↓</kbd>",
           description: "use arrow (up/down) to navigate through history"
-        },
-        {
-          action: "...valsi / words",
-          description: "type words to display translation (if available)"
-        },
-        {
-          action: "do ciska lo xamgu jufra",
-          description:   "display boxes"
         }
       ],
       waitForInput: undefined,
