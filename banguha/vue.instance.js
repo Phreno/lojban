@@ -38,8 +38,8 @@ new Vue({
           description: "request <a href='https://glosbe.com/'> glosbe</a> for available sample about vlaste"
         },
         {
-          action:   "<pre> # is a sort of comment </pre>",
-          description: "after this sign, the lojban is not parsed for the boxes, but you can run command and display translation"
+          action:   "<pre>lo melbi jufra # here you can safely run command like :jvozba melbi jufra; </pre>",
+          description: "this permit to conserve boxes preview for the left part of the text"
         },
         {
           action:   "<kbd>enter</kbd>",
