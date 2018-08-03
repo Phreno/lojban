@@ -17,6 +17,14 @@ new Vue({
         {
           action: "do ciska lo xamgu jufra",
           description:   "display boxes"
+        },
+        {
+          action:   "<kbd>enter</kbd>",
+          description: "type enter to store your work in history"
+        },
+        {
+          action: "<kbd>↑</kbd> <kbd>↓</kbd>",
+          description: "use arrow (up/down) to navigate through history"
         }, {
           action: "<pre>:help;</pre>",
           description:   "display help"
@@ -41,14 +49,6 @@ new Vue({
           action:   "<pre>lo melbi jufra # here you can safely run command like :jvozba melbi jufra; </pre>",
           description: "this permit to conserve boxes preview for the left part of the text"
         },
-        {
-          action:   "<kbd>enter</kbd>",
-          description: "type enter to store your work in history"
-        },
-        {
-          action: "<kbd>↑</kbd> <kbd>↓</kbd>",
-          description: "use arrow (up/down) to navigate through history"
-        }
       ],
       waitForInput: undefined,
       waitingTime: 1000,
