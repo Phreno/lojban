@@ -27,11 +27,15 @@ new Vue({
           description: "decompose a lujvo"
         },
         {
+          action:   "<pre> # is a sort of comment </pre>",
+          description: "after this sign, the lojban is not parsed for the boxes, but you can run command and display translation"
+        },
+        {
           action:   "<kbd>enter</kbd>",
           description: "type enter to store your work in history"
         },
         {
-          action: "<kbd>↑</kbd><kbd>↓</kbd>",
+          action: "<kbd>↑</kbd> <kbd>↓</kbd>",
           description: "use arrow (up/down) to navigate through history"
         },
         {
