@@ -25,6 +25,7 @@
                                 <img src="pics/flag.png" height="70"> bangu'a
                             </h1>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -78,13 +79,85 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" v-if="displayTranslations">
+
+
+
+                    <!-- ======================================================================= -->
+                    <!-- Résultat de la commande -->
+                    <!-- ======================================================================= -->
+                    <div class="row" id="command-result-container">
                         <div class="col">
-                            <!-- ======================================================================= -->
-                            <!-- Exemples de traductions -->
-                            <!-- ======================================================================= -->
                             <div class="card m-2">
-                                <div class="card-body">
+                                <!-- ======================================================================= -->
+                                <!-- Affichage de l'aide -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="help">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>action</th>
+                                                <th>description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="msg in help">
+                                                <td scope="row "></td>
+                                                <td v-html="msg.action"></td>
+                                                <td v-text="msg.description"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- ======================================================================= -->
+                                <!-- Décomposition de lujvo -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="jvokahaste">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>rafsi</th>
+                                                <th>valsi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="valsi in jvokahaste">
+                                                <td scope="row "></td>
+                                                <td v-text="valsi.rafsi"></td>
+                                                <td v-text="valsi.valsi"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- ======================================================================= -->
+                                <!-- Création de lujvo -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="jvoste">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>lujvo</th>
+                                                <th>score</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="valsi in jvoste">
+                                                <td scope="row "></td>
+                                                <td v-text="valsi.lujvo"></td>
+                                                <td v-text="valsi.score"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <!-- ======================================================================= -->
+                                <!-- Affichage des translations memories -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="displayTranslations">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -108,7 +181,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="row">
+
+                    <!--  <div class="row">
                         <div class="col" id="debug-container">
                             <div class="card m-2 bg-info ">
                                 <div class="card-body ">
@@ -141,12 +215,22 @@
         <!-- ======================================================================= -->
         <!-- Dependencies -->
         <!-- ======================================================================= -->
+
+        <!-- Lojban parser -->
         <script src="ext/camxes.js"></script>
 
+        <!-- Boxes -->
         <link rel="stylesheet" href="css/box.css">
         <script src="ext/gismudata.js"></script>
         <script src="ext/interface.js"></script>
         <script src="ext/tree.js"></script>
+
+        <!-- Lujvo -->
+        <script src="ext/rafsi_list.js"></script>
+        <script src="ext/scoring.js"></script>
+        <script src="ext/tools.js"></script>
+        <script src="ext/jvokaha.js"></script>
+        <script src="ext/jvozba.js"></script>
 
 
         <!-- ======================================================================= -->

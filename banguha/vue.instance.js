@@ -9,12 +9,39 @@ new Vue({
     // Focus de la session de travaille
     reference: {
       placeholder: "ca lo nu do.ui ciska lo jbobau",
-      value: undefined,
-      help: [
-        "lo glico fanva cu cumki ma'i zoi sy. http://www.lojban.org/publications/wordlists/gismu.txt .sy.",
-        "zoi sy.#.sy. cu pinka",
-        "zoi sy.:gleki;.sy. cu prina lo mupli sepi'o la'o sy. glosbe .sy.",
-        "lo skami galtu ciska .e lo skami dizlo ciska cu litru le do jufra citri"
+      value: ":help;",
+      help: [{
+          action: "<pre>:help;</pre>",
+          description:   "display help"
+        },
+        {
+          action: "<pre>:command [args...];<pre>",
+          description: "run some command"
+        },
+        {
+          action: "<pre>:jvozba <gismu> [gismu ...];<pre>",
+          description: "do a lujvo"
+        },
+        {
+          action: "<pre>:jvokaha &lt;lujvo&gt;;<pre>",
+          description: "decompose a lujvo"
+        },
+        {
+          action:   "<kbd>enter</kbd>",
+          description: "type enter to store your work in history"
+        },
+        {
+          action: "<kbd>↑</kbd><kbd>↓</kbd>",
+          description: "use arrow (up/down) to navigate through history"
+        },
+        {
+          action: "...valsi / words",
+          description: "type words to display translation (if available)"
+        },
+        {
+          action: "do ciska lo xamgu jufra",
+          description:   "display boxes"
+        }
       ],
       waitForInput: undefined,
       waitingTime: 1000,
@@ -28,57 +55,82 @@ new Vue({
   },
   watch: {
     "reference.value" () {
-      function preventUselessCallToService() {
-        if (instance.waitForInput) {
-          clearTimeout(instance.waitForInput)
-        }
-      }
-      // TODO: changer le nom de la vers command
-      function handleReferenceChange() {
-        function waitAndDoServiceCall() {
-          function doServiceCall() {
-            /* glosbeService.translate(
-              instance.reference.substring(
-                str.lastIndexOf(":") + 1,
-                str.lastIndexOf(";")
-              ),
-              instance.setDataTranslate
-            ) */
-            glosbeService.getTranslationMemory(
-              instance.command,
-              instance.setDataTranslationMemory
-            )
-            instance.waitForInput = undefined
-          }
-          instance.waitForInput = setTimeout(doServiceCall, 1000)
-        }
-        const noLetters = /^\W*$/
-        const noCommand = instance.command.match(noLetters)
-        if (noCommand) {
-          instance.emptyData()
-        } else {
-          // TODO: handle complex command
-          waitAndDoServiceCall()
-        }
-      }
-
       const instance = this
-      preventUselessCallToService()
-      handleReferenceChange()
+      instance.emptyData()
+      if (instance.command) {
+        let command = this.parseCommand(instance.command)
+        if (command.action === "tm" && command.args) {
+          glosbeService.getTranslationMemory(
+            command.args.join(' '),
+            instance.setDataTranslationMemory
+          )
+        }
+      }
     }
   },
   computed: {
 
     command() {
       let command = ''
-      if (this.hasReferenceValue) {
+      let commandStart = ':'
+      let commandEnd = ';'
+      if (
+        this.hasReferenceValue &&
+        this.reference.value.includes(commandStart) &&
+        this.reference.value.includes(commandEnd)
+      ) {
         command = this.reference.value.substring(
-          this.reference.value.lastIndexOf(":") + 1,
-          this.reference.value.lastIndexOf(";")
+          this.reference.value.lastIndexOf(commandStart) + 1,
+          this.reference.value.lastIndexOf(commandEnd)
         );
       }
       return command
     },
+    help() {
+      let result
+      let command
+      if (this.command) {
+        command = this.parseCommand()
+        if ("help" === command.action) {
+          result = this.reference.help
+        }
+      }
+      return result
+    },
+    jvoste() {
+      let result
+      let command
+      if (this.command) {
+        command = this.parseCommand()
+        if ("jvozba" === command.action) {
+          try {
+            result = jvozba(command.args)
+          } catch (error) {
+            /* malformed tanru */
+          }
+        }
+      }
+      return result
+    },
+
+    jvokahaste() {
+      let result
+      let command
+      if (this.command) {
+        command = this.parseCommand()
+        if ("jvokaha" === command.action) {
+          result = jvokaha(command.args.pop())
+          result = result.map(rafsi =>
+            data && data.gismuDatabase ?
+            data.gismuDatabase.find(gismu => gismu.rafsi.includes(rafsi)) : {
+              rafsi
+            }
+          )
+        }
+      }
+      return result
+    },
+
     // =============================================================================
     // Transformation de données
     // =============================================================================
@@ -186,6 +238,39 @@ new Vue({
     }
   },
   methods: {
+    // =============================================================================
+    // Command Tools
+    // =============================================================================
+    parseCommand() {
+      let parse = []
+      if (this.command) {
+        parse = this.command.split(/\s+/)
+      }
+      return {
+        action:  parse.shift(),
+        args: parse
+      }
+    },
+
+    runCommand() {
+      let command = this.parseCommand(this.command)
+      switch (command.action) {
+        case "tm":
+
+          break;
+
+        case "jvoka'a":
+          break;
+
+        case "jvozba":
+          console.log(result)
+          break
+
+        default:
+          break;
+      }
+
+    },
     // =============================================================================
     // History Tools
     // =============================================================================
