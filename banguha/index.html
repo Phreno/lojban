@@ -22,13 +22,13 @@
                     <div class="jumbotron jumbotron-fluid bg-white">
                         <div class="container">
                             <h1 class="display-3">
-                                <img src="pics/flag.png" height="70"> bangu'a
+                                <img src="pics/flag.png" height="70"> {{ page.title }}
                             </h1>
                         </div>
-
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <!-- ======================================================================= -->
                 <!-- Container guauche -->
@@ -208,22 +208,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--  <div class="row">
-                        <div class="col" id="debug-container">
-                            <div class="card m-2 bg-info ">
-                                <div class="card-body ">
-                                    <pre>
-                                        {{JSON.stringify(referenceParsed, null, 2)}}
-                                    </pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
-        <!-- Optional JavaScript -->
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!-- ======================================================================= -->
         <!-- Vendor -->
@@ -271,6 +259,7 @@
         <script src="data/cmavo.js"></script>
         <script src="data/gismu.js"></script>
         <script src="data/lujvo.js"></script>
+
         <!-- ======================================================================= -->
         <!-- Service de récupération des données -->
         <!-- ======================================================================= -->
@@ -278,9 +267,11 @@
         <script src="glosbe/glosbe.service.tool.url.js "></script>
         <script src="glosbe/glosbe.service.tool.option.js "></script>
         <script src="glosbe/glosbe.service.js "></script>
+
         <!-- ======================================================================= -->
         <!-- Gestion de l'interface -->
         <!-- ======================================================================= -->
+        <script src="vue.instance.configuration.js"></script>
         <script src="vue.instance.js "></script>
     </body>
 

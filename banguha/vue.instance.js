@@ -7,129 +7,64 @@ new Vue({
     // Focus de la session de travaille
     reference: {
       placeholder: "ca lo nu do.ui ciska lo jbobau",
-      value: ":help;",
-      help: [{
-          action: "...valsi / words",
-          description: "type words to display translation (if available)"
-        },
-        {
-          action: "do ciska lo xamgu jufra",
-          description:   "display boxes"
-        },
-        {
-          action:   "<kbd>enter</kbd>",
-          description: "type enter to store your work in history"
-        },
-        {
-          action: "<kbd>↑</kbd> <kbd>↓</kbd>",
-          description: "use arrow (up/down) to navigate through history"
-        }, {
-          action: "<pre>:help;</pre>",
-          description:   "display help"
-        },
-        {
-          action: "<pre>:command [args...];<pre>",
-          description: "run some command"
-        },
-        {
-          action: "<pre>:jvozba <gismu> [gismu ...];<pre>",
-          description: "do a lujvo"
-        },
-        {
-          action: "<pre>:jvokaha &lt;lujvo&gt;;<pre>",
-          description: "decompose a lujvo"
-        },
-        {
-          action: "<pre>:tm [valste...];<pre>",
-          description: "request <a href='https://glosbe.com/'> glosbe</a> for available sample about vlaste"
-        },
-        {
-          action:   "<pre>lo melbi jufra # here you can safely run command like :jvozba melbi jufra; </pre>",
-          description: "this permit to conserve boxes preview for the left part of the text"
-        },
-      ],
+      value: `:${banguha.command.action.HELP};`,
       history: []
     },
-    // TODO: déplacer data dans reference.glosbe
     data: {
       translationMemory: undefined
     }
   },
   watch: {
     "reference.value" () {
-      const instance = this
-      instance.emptyData()
-      if (instance.command) {
-        let command = this.parseCommand(instance.command)
-        if (command.action === "tm" && command.args) {
-          glosbeService.getTranslationMemory(
-            command.args.join(' '),
-            instance.setDataTranslationMemory
-          )
-        }
+      this.emptyData()
+      if (this.commandParsed &&
+        banguha.command.action.TM === this.commandParsed.action &&
+        this.commandParsed.args) {
+        glosbeService.getTranslationMemory(
+          this.commandParsed.args.join(' '),
+          this.setDataTranslationMemory
+        )
       }
     }
   },
   computed: {
     command() {
-      let command = ''
-      let commandStart = ':'
-      let commandEnd = ';'
-      if (
-        this.hasReferenceValue &&
-        this.reference.value.includes(commandStart) &&
-        this.reference.value.includes(commandEnd)
-      ) {
+      if (this.includesCommand) {
         command = this.reference.value.substring(
-          this.reference.value.lastIndexOf(commandStart) + 1,
-          this.reference.value.lastIndexOf(commandEnd)
+          this.reference.value.lastIndexOf(banguha.command.START) + 1,
+          this.reference.value.lastIndexOf(banguha.command.END)
         );
       }
       return command
     },
+    commandParsed() {
+      return this.includesCommand ?
+        this.parseCommand() :  undefined
+    },
     help() {
-      let result
-      let command
-      if (this.command) {
-        command = this.parseCommand()
-        if ("help" === command.action) {
-          result = this.reference.help
-        }
-      }
-      return result
+      return this.commandParsed && "help" === this.commandParsed.action ?
+        banguha.help : undefined
     },
     jvoste() {
-      let result
-      let command
-      if (this.command) {
-        command = this.parseCommand()
-        if ("jvozba" === command.action) {
-          try {
-            result = jvozba(command.args)
-          } catch (error) {
-            /* malformed tanru */
-          }
-        }
+      try {
+        return this.commandParsed && "jvozba" === this.commandParsed.action ?
+          jvozba(this.commandParsed.args) :  undefined
+      } catch (e) {
+        /* We don't care about parse error */
       }
-      return result
     },
-
     jvokahaste() {
-      let result
-      let command
-      if (this.command) {
-        command = this.parseCommand()
-        if ("jvokaha" === command.action) {
-          result = jvokaha(command.args.pop())
-          result = result.map(rafsi =>
+      try {
+        return this.commandParsed && "jvokaha" === this.commandParsed.action ?
+          jvokaha(this.commandParsed.args.pop()).map(rafsi =>
             data && data.gismuDatabase ?
             data.gismuDatabase.find(gismu => gismu.rafsi.includes(rafsi)) : {
               rafsi
             }
-          )
-        }
+          ) : undefined
+      } catch (e) {
+        /* We don't care about parse error */
       }
-      return result
     },
 
     // =============================================================================
@@ -137,8 +72,6 @@ new Vue({
     // =============================================================================
     referenceSegments() {
       const whiteSpaces = /\s+/
-      const comment = /#.*$/
-      const empty = ''
       return this.reference.value.split(whiteSpaces).map((el, index) => {
         return {
           value:  el,
@@ -148,13 +81,6 @@ new Vue({
     },
 
     dictionaryTranslations() {
-
-      /**
-       * @description
-       * @author  K3rn€l_P4n1k
-       */
-      // TODO: externaliser dans un service
-      // TODO: prioriser les sources de données
       let match = []
       let valsi
       let words
@@ -186,18 +112,15 @@ new Vue({
     },
 
     referenceParsed() {
-      const comment = /#.*$/
       const empty = ''
       let fullParse
       let simplified
       if (this.reference && this.reference.value) {
         try {
-          fullParse = camxes.parse(this.reference.value.replace(comment, empty))
+          fullParse = camxes.parse(this.reference.value.replace(banguha.COMMENT, empty))
           simplified = simplifyTree(fullParse)
         } catch (e) {
-          /* 
-          Something strange happens but I don't care :)
-          */
+          /* We don't care about parse error */
         }
       }
       return simplified
@@ -211,12 +134,20 @@ new Vue({
      * Shows the boxes in the interface.
      */
     boxes() {
-      return this.referenceParsed && this.referenceParsed[0] ? constructBoxesOutput(this.referenceParsed[0], 0) :  undefined
+      return this.referenceParsedWithSuccess ? constructBoxesOutput(this.referenceParsed[0], 0) :  undefined
     },
 
     // =============================================================================
     // Vérification de données
     // =============================================================================
+    referenceParsedWithSuccess() {
+      return this.referenceParsed && this.referenceParsed[0]
+    },
+    includesCommand() {
+      return this.hasReferenceValue &&
+        this.reference.value.includes(banguha.command.START) &&
+        this.reference.value.includes(banguha.command.END);
+    },
     hasReferenceValue() {
       return this.reference &&
         this.reference.value
@@ -244,7 +175,7 @@ new Vue({
     parseCommand() {
       let parse = []
       if (this.command) {
-        parse = this.command.split(/\s+/)
+        parse = this.command.split(banguha.command.ARGS_SEPARATOR)
       }
       return {
         action:  parse.shift(),
@@ -259,7 +190,7 @@ new Vue({
       const currentIndex = this.findIndexInHistory()
       const empty = /^\s*$/
       if (this.hasReferenceValue && notFound === currentIndex && !this.reference.value.match(empty)) {
-        this.reference.history.push(`${this.reference.value}`)
+        this.reference.history.push(`${this.reference.value}`) // push a copy to avoid conflicts
       }
     },
     memorize() {
@@ -310,6 +241,7 @@ new Vue({
 
     // =============================================================================
     // Database tools
+    // TODO: rextract data to standardize databases
     // =============================================================================
     getSourcesFromSegments(database) {
       let source = database
@@ -332,7 +264,6 @@ new Vue({
     // =============================================================================
     // Html Tools
     // =============================================================================
-
     decodeHtml(htmlEncoded) {
       return $("<div/>")
         .html(htmlEncoded)
@@ -351,6 +282,7 @@ new Vue({
     getRafsiListFrom(valsi) {
       let rafsi = []
       if (valsi && valsi.rafsi) {
+        // TODO: Fix this ugly patch with new extraction of data
         rafsi = valsi.rafsi.split(/\s+/)
       }
       return rafsi
@@ -363,7 +295,6 @@ new Vue({
       const empty = ''
       this.setReference(empty);
     },
-
 
     emptyDataTranslationMemory() {
       this.setDataTranslationMemory(undefined)
