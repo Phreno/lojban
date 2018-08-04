@@ -80,12 +80,10 @@
                         </div>
                     </div>
 
-
-
                     <!-- ======================================================================= -->
                     <!-- Résultat de la commande -->
                     <!-- ======================================================================= -->
-                    <div class="row" id="command-result-container" v-if="help || jvokahaste || jvoste || displayTranslations">
+                    <div class="row" id="command-result-container" v-if="displayRightContainer">
                         <div class="col">
                             <div class="card m-2">
                                 <!-- ======================================================================= -->
@@ -140,7 +138,7 @@
                                 <!-- ======================================================================= -->
                                 <!-- Décomposition de lujvo -->
                                 <!-- ======================================================================= -->
-                                <div class="card-body" v-if="jvokahaste">
+                                <div class="card-body" v-if="displayJvokaha">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -161,7 +159,7 @@
                                 <!-- ======================================================================= -->
                                 <!-- Création de lujvo -->
                                 <!-- ======================================================================= -->
-                                <div class="card-body" v-if="jvoste">
+                                <div class="card-body" v-if="displayJvozba">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -180,12 +178,23 @@
                                     </table>
                                 </div>
 
-
+                                <!-- ======================================================================= -->
+                                <!-- Affichage des traductions de vlasisku -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="displayVlasisku">
+                                    <strong class="bg-warning rounded p-2">This panel is an iframe. To get to the source,
+                                        @see
+                                        <a href="http://vlasisku.lojban.org/" class="alert-link">
+                                            vlasisku</a>
+                                    </strong>
+                                    <iframe id=" inlineFrameExample " width="100%" height="500px" :src="vlasisku">
+                                    </iframe>
+                                </div>
                                 <!-- ======================================================================= -->
                                 <!-- Affichage des translations memories -->
                                 <!-- ======================================================================= -->
-                                <div class="card-body" v-if="displayTranslations">
-                                    <table class="table">
+                                <div class="card-body " v-if="displayTranslations ">
+                                    <table class="table ">
                                         <thead>
                                             <tr>
                                                 <!-- ======================================================================= -->
@@ -199,8 +208,8 @@
                                         <tbody>
                                             <tr v-for="traduction in data.translationMemory.examples ">
                                                 <td scope="row "></td>
-                                                <td v-text="traduction.first"></td>
-                                                <td v-text="traduction.second"></td>
+                                                <td v-text="traduction.first "></td>
+                                                <td v-text="traduction.second "></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -216,7 +225,8 @@
         <!-- ======================================================================= -->
         <!-- Vendor -->
         <!-- ======================================================================= -->
-        <script src=" https://code.jquery.com/jquery-3.3.1.min.js " crossorigin="anonymous "></script>
+        <script src=" https://code.jquery.com/jquery-3.3.1.min.js
+                                    " crossorigin="anonymous "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
             crossorigin="anonymous "></script>
@@ -232,20 +242,20 @@
         <!-- ======================================================================= -->
 
         <!-- Lojban parser -->
-        <script src="ext/camxes.js"></script>
+        <script src="ext/camxes.js "></script>
 
         <!-- Boxes -->
-        <link rel="stylesheet" href="css/box.css">
-        <script src="ext/gismudata.js"></script>
-        <script src="ext/interface.js"></script>
-        <script src="ext/tree.js"></script>
+        <link rel="stylesheet " href="css/box.css ">
+        <script src="ext/gismudata.js "></script>
+        <script src="ext/interface.js "></script>
+        <script src="ext/tree.js "></script>
 
         <!-- Lujvo -->
-        <script src="ext/rafsi_list.js"></script>
-        <script src="ext/scoring.js"></script>
-        <script src="ext/tools.js"></script>
-        <script src="ext/jvokaha.js"></script>
-        <script src="ext/jvozba.js"></script>
+        <script src="ext/rafsi_list.js "></script>
+        <script src="ext/scoring.js "></script>
+        <script src="ext/tools.js "></script>
+        <script src="ext/jvokaha.js "></script>
+        <script src="ext/jvozba.js "></script>
 
 
         <!-- ======================================================================= -->
@@ -256,9 +266,9 @@
             let data = {}
 
         </script>
-        <script src="data/cmavo.js"></script>
-        <script src="data/gismu.js"></script>
-        <script src="data/lujvo.js"></script>
+        <script src="data/cmavo.js "></script>
+        <script src="data/gismu.js "></script>
+        <script src="data/lujvo.js "></script>
 
         <!-- ======================================================================= -->
         <!-- Service de récupération des données -->
@@ -271,7 +281,7 @@
         <!-- ======================================================================= -->
         <!-- Gestion de l'interface -->
         <!-- ======================================================================= -->
-        <script src="vue.instance.configuration.js"></script>
+        <script src="vue.instance.configuration.js "></script>
         <script src="vue.instance.js "></script>
     </body>
 

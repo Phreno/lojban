@@ -8,7 +8,8 @@ const banguha = (function () {
         HELP:   "help",
         TM: "tm",
         JVOKAHA: "jvokaha",
-        JVOZBA:   "jvozba"
+        JVOZBA:   "jvozba",
+        VLASISKU: "vlasisku"
       }
     },
     COMMENT:   /#.*$/,
@@ -27,13 +28,18 @@ const banguha = (function () {
       {
         action: "<kbd>↑</kbd> <kbd>↓</kbd>",
         description: "use arrow (up/down) to navigate through history"
-      }, {
+      },
+      {
         action: "<pre>:help;</pre>",
         description:   "display help"
       },
       {
         action: "<pre>:command [args...];<pre>",
         description: "run some command"
+      },
+      {
+        action: "<pre>:vlasisku [valsi/word...];</pre>",
+        description: "open an iframe to display <a href='http://vlasisku.lojban.org/'>vlasisku</a> data"
       },
       {
         action: "<pre>:jvozba <gismu> [gismu ...];<pre>",

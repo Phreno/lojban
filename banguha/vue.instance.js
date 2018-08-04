@@ -42,12 +42,16 @@ new Vue({
         this.parseCommand() :  undefined
     },
     help() {
-      return this.commandParsed && "help" === this.commandParsed.action ?
+      return this.displayHelp ?
         banguha.help : undefined
+    },
+    vlasisku() {
+      return this.displayVlasisku ?
+        `http://vlasisku.lojban.org/${encodeURIComponent(this.commandParsed.args.join(' '))}` : undefined
     },
     jvoste() {
       try {
-        return this.commandParsed && "jvozba" === this.commandParsed.action ?
+        return this.displayJvozba ?
           jvozba(this.commandParsed.args) :  undefined
       } catch (e) {
         /* We don't care about parse error */
@@ -55,7 +59,7 @@ new Vue({
     },
     jvokahaste() {
       try {
-        return this.commandParsed && "jvokaha" === this.commandParsed.action ?
+        return this.displayJvokaha ?
           jvokaha(this.commandParsed.args.pop()).map(rafsi =>
             data && data.gismuDatabase ?
             data.gismuDatabase.find(gismu => gismu.rafsi.includes(rafsi)) : {
@@ -140,6 +144,25 @@ new Vue({
     // =============================================================================
     // Vérification de données
     // =============================================================================
+    displayRightContainer() {
+      return this.displayHelp ||
+        this.displayJvokaha ||
+        this.displayJvozba ||
+        this.displayTranslations ||
+        this.displayVlasisku;
+    },
+    displayVlasisku() {
+      return this.commandParsed && banguha.command.action.VLASISKU === this.commandParsed.action
+    },
+    displayHelp() {
+      return this.commandParsed && banguha.command.action.HELP === this.commandParsed.action
+    },
+    displayJvozba() {
+      return this.commandParsed && banguha.command.action.JVOZBA === this.commandParsed.action
+    },
+    displayJvokaha() {
+      return this.commandParsed && banguha.command.action.JVOKAHA === this.commandParsed.action
+    },
     referenceParsedWithSuccess() {
       return this.referenceParsed && this.referenceParsed[0]
     },
