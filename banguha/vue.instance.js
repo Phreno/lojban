@@ -47,7 +47,7 @@ new Vue({
     },
     vlasisku() {
       return this.displayVlasisku ?
-        `http://vlasisku.lojban.org/${encodeURIComponent(this.commandParsed.args.join(' '))}` : undefined
+        `https://vlasisku.lojban.org/${encodeURIComponent(this.commandParsed.args.join(' '))}` : undefined
     },
     jvoste() {
       try {
