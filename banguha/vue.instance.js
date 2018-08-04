@@ -59,7 +59,7 @@ new Vue({
     },
     open() {
       return this.displayOpen ?
-        `https://${this.commandParsed.args[0]}` : undefined
+        `http://${this.commandParsed.args[0]}` : undefined
     },
     cll() {
       return this.displayCll ?
