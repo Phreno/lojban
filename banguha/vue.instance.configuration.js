@@ -40,10 +40,12 @@ const banguha = (function () {
         action: "<pre>:command [args...];<pre>",
         description: "run some command"
       },
-      {
+      // BROKEN ON GITHUB
+      /* 
+      { 
         action: "<pre>:vlasisku [valsi/word...];</pre>",
         description: "open an iframe to display <a href='http://vlasisku.lojban.org/'>vlasisku</a> data"
-      },
+      }, */
       {
         action: "<pre>:cll;</pre>",
         description: "open an iframe to display <a href='https://lojban.github.io/cll/'>cll</a> data"
