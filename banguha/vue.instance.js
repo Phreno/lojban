@@ -1,7 +1,5 @@
 new Vue({
   el: "#app",
-
-
   data: {
     page: {
       title: "bangu'a"
@@ -50,13 +48,10 @@ new Vue({
           description: "this permit to conserve boxes preview for the left part of the text"
         },
       ],
-      waitForInput: undefined,
-      waitingTime: 1000,
       history: []
     },
     // TODO: déplacer data dans reference.glosbe
     data: {
-      translate: undefined,
       translationMemory: undefined
     }
   },
@@ -76,7 +71,6 @@ new Vue({
     }
   },
   computed: {
-
     command() {
       let command = ''
       let commandStart = ':'
@@ -222,7 +216,6 @@ new Vue({
 
     // =============================================================================
     // Vérification de données
-    // TODO: mettre en commun certaines vérifications
     // =============================================================================
     hasReferenceValue() {
       return this.reference &&
@@ -258,26 +251,6 @@ new Vue({
         args: parse
       }
     },
-
-    runCommand() {
-      let command = this.parseCommand(this.command)
-      switch (command.action) {
-        case "tm":
-
-          break;
-
-        case "jvoka'a":
-          break;
-
-        case "jvozba":
-          console.log(result)
-          break
-
-        default:
-          break;
-      }
-
-    },
     // =============================================================================
     // History Tools
     // =============================================================================
@@ -287,16 +260,7 @@ new Vue({
       const empty = /^\s*$/
       if (this.hasReferenceValue && notFound === currentIndex && !this.reference.value.match(empty)) {
         this.reference.history.push(`${this.reference.value}`)
-      } else {
-        //TODO: faire remonter le résultat en première position 
       }
-
-      // @see https://stackoverflow.com/a/36744732
-      /*       this.reference.history = this.reference.history.filter((survivor, index, arr) =>
-              index === arr.findIndex((other) => (
-                other.valsi === survivor.valsi
-              )))
-       */
     },
     memorize() {
       this.backupReference()
@@ -381,9 +345,6 @@ new Vue({
     setReference(text) {
       this.reference.value = text
     },
-    setDataTranslate(data) {
-      this.data.translate = data
-    },
     setDataTranslationMemory(data) {
       this.data.translationMemory = data
     },
@@ -402,14 +363,13 @@ new Vue({
       const empty = ''
       this.setReference(empty);
     },
-    emptyDataTranslate() {
-      this.setDataTranslate(undefined)
-    },
+
+
     emptyDataTranslationMemory() {
       this.setDataTranslationMemory(undefined)
     },
+
     emptyData() {
-      this.emptyDataTranslate()
       this.emptyDataTranslationMemory()
     }
   }
