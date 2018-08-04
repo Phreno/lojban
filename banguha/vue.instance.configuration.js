@@ -9,7 +9,10 @@ const banguha = (function () {
         TM: "tm",
         JVOKAHA: "jvokaha",
         JVOZBA:   "jvozba",
-        VLASISKU: "vlasisku"
+        VLASISKU: "vlasisku",
+        OPEN: "open",
+        CLL: "cll",
+        YOUTUBE: "youtube"
       }
     },
     COMMENT:   /#.*$/,
@@ -40,6 +43,14 @@ const banguha = (function () {
       {
         action: "<pre>:vlasisku [valsi/word...];</pre>",
         description: "open an iframe to display <a href='http://vlasisku.lojban.org/'>vlasisku</a> data"
+      },
+      {
+        action: "<pre>:cll;</pre>",
+        description: "open an iframe to display <a href='https://lojban.github.io/cll/'>cll</a> data"
+      },
+      {
+        action: "<pre>:youtube videoID;</pre>",
+        description: "<small>where videoID is the last part of the url of the video: https://www.youtube.com/watch?v=<strong class='bg-success rounded'>dQw4w9WgXcQ</strong></small>"
       },
       {
         action: "<pre>:jvozba <gismu> [gismu ...];<pre>",

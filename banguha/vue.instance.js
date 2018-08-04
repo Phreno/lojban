@@ -57,6 +57,18 @@ new Vue({
         /* We don't care about parse error */
       }
     },
+    open() {
+      return this.displayOpen ?
+        `https://${this.commandParsed.args[0]}` : undefined
+    },
+    cll() {
+      return this.displayCll ?
+        "https://lojban.github.io/cll/" :  undefined
+    },
+    youtube() {
+      return this.displayYoutube ?
+        `https://www.youtube.com/embed/${this.commandParsed.args[0]}` : undefined
+    },
     jvokahaste() {
       try {
         return this.displayJvokaha ?
@@ -149,7 +161,13 @@ new Vue({
         this.displayJvokaha ||
         this.displayJvozba ||
         this.displayTranslations ||
-        this.displayVlasisku;
+        this.displayVlasisku ||
+        this.displayOpen ||
+        this.displayCll ||
+        this.displayYoutube
+    },
+    displayCll() {
+      return this.commandParsed && banguha.command.action.CLL === this.commandParsed.action
     },
     displayVlasisku() {
       return this.commandParsed && banguha.command.action.VLASISKU === this.commandParsed.action
@@ -162,6 +180,12 @@ new Vue({
     },
     displayJvokaha() {
       return this.commandParsed && banguha.command.action.JVOKAHA === this.commandParsed.action
+    },
+    displayOpen() {
+      return this.commandParsed && banguha.command.action.OPEN === this.commandParsed.action
+    },
+    displayYoutube() {
+      return this.commandParsed && banguha.command.action.YOUTUBE === this.commandParsed.action
     },
     referenceParsedWithSuccess() {
       return this.referenceParsed && this.referenceParsed[0]

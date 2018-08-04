@@ -179,6 +179,13 @@
                                 </div>
 
                                 <!-- ======================================================================= -->
+                                <!-- Affichage de video youtube -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="displayYoutube">
+                                    <iframe width="560" height="315" :src="youtube" frameborder="0" allow="autoplay; encrypted-media"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <!-- ======================================================================= -->
                                 <!-- Affichage des traductions de vlasisku -->
                                 <!-- ======================================================================= -->
                                 <div class="card-body" v-if="displayVlasisku">
@@ -190,6 +197,32 @@
                                     <iframe id=" inlineFrameExample " width="100%" height="500px" :src="vlasisku">
                                     </iframe>
                                 </div>
+
+                                <!-- ======================================================================= -->
+                                <!-- Affichage du complete lojban language -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="displayCll">
+                                    <strong class="bg-warning rounded p-2">This panel is an iframe. To get to the source,
+                                        @see
+                                        <a href="https://lojban.github.io/cll/" class="alert-link">
+                                            The Complete Lojban Language </a> by
+                                        John Woldemar Cowan
+                                    </strong>
+                                    <iframe id=" inlineFrameExample " width="100%" height="500px" :src="cll">
+                                    </iframe>
+                                </div>
+
+                                <!-- ======================================================================= -->
+                                <!-- Affiche un site à la demande de l'utilisateur -->
+                                <!-- ======================================================================= -->
+                                <div class="card-body" v-if="displayOpen">
+                                    <strong class="bg-warning rounded p-2">This panel is an iframe.
+                                    </strong>
+                                    <iframe id=" inlineFrameExample " width="100%" height="500px" :src="open">
+                                    </iframe>
+                                </div>
+
+
                                 <!-- ======================================================================= -->
                                 <!-- Affichage des translations memories -->
                                 <!-- ======================================================================= -->
