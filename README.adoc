@@ -1,6 +1,26 @@
 = Ressources de traduction en lojban
 
+Site en construction, 
 Ce dépôt contient quelques outils pour m'aider à effectuer des traductions.
 
+== Démonstration
+https://phreno.github.io/lojban/banguha/
 
 
+== Installation
+
+.Téléchargement du dépot
+[source, bash]
+----
+git clone https://github.com/Phreno/lojban.git
+----
+
+== Lancement
+
+Ouvrir avec un navigateur le fichier `./banguha/index.html`
+
+== Structure
+
+Le dossier `./banguha` contient le site 
+Le dossier `./rsc` contient des données récupérées sur le net (gismu, lujvo, ...)
+Le dossier `./tools` contient des scripts utilitaires, pour transformer les données
