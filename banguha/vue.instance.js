@@ -62,8 +62,14 @@ new Vue({
         `http://${this.commandParsed.args[0]}` : undefined
     },
     cll() {
+      let chapter, section
+      const url = ["https://lojban.github.io/cll"]
+      if (this.hasUsableArgs) {
+        url.push(this.commandParsed.args[0] || 1)
+        url.push(this.commandParsed.args[1] || 1)
+      }
       return this.displayCll ?
-        "https://lojban.github.io/cll/" :  undefined
+        url.join('/') :  undefined
     },
     youtube() {
       return this.displayYoutube ?
@@ -198,6 +204,12 @@ new Vue({
       return this.hasReferenceValue &&
         this.reference.value.includes(banguha.command.START) &&
         this.reference.value.includes(banguha.command.END);
+    },
+    hasUsableArgs() {
+      return this.commandParsed &&
+        this.commandParsed.args &&
+        this.commandParsed.args.length > 0 &&
+        this.commandParsed.args.some(el => !el.match(/^\s*$/))
     },
     hasReferenceValue() {
       return this.reference &&

@@ -52,7 +52,7 @@ const banguha = (function () {
         description: "open a text editor that keep your words across the session"
       },
       {
-        action: "<code>:cll;</code>",
+        action: "<code>:cll [chapter] [section];</code>",
         description: "open an iframe to display <a href='https://lojban.github.io/cll/'>cll</a> data"
       },
       {
