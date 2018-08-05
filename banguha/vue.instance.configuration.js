@@ -34,46 +34,46 @@ const banguha = (function () {
         description: "use arrow (up/down) to navigate through history"
       },
       {
-        action: "<pre>:help;</pre>",
+        action: "<code>:help;</code>",
         description:   "display help"
       },
       {
-        action: "<pre>:command [args...];<pre>",
+        action: "<code>:command [args...];<code>",
         description: "run some command"
       },
       // BROKEN ON GITHUB
       /* 
       { 
-        action: "<pre>:vlasisku [valsi/word...];</pre>",
+        action: "<code>:vlasisku [valsi/word...];</code>",
         description: "open an iframe to display <a href='http://vlasisku.lojban.org/'>vlasisku</a> data"
       }, */
       {
-        action:   "<pre>:editor;</pre",
+        action:   "<code>:editor;</code>",
         description: "open a text editor that keep your words across the session"
       },
       {
-        action: "<pre>:cll;</pre>",
+        action: "<code>:cll;</code>",
         description: "open an iframe to display <a href='https://lojban.github.io/cll/'>cll</a> data"
       },
       {
-        action: "<pre>:youtube videoID;</pre>",
-        description: "<small>where videoID is the last part of the url of the video: https://www.youtube.com/watch?v=<strong class='bg-success rounded'>dQw4w9WgXcQ</strong></small>"
+        action: "<code>:youtube &lt;videoID&gt;;</code>",
+        description: "where <code>videoID</code> is the last part of the url of the video: <pre>https://www.youtube.com/watch?v=<strong class='bg-success rounded'>dQw4w9WgXcQ</strong></pre>"
       },
       {
-        action: "<pre>:jvozba <gismu> [gismu ...];<pre>",
+        action: "<code>:jvozba <gismu> [gismu ...];<code>",
         description: "do a lujvo"
       },
       {
-        action: "<pre>:jvokaha &lt;lujvo&gt;;<pre>",
+        action: "<code>:jvokaha &lt;lujvo&gt;;<code>",
         description: "decompose a lujvo"
       },
       {
-        action: "<pre>:tm [valste...];<pre>",
+        action: "<code>:tm [valste...];<code>",
         description: "request <a href='https://glosbe.com/'> glosbe</a> for available sample about vlaste"
       },
       {
-        action:   "<pre>lo melbi jufra # here you can safely run command like :jvozba melbi jufra; </pre>",
-        description: "this permit to conserve boxes preview for the left part of the text"
+        action:   "<code>lo melbi jufra # :jvozba melbi jufra; </code>",
+        description: "«<code>#</code>» permit to conserve boxes preview for the left part of the text"
       },
     ]
   }
