@@ -164,7 +164,8 @@ new Vue({
         this.displayVlasisku ||
         this.displayOpen ||
         this.displayCll ||
-        this.displayYoutube
+        this.displayYoutube ||
+        this.displayEditor
     },
     displayCll() {
       return this.commandParsed && banguha.command.action.CLL === this.commandParsed.action
@@ -186,6 +187,9 @@ new Vue({
     },
     displayYoutube() {
       return this.commandParsed && banguha.command.action.YOUTUBE === this.commandParsed.action
+    },
+    displayEditor() {
+      return this.commandParsed && banguha.command.action.EDITOR === this.commandParsed.action
     },
     referenceParsedWithSuccess() {
       return this.referenceParsed && this.referenceParsed[0]

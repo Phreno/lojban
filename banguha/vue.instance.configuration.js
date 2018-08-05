@@ -12,7 +12,8 @@ const banguha = (function () {
         VLASISKU: "vlasisku",
         OPEN: "open",
         CLL: "cll",
-        YOUTUBE: "youtube"
+        YOUTUBE: "youtube",
+        EDITOR: "editor"
       }
     },
     COMMENT:   /#.*$/,
@@ -46,6 +47,10 @@ const banguha = (function () {
         action: "<pre>:vlasisku [valsi/word...];</pre>",
         description: "open an iframe to display <a href='http://vlasisku.lojban.org/'>vlasisku</a> data"
       }, */
+      {
+        action:   "<pre>:editor;</pre",
+        description: "open a text editor that keep your words across the session"
+      },
       {
         action: "<pre>:cll;</pre>",
         description: "open an iframe to display <a href='https://lojban.github.io/cll/'>cll</a> data"
