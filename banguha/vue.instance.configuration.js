@@ -13,7 +13,8 @@ const banguha = (function () {
         OPEN: "open",
         CLL: "cll",
         YOUTUBE: "youtube",
-        EDITOR: "editor"
+        EDITOR: "editor",
+        CONTACT:   "contact"
       }
     },
     COMMENT:   /#.*$/,
@@ -75,6 +76,10 @@ const banguha = (function () {
         action:   "<code>lo melbi jufra # :jvozba melbi jufra; </code>",
         description: "«<code>#</code>» permit to conserve boxes preview for the left part of the text"
       },
+      {
+        action:   "<code>:contact;</code>",
+        description:   "where you can report me bugs"
+      }
     ]
   }
 })()
